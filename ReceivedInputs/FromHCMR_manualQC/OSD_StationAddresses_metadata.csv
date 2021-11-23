@@ -1,0 +1,15 @@
+Column name,Description,To be published
+To be published,Whether to publish this row or not,
+SiteID,Site ID,1
+People and Institute (raw),People and institute details as provided by HCMR,0
+Institute,Institute extracted from above,1
+Station name,Station name extracted from above,1
+County,Country extracted from above,1
+Participated in OSD2018,Boolean,0
+Participated in OSD2019,Boolean,0
+Participated in OSD2014,Boolean,0
+firstnames,Comma-separate list of first names,0
+lastnames,Comma-separate list of surnames,0
+e-mails,Comma-separate list of email addresses,0
+comparison to Metagenomics spreadsheet - OSD18,Boolean,0
+comparison to Metagenomics spreadsheet - OSD19,Boolean,0
