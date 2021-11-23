@@ -1,1 +1,1 @@
-This directory is to hold the manually edited CSV files from HCMR. Quality of the inputs was poor, much content was missing
+This directory is to hold theSV files from HCMR which, due to missing, corrupted, or incorrect data, were manually quality controlled by VLIZ (Katrina Exter and Laurian Van Maldeghem)
