@@ -25,22 +25,22 @@ Organic Matter Concentration (Amount or Mass)_PON,Particulate organic nitrogen c
 Organic Matter Concentration (Amount or Mass)_DON,Dissolved organic nitrogen concentration in the water column,Dissolved total and organic nitrogen concentrations in the water column,http://vocab.nerc.ac.uk/collection/P02/current/TDNT/,mg/L,http://vocab.nerc.ac.uk/collection/P06/current/UMGL/,1,only 1 value with µmol/L and 1 value with no unit in 18/19 data; no mg/L --> need to check for conversion
 Organic Matter Concentration (Amount or Mass)_DOC,Dissolved organic carbon concentration in the water column,Dissolved organic carbon concentration in the water column,http://vocab.nerc.ac.uk/collection/P02/current/DOCC/,micromol/L,http://vocab.nerc.ac.uk/collection/P06/current/UPOX/,1,
 Pigments_19Hex_Fucoxanthin,Not provided,Not provided,Not provided,Not provided,Not provided,0, measured independently by the sampling scientist (no fixed protocol or units)
-Pigments _Antheraxanthin,Not provided,Not provided,Not provided,Not provided,Not provided,0, measured independently by the sampling scientist (no fixed protocol or units)
-Pigments _Anthoxanthin,Not provided,Not provided,Not provided,Not provided,Not provided,0, measured independently by the sampling scientist (no fixed protocol or units)
+Pigments_Antheraxanthin,Not provided,Not provided,Not provided,Not provided,Not provided,0, measured independently by the sampling scientist (no fixed protocol or units)
+Pigments_Anthoxanthin,Not provided,Not provided,Not provided,Not provided,Not provided,0, measured independently by the sampling scientist (no fixed protocol or units)
 Pigments_Alloxanthin,Not provided,Not provided,Not provided,Not provided,Not provided,0, measured independently by the sampling scientist (no fixed protocol or units)
-Pigments_ Beta_Carotene,Not provided,Not provided,Not provided,Not provided,Not provided,0, measured independently by the sampling scientist (no fixed protocol or units)
+Pigments_Beta_Carotene,Not provided,Not provided,Not provided,Not provided,Not provided,0, measured independently by the sampling scientist (no fixed protocol or units)
 Pigments_Chlorophyll_a,Not provided,Not provided,Not provided,Not provided,Not provided,0, measured independently by the sampling scientist (no fixed protocol or units)
 Pigments_Chlorophyll_b,Not provided,Not provided,Not provided,Not provided,Not provided,0, measured independently by the sampling scientist (no fixed protocol or units)
-Pigments _Chlorophyll_c1,Not provided,Not provided,Not provided,Not provided,Not provided,0, measured independently by the sampling scientist (no fixed protocol or units)
+Pigments_Chlorophyll_c1,Not provided,Not provided,Not provided,Not provided,Not provided,0, measured independently by the sampling scientist (no fixed protocol or units)
 Pigments_Chlorophyll_c2,Not provided,Not provided,Not provided,Not provided,Not provided,0, measured independently by the sampling scientist (no fixed protocol or units)
-Pigments_ Diadinoxanthin,Not provided,Not provided,Not provided,Not provided,Not provided,0, measured independently by the sampling scientist (no fixed protocol or units)
+Pigments_Diadinoxanthin,Not provided,Not provided,Not provided,Not provided,Not provided,0, measured independently by the sampling scientist (no fixed protocol or units)
 Pigments_Diatoxanthin,Not provided,Not provided,Not provided,Not provided,Not provided,0, measured independently by the sampling scientist (no fixed protocol or units)
 Pigments_Fucoxanthin,Not provided,Not provided,Not provided,Not provided,Not provided,0, measured independently by the sampling scientist (no fixed protocol or units)
-Pigments _Neoxanthin,Not provided,Not provided,Not provided,Not provided,Not provided,0, measured independently by the sampling scientist (no fixed protocol or units)
+Pigments_Neoxanthin,Not provided,Not provided,Not provided,Not provided,Not provided,0, measured independently by the sampling scientist (no fixed protocol or units)
 Pigments_Peridinin,Not provided,Not provided,Not provided,Not provided,Not provided,0, measured independently by the sampling scientist (no fixed protocol or units)
-Pigments _Pheophorbide_a,Not provided,Not provided,Not provided,Not provided,Not provided,0, measured independently by the sampling scientist (no fixed protocol or units)
-Pigments_ Prasinoxanthin,Not provided,Not provided,Not provided,Not provided,Not provided,0, measured independently by the sampling scientist (no fixed protocol or units)
-Pigments _ Zeaxanthin,Not provided,Not provided,Not provided,Not provided,Not provided,0, measured independently by the sampling scientist (no fixed protocol or units)
+Pigments_Pheophorbide_a,Not provided,Not provided,Not provided,Not provided,Not provided,0, measured independently by the sampling scientist (no fixed protocol or units)
+Pigments_Prasinoxanthin,Not provided,Not provided,Not provided,Not provided,Not provided,0, measured independently by the sampling scientist (no fixed protocol or units)
+Pigments_Zeaxanthin,Not provided,Not provided,Not provided,Not provided,Not provided,0, measured independently by the sampling scientist (no fixed protocol or units)
 Secchi_Depth,Not provided,Not provided,Not provided,Not provided,Not provided,0, measured independently by the sampling scientist (no fixed protocol or units)
 SPM,Not provided,Not provided,Not provided,Not provided,Not provided,0, measured independently by the sampling scientist (no fixed protocol or units)
 "Organism Concentration (Amount, Volume or Mass)_Pigment concentrations",Concentration of pigments (e.g. chlorophyll a) extracted and analysed by fluorometry or HPLC,Chlorophyll pigment concentrations in water bodies,http://vocab.nerc.ac.uk/collection/P02/current/CPWC/,mg/m˄3,http://vocab.nerc.ac.uk/collection/P06/current/UMMC/,1,
@@ -52,10 +52,10 @@ Community Production Rate_Primary Production (isotope uptake),Primary Production
 Community Production Rate_Primary Production (Oxygen),Primary Production in the water column,Primary production in the water column,http://vocab.nerc.ac.uk/collection/P02/current/PPRD/,mg/m˄3/d,http://vocab.nerc.ac.uk/collection/P06/current/UGDC/,1,
 Community Production Rate_Bacterial Production (isotope uptake),Bacterial production in the water column,Bacterial production in the water column,http://vocab.nerc.ac.uk/collection/P02/current/UPTH/,mg/m˄3/d,http://vocab.nerc.ac.uk/collection/P06/current/UGDC/,1,"is this ""Bacterial production as C"""
 Community Production Rate_Bacterial Production (respiration),Bacterial production in the water column,Bacterial production in the water column,http://vocab.nerc.ac.uk/collection/P02/current/UPTH/,mg/m˄3/d,http://vocab.nerc.ac.uk/collection/P06/current/UGDC/,1,of which element or molecule?
-Community Production Rate_DC13‰,Not provided,Not provided,Not provided,Not provided,Not provided,0, measured independently by the sampling scientist (no fixed protocol or units)
+Community Production Rate_DC13perc,Not provided,Not provided,Not provided,Not provided,Not provided,0, measured independently by the sampling scientist (no fixed protocol or units)
 Community Production Rate_Dissolved inorganic carbon,Not provided,Not provided,Not provided,Not provided,Not provided,0, measured independently by the sampling scientist (no fixed protocol or units)
 Community Production Rate_Total alkalinity,Not provided,Not provided,Not provided,Not provided,Not provided,0, measured independently by the sampling scientist (no fixed protocol or units)
 Community Production Rate_suspended material,Not provided,Not provided,Not provided,Not provided,Not provided,0, measured independently by the sampling scientist (no fixed protocol or units)
 Community Production Rate_bacteria abundance,Not provided,Not provided,Not provided,Not provided,Not provided,0, measured independently by the sampling scientist (no fixed protocol or units)
-Community Production Rate_DN15‰,Not provided,Not provided,Not provided,Not provided,Not provided,0,measured independently by the sampling scientist (no fixed protocol or units)
+Community Production Rate_DN15perc,Not provided,Not provided,Not provided,Not provided,Not provided,0,measured independently by the sampling scientist (no fixed protocol or units)
  ,,,,,,,
