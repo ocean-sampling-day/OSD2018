@@ -8,7 +8,7 @@ The documentation provided includes:
 
 The data files provided are:
 
-* A CSV file with the collected environmental, event, and omics data (being ENA, https://www.ebi.ac.uk/ena/browser/home, accession numbers). Version 1 was published on 29/11/2021. For Version 2, published in Jan 2022, data flags were added to mitigate confusion about the units being provided for the environmental measurements, and character malformations were corrected. 
+* A CSV file with the collected environmental, event, and omics data (being ENA, https://www.ebi.ac.uk/ena/browser/home, accession numbers). Version 1 was published on 26/11/2021. For Version 2, published in Jan 2022, data flags were added to mitigate confusion about the units being provided for the environmental measurements, and character malformations were corrected. 
 * A CSV metadata file which lists the definitions of the terms used in the data file
 * The station information spreadsheet
 
