@@ -1,3 +1,6 @@
+Note: 
+These folders have been taken over by the repository ToPublish, and we are not adding to these any more.
+
 These are the files for Ocean Sampling Day 2018 that are published via the IMIS datasets catalogue (https://www.vliz.be/en/imis?module=dataset&dasid=7916)</br>
 
 The documentation provided includes:
