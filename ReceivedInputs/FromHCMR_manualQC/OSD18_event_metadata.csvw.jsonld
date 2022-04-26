@@ -1,0 +1,113 @@
+{
+  "@context": "http://www.w3.org/ns/csvw",
+  "@type": "Table",
+  "url": "https://github.com/ocean-sampling-day/OSD2018/blob/main/ReceivedInputs/FromHCMR_manualQC/OSD18_event_data.csv",
+  "dc:title": "OSD18_event_data",
+  "dc:publisher": "Flanders Marine Institute",
+  "tableSchema": {
+    "columns": [   ### to be adapted...
+    	{"name": "To be published",
+    	"datatype": "string",
+    	"propertyUrl": "schema:Comment"},
+    
+    	{"name": "EventID",
+    	"datatype": "string",
+    	"propertyUrl": "http://rs.tdwg.org/dwc/terms/eventID"},
+    
+    	{"name": "environmental package",
+    	"datatype": "string",
+    	"propertyUrl": "https://w3id.org/gensc/terms/MIXS:0000019"},
+    
+    	{"name": "Event Date/Time",
+    	"datatype": "string",
+    	"propertyUrl": "http://rs.tdwg.org/dwc/terms/eventDate"},
+    
+    	{"name": "DateTime",
+    	"datatype": "float",
+    	"propertyUrl": "http://rs.tdwg.org/dwc/terms/EarliestDateCollected"},
+    
+    	{"name": "Latitude",
+    	"datatype": "float",
+    	"propertyUrl": "http://rs.tdwg.org/dwc/terms/decimalLatitude"},
+    
+	{"name": "Longitude",
+    	"datatype": "float",
+    	"propertyUrl": "http://rs.tdwg.org/dwc/terms/decimalLongitude"},    
+
+	{"name": "environment (biome)",
+    	"datatype": "int",
+    	"propertyUrl": "http://purl.obolibrary.org/obo/ENVO_00000428"},
+
+	{"name": "environment (feature)",
+    	"datatype": "int",
+    	"propertyUrl": "http://purl.obolibrary.org/obo/ENVO_00000012"},
+    
+	{"name": "project name",
+    	"datatype": "int",
+    	"propertyUrl": "http://rs.tdwg.org/dwc/terms/eventRemarks"},
+    
+	{"name": "Marine Region",
+    	"datatype": "int",
+    	"propertyUrl": "http://rs.tdwg.org/dwc/terms/locationAccordingTo"},
+    
+    	{"name": "SiteID",
+    	"datatype": "string",
+    	"propertyUrl": ""},
+    
+    	{"name": "Sampling Platform",
+    	"datatype": "string",
+    	"propertyUrl": ""},
+    
+    	{"name": "SAMPLE_Depth",
+    	"datatype": "",
+    	"propertyUrl": "",
+	"hasunit...": "",
+	"unitvocab?": ""},
+    
+    	{"name": "SAMPLE_Protocol",
+    	"datatype": "string",
+    	"propertyUrl": ""},
+    
+    	{"name": "SAMPLE_Temperature",
+    	"datatype": "string",
+    	"propertyUrl": ""},
+    
+    	{"name": "SAMPLE_Salinity",
+    	"datatype": "string",
+    	"propertyUrl": ""},
+    
+    	{"name": "Sampling Campaign",
+    	"datatype": "string",
+    	"propertyUrl": ""},
+    
+
+
+
+
+
+
+
+    	{"name": "negativeControl_gene_18S",
+    	"datatype": "string",
+    	"propertyUrl": "http://edamontology.org/data_1093"},
+    
+    	{"name": "negativeControl_gene_ITS",
+    	"datatype": "string",
+    	"propertyUrl": "http://edamontology.org/data_1093"},
+    
+    	{"name": "OtherDataLink",
+    	"datatype": "anyURI",
+    	"propertyUrl": "schema:identifier"},
+    
+    	{"name": "AccessRights",
+    	"datatype": "int",
+    	"propertyUrl": "http://purl.org/dc/terms/accessRights"},
+    
+    	{"name": "AssociatedFileType",
+    	"datatype": "string",
+    	"propertyUrl": "http://purl.org/dc/terms/type"}
+    
+    ],
+    "primaryKey": "MaterialSample-ID"
+  }
+}

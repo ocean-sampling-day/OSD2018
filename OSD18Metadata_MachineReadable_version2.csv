@@ -1,0 +1,98 @@
+ColumnTitle,Description,Datatype,Property,ObservablePropertyUrl,Unit,UnitUrl,UnitColumnUrl
+EventID,Event ID,xsd:string,schema:identifier,,,,
+SampleID,"Sample ID, harmonised over all OSD years",xsd:string,schema:identifier,,,,
+SampleID_ENA," ""Sample ID following ENA structure (Sample Title)""",xsd:string,schema:identifier,,,, 
+SiteID,Site ID (site details provided on the OSDStations spreadsheet),xsd:string,schema:identifier,,,,
+DateTime,Start date and time of the event,xsd:datetime,schema:startDate,,,,
+Latitude,Latitude of the station,xsd:double,schema:latitude,,decimal degree,http://vocab.nerc.ac.uk/collection/P06/current/UAAA/,
+Longitude,Longitude of the station,xsd:double,schema:longitude,,decimal degree,http://vocab.nerc.ac.uk/collection/P06/current/UAAA/,
+environment (biome),ENVO type for the biome sampled,xsd:string,schema:location,,,,
+environment (material),ENVO type for the material sampled,xsd:string,schema:description,,,,
+environment (feature),ENVO type for the feature sampled,xsd:string,schema:description,,,,
+project name,Name of the project,xsd:string,schema:description,,,,
+Marine Region,URL of the Marine Region of the sampling site,xsd:anyURI,schema:location,,,,
+Sampling Platform,Name or type of the sampling platform,xsd:string,,,,,
+Depth,Depth of the water sampled ,xsd:integer,qudt:numericValue,http://vocab.nerc.ac.uk/collection/P02/current/AHGT/,metre,http://vocab.nerc.ac.uk/collection/P06/current/ULAA/,Depth_unitUrl
+Depth_unit,Actually recorded unit for value in column: Depth,,,,,,
+Depth_flag,"Flag for when the recorded unit differs from the proposed unit, for column: Depth",,,,,,
+Protocol Label,"OSD protocol used (NPL022 = Protocol A, NE08 = Protocol B)",xsd:string,schema:description,,,,
+Sampling Campaign,Sampling campaign name,xsd:string,schema:description,,,,
+SAMPLE_Objective,Objective comments,xsd:string,schema:description,,,,
+EVENT_Device,Sampling device,xsd:string,sosa:madeBySampler,,,,
+EVENT_Method,Sampling method,xsd:string,sosa:usedProcedure,,,,
+EVENT_Comment,Event comments,xsd:string,rdfs:comment,,,,
+SAMPLE_Quantity,Quantity of sampled water,xsd:double,schema:description,,litre,http://vocab.nerc.ac.uk/collection/P06/current/ULIT/,SAMPLE_Quantity_unitUrl
+SAMPLE_Quantity_unit,Actually recorded unit for value in column: SAMPLE_Quantity,,,,,,
+SAMPLE_Quantity_flag,"Flag for when the recorded unit differs from the proposed unit, for column: SAMPLE_Quantity",,,,,,
+SAMPLE_FiltrationTime,Filtration time,xsd:integer,schema:Duration,,minutes,http://vocab.nerc.ac.uk/collection/P06/current/UMIN/,SAMPLE_FiltrationTime_unitUrl
+SAMPLE_FiltrationTime_unit,Actually recorded unit for value in column: SAMPLE_FiltrationTime,,,,,,
+SAMPLE_FiltrationTime_flag,"Flag for when the recorded unit differs from the proposed unit, for column: SAMPLE_FiltrationTime",,,,,,
+SAMPLE_Container,Container used for the sampling,xsd:string,schema:description,,,,
+SAMPLE_Content,Content comments,xsd:string,schema:description,,,,
+SAMPLE_Size-Fraction_UpperThreshold,Mesh size upper limit for pre-filtration (larger material is excluded),xsd:string,schema:description,,micrometre,http://vocab.nerc.ac.uk/collection/P06/current/UMIC/,
+SAMPLE_Size-Fraction_LowerThreshold,Mesh size lower limit for pre-filtration (smaller material are excluded),xsd:double,schema:description,,micrometre,http://vocab.nerc.ac.uk/collection/P06/current/UMIC/,SAMPLE_Size-Fraction_LowerThreshold_unitUrl
+SAMPLE_Size-Fraction_LowerThreshold_unit,Actually recorded unit for value in column: SAMPLE_Size-Fraction_LowerThreshold,,,,,,
+SAMPLE_Size-Fraction_LowerThreshold_flag,"Flag for when the recorded unit differs from the proposed unit, for column: SAMPLE_Size-Fraction_LowerThreshold",,,,,,
+SAMPLE_Treatment_Chemicals,Treatment chemicals added to the sample,xsd:string,schema:description,,,,
+SAMPLE_Treatment_Storage,Storage temperature or type,xsd:string,schema:description,,centigrade,http://vocab.nerc.ac.uk/collection/P06/current/UPAA/,
+Temperature,Temperature of the sampled water,xsd:double,qudt:numericValue,http://vocab.nerc.ac.uk/collection/P02/current/TEMP,centigrade,http://vocab.nerc.ac.uk/collection/P06/current/UPAA/,Temperature_unitUrl
+Temperature_unit,Actually recorded unit for value in column: Temperature,,,,,,
+Temperature_flag,"Flag for when the recorded unit differs from the proposed unit, for column: Temperature",,,,,,
+Salinity,Salinity of the sampled water,xsd:double,qudt:numericValue,http://vocab.nerc.ac.uk/collection/P02/current/PSAL/,PSU,http://vocab.nerc.ac.uk/collection/P06/current/UGKG/,Salinity_unitUrl
+Salinity_unit,Actually recorded unit for value in column: Salinity,,,,,,
+Salinity_flag,"Flag for when the recorded unit differs from the proposed unit, for column: Salinity",,,,,,
+CTD_Conductivity,Electrical conductivity of H2O,xsd:double,qudt:numericValue,http://vocab.nerc.ac.uk/collection/P02/current/CNDC/,mS/cm,http://vocab.nerc.ac.uk/collection/P06/current/MSPM/,CTD_Conductivity_unitUrl
+CTD_Conductivity_unit,Actually recorded unit for value in column: CTD_Conductivity,,,,,,
+CTD_Conductivity_flag,"Flag for when the recorded unit differs from the proposed unit, for column: CTD_Conductivity",,,,,,
+CTD_Fluorescence,Raw (volts) OR converted (mg Chla/m^3) fluorescence of the H2O,xsd:double,qudt:numericValue,http://vocab.nerc.ac.uk/collection/P02/current/FVLT/,volt,http://vocab.nerc.ac.uk/collection/P06/current/UVLT/,CTD_Fluorescence_unitUrl
+CTD_Fluorescence_unit,Actually recorded unit for value in column: CTD_Fluorescence,,,,,,
+CTD_Fluorescence_flag,"Flag for when the recorded unit differs from the proposed unit, for column: CTD_Fluorescence",,,,,,
+CTD_Depth,Vertical depth as measured by a CTD,xsd:double,qudt:numericValue,http://vocab.nerc.ac.uk/collection/P02/current/AHGT/,metre,http://vocab.nerc.ac.uk/collection/P06/current/ULAA/,CTD_Depth_unitUrl
+CTD_Depth_unit,Actually recorded unit for value in column: CTD_Depth,,,,,,
+CTD_Depth_flag,"Flag for when the recorded unit differs from the proposed unit, for column: CTD_Depth",,,,,,
+Seawater Nutrients Concentration_Ammonium,Ammonium concentration parameters in the H2O column,xsd:double,qudt:numericValue,http://vocab.nerc.ac.uk/collection/P02/current/AMON/,micromol/l,http://vocab.nerc.ac.uk/collection/P06/current/UPOX/,Seawater Nutrients Concentration_Ammonium_unitUrl
+Seawater Nutrients Concentration_Ammonium_unit,Actually recorded unit for value in column: Seawater Nutrients Concentration_Ammonium,,,,,,
+Seawater Nutrients Concentration_Ammonium_flag,"Flag for when the recorded unit differs from the proposed unit, for column: Seawater Nutrients Concentration_Silicate",,,,,,
+Seawater Nutrients Concentration_Nitrate,Nitrate concentration parameters in the H2O column,xsd:double,qudt:numericValue,http://vocab.nerc.ac.uk/collection/P02/current/NTRA/,micromol/l,http://vocab.nerc.ac.uk/collection/P06/current/UPOX/,Seawater Nutrients Concentration_Nitrate_unitUrl
+Seawater Nutrients Concentration_Nitrate_unit,Actually recorded unit for value in column: Seawater Nutrients Concentration_Nitrate,,,,,,
+Seawater Nutrients Concentration_Nitrate_flag,"Flag for when the recorded unit differs from the proposed unit, for column: Seawater Nutrients Concentration_Nitrate",,,,,,
+Seawater Nutrients Concentration_Nitrite,Nitrite concentration parameters in the H2O column,xsd:double,qudt:numericValue,http://vocab.nerc.ac.uk/collection/P02/current/NTRI/,micromol/l,http://vocab.nerc.ac.uk/collection/P06/current/UPOX/,Seawater Nutrients Concentration_Nitrite_unitUrl
+Seawater Nutrients Concentration_Nitrite_unit,Actually recorded unit for value in column: Seawater Nutrients Concentration_Nitrite,,,,,,
+Seawater Nutrients Concentration_Nitrite_flag,"Flag for when the recorded unit differs from the proposed unit, for column: Seawater Nutrients Concentration_Nitrite",,,,,,
+Seawater Nutrients Concentration_Phosphate,Phosphate concentration parameters in the H2O column,xsd:double,qudt:numericValue,http://vocab.nerc.ac.uk/collection/P02/current/PHOS/,micromol/l,http://vocab.nerc.ac.uk/collection/P06/current/UPOX/,Seawater Nutrients Concentration_Phosphate_unitUrl
+Seawater Nutrients Concentration_Phosphate_unit,Actually recorded unit for value in column: Seawater Nutrients Concentration_Phosphate,,,,,,
+Seawater Nutrients Concentration_Phosphate_flag,"Flag for when the recorded unit differs from the proposed unit, for column: Seawater Nutrients Concentration_Ammonium",,,,,,
+Seawater Nutrients Concentration_Silicate,Silicate concentration parameters in the H2O column,xsd:double,qudt:numericValue,http://vocab.nerc.ac.uk/collection/P02/current/SLCA/,micromol/l,http://vocab.nerc.ac.uk/collection/P06/current/UPOX/,Seawater Nutrients Concentration_Silicate_unitUrl
+Seawater Nutrients Concentration_Silicate_unit,Actually recorded unit for value in column: Seawater Nutrients Concentration_Silicate,,,,,,
+Seawater Nutrients Concentration_Silicate_flag,"Flag for when the recorded unit differs from the proposed unit, for column: Seawater Nutrients Concentration_Phosphate",,,,,,
+Seawater Chemical Properties_pH,"Alkalinity, acidity and pH of the H2O column",xsd:double,qudt:numericValue,http://vocab.nerc.ac.uk/collection/P02/current/ALKY/,dimensionless,http://vocab.nerc.ac.uk/collection/P06/current/UUUU/,Seawater Chemical Properties_pH_unitUrl
+Seawater Chemical Properties_pH_unit,Actually recorded unit for value in column: Seawater Chemical Properties_pH,,,,,,
+Seawater Chemical Properties_pH_flag,"Flag for when the recorded unit differs from the proposed unit, for column: Seawater Chemical Properties_pH",,,,,,
+Seawater Chemical Properties_Dissolved Oxygen concentration,Dissolved oxygen concentration in the H2O column,xsd:double,qudt:numericValue,http://vocab.nerc.ac.uk/collection/P02/current/DOCC/,micromol/kg,http://vocab.nerc.ac.uk/collection/P06/current/UPOX/,Seawater Chemical Properties_Dissolved Oxygen concentration_unitUrl
+Seawater Chemical Properties_Dissolved Oxygen concentration_unit,Actually recorded unit for value in column: Seawater Chemical Properties_Dissolved Oxygen concentration,,,,,,
+Seawater Chemical Properties_Dissolved Oxygen concentration_flag,"Flag for when the recorded unit differs from the proposed unit, for column: Seawater Chemical Properties_Dissolved Oxygen concentration",,,,,,
+Seawater Optical Properties_Downward PAR,Visible waveband radiance and irradiance measurements in the H2O column,xsd:double,qudt:numericValue,http://vocab.nerc.ac.uk/collection/P02/current/VSRW/,microE/m^2/s,http://vocab.nerc.ac.uk/collection/P06/current/UM2S/,Seawater Optical Properties_Downward PAR_unitUrl
+Seawater Optical Properties_Downward PAR_unit,Actually recorded unit for value in column: Seawater Optical Properties_Downward PAR,,,,,,
+Seawater Optical Properties_Downward PAR_flag,"Flag for when the recorded unit differs from the proposed unit, for column: Seawater Optical Properties_Downward PAR",,,,,,
+Seawater Optical Properties_Turbidity,Transmittance and attenuance of the H2O column,xsd:double,qudt:numericValue,http://vocab.nerc.ac.uk/collection/P02/current/ATTN/,NTU,http://vocab.nerc.ac.uk/collection/P06/current/USTU/,Seawater Optical Properties_Turbidity_unitUrl
+Seawater Optical Properties_Turbidity_unit,Actually recorded unit for value in column: Seawater Optical Properties_Turbidity,,,,,,
+Seawater Optical Properties_Turbidity_flag,"Flag for when the recorded unit differs from the proposed unit, for column: Seawater Optical Properties_Turbidity",,,,,,
+Organic Matter Concentration (Amount or Mass)_DON,Dissolved organic nitrogen concentration in the H2O column,xsd:double,qudt:numericValue,http://vocab.nerc.ac.uk/collection/P02/current/TDNT/,mg/Ll,http://vocab.nerc.ac.uk/collection/P06/current/UMGL/,
+Organic Matter Concentration (Amount or Mass)_DON_unit,Actually recorded unit for value in column: Organic Matter Concentration (Amount or Mass)_DON,,,,,,
+Organic Matter Concentration (Amount or Mass)_DON_flag,"Flag for when the recorded unit differs from the proposed unit, for column: Organic Matter Concentration (Amount or Mass)_DON",,,,,,
+Organic Matter Concentration (Amount or Mass)_POC,Particulate organic carbon concentration in the H2O column,xsd:double,qudt:numericValue,http://vocab.nerc.ac.uk/collection/P02/current/CORG/,microg/l,http://vocab.nerc.ac.uk/collection/P06/current/UGPL/,Organic Matter Concentration (Amount or Mass)_POC_unitUrl
+Organic Matter Concentration (Amount or Mass)_POC_unit,Actually recorded unit for value in column: Organic Matter Concentration (Amount or Mass)_POC,,,,,,
+Organic Matter Concentration (Amount or Mass)_POC_flag,"Flag for when the recorded unit differs from the proposed unit, for column: Organic Matter Concentration (Amount or Mass)_POC",,,,,,
+Organic Matter Concentration (Amount or Mass)_PON,Particulate organic nitrogen concentration in the H2O column,xsd:double,qudt:numericValue,http://vocab.nerc.ac.uk/collection/P02/current/NTOT/,microg/l,http://vocab.nerc.ac.uk/collection/P06/current/UPOX/,Organic Matter Concentration (Amount or Mass)_PON_unitUrl
+Organic Matter Concentration (Amount or Mass)_PON_unit,Actually recorded unit for value in column: Organic Matter Concentration (Amount or Mass)_PON,,,,,,
+Organic Matter Concentration (Amount or Mass)_PON_flag,"Flag for when the recorded unit differs from the proposed unit, for column: Organic Matter Concentration (Amount or Mass)_PON",,,,,,
+Organism Concentration (Amount Volume or Mass)_Pigment concentrations,Concentration of pigments (e.g. chlorophyll a) extracted and analysed by fluorometry or HPLC,xsd:double,qudt:numericValue,http://vocab.nerc.ac.uk/collection/P02/current/CPWC/,mg/m^3,http://vocab.nerc.ac.uk/collection/P06/current/UMMC/,Organism Concentration (Amount Volume or Mass)_Pigment concentrations_unitUrl
+Organism Concentration (Amount Volume or Mass)_Pigment concentrations_unit,"Actually recorded unit for value in column: Organism Concentration (Amount, Volume or Mass)_Pigment concentrations",,,,,,
+Organism Concentration (Amount Volume or Mass)_Pigment concentrations_flag,"Flag for when the recorded unit differs from the proposed unit, for column: Organism Concentration (Amount, Volume or Mass)_Pigment concentrations",,,,,,
+Organism Concentration (Amount Volume or Mass)_Nano/Microplankton,Abundance of cells in the H2O column (+other avail. cell properties),xsd:double,qudt:numericValue,http://vocab.nerc.ac.uk/collection/P02/current/MATX/,per m^3,http://vocab.nerc.ac.uk/collection/P06/current/UPMM/,
+Organism Concentration (Amount Volume or Mass)_Nano/Microplankton_unit,"Actually recorded unit for value in column: Organism Concentration (Amount, Volume or Mass)_Nano/Microplakton",,,,,,
+Organism Concentration (Amount Volume or Mass)_Nano/Microplankton_flag,"Flag for when the recorded unit differs from the proposed unit, for column: Organism Concentration (Amount, Volume or Mass)_Nano/Microplakton",,,,,,
+ENA_BioSampleID,ENA biosample accession number,xsd:string,schema:identifier,,,,
+ENA_BioProjectID_TargetGene18S,ENA bioproject accession number for the 18S target gene,xsd:string,schema:identifier,,,,
+ENA_BioProjectID_TargetGeneMG,ENA bioproject accession number for the metagenomics work,xsd:string,schema:identifier,,,,
+ENA_BioProjectID_TargetGene16S,ENA bioproject accession number for the 16S target gene,xsd:string,schema:identifier,,,,
