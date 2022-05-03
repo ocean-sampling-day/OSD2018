@@ -1,1 +1,397 @@
-{"@context": "https://w3id.org/ro/crate/1.1/context", "@graph": [{"@id": "ro-crate-metadata.json", "@type": "CreativeWork", "about": {"@id": "./"}, "conformsTo": {"@id": "https://w3id.org/ro/crate/1.1"}}, {"@id": "./", "@type": "Dataset", "datePublished": "2021-11-25T11:27:08+00:00", "hasPart": [{"@id": "ConversionConfig/"}, {"@id": "Documentation/"}, {"@id": "Documentation/"}, {"@id": "ReceivedInputs/"}, {"@id": "README.md"}, {"@id": "OSD18Data_HumanReadable_version2.csv"}, {"@id": "OSD18Data_MachineReadable_version2.csv"}, {"@id": "OSD18Data_MachineReadable_version2.ldt"}, {"@id": "OSD18Data_MachineReadable_version2.ttl"}, {"@id": "OSD18Data_version1.csv"}, {"@id": "OSD18Metadata_HumanReadable_version2.csv"}, {"@id": "OSD18Metadata_MachineReadable_version2.csv"}, {"@id": "OSD18Metadata_version1.csv"}, {"@id": "README.md"}]}, {"@id": "ConversionConfig/", "@type": "Dataset", "hasPart": [{"@id": "pyConSem/"}, {"@id": "pyKG2TBL/"}, {"@id": "pysubyt/"}, {"@id": "Readme.md"}, {"@id": "Readme.md"}, {"@id": "Readme.md"}, {"@id": "Readme.md"}, {"@id": "Readme.md"}, {"@id": "Readme.md"}, {"@id": "Readme.md"}, {"@id": "Readme.md"}]}, {"@id": "pyConSem/", "@type": "Dataset", "hasPart": [{"@id": "Readme.md"}, {"@id": "Readme.md"}, {"@id": "Readme.md"}, {"@id": "Readme.md"}, {"@id": "Readme.md"}, {"@id": "Readme.md"}, {"@id": "Readme.md"}, {"@id": "Readme.md"}]}, {"@id": "pyKG2TBL/", "@type": "Dataset", "hasPart": [{"@id": "Readme.md"}, {"@id": "Readme.md"}, {"@id": "Readme.md"}, {"@id": "Readme.md"}, {"@id": "Readme.md"}, {"@id": "Readme.md"}, {"@id": "Readme.md"}, {"@id": "Readme.md"}]}, {"@id": "pyKG2TBL/", "@type": "Dataset", "hasPart": [{"@id": "Readme.md"}, {"@id": "Readme.md"}, {"@id": "Readme.md"}, {"@id": "Readme.md"}, {"@id": "Readme.md"}, {"@id": "Readme.md"}, {"@id": "Readme.md"}, {"@id": "Readme.md"}]}, {"@id": "pysubyt/", "@type": "Dataset", "hasPart": [{"@id": "Readme.md"}, {"@id": "Readme.md"}, {"@id": "Readme.md"}, {"@id": "Readme.md"}, {"@id": "Readme.md"}, {"@id": "Readme.md"}, {"@id": "Readme.md"}, {"@id": "Readme.md"}]}, {"@id": "Documentation/", "@type": "Dataset", "hasPart": [{"@id": "Readme.md"}, {"@id": "Readme.md"}, {"@id": "Readme.md"}, {"@id": "Readme.md"}, {"@id": "2018_OSD_Protocol_A_v2.0.pdf"}, {"@id": "2018_OSD_Protocol_B_v.2.0.pdf"}, {"@id": "Definitions of the OSD Metadata & Instructions to fill in.pdf"}, {"@id": "OSD2018_ABS.docx"}, {"@id": "OSD2018_Data Policy.pdf"}, {"@id": "OSD2018_Legal_Permits_Procedure.pdf"}, {"@id": "OSD2018_MTA.pdf"}, {"@id": "OSDHandbook_2016.pdf"}, {"@id": "OSDStations.csv"}, {"@id": "Readme.md"}, {"@id": "Readme.md"}, {"@id": "Readme.md"}, {"@id": "Readme.md"}]}, {"@id": "Documentation/", "@type": "Dataset", "hasPart": [{"@id": "Readme.md"}, {"@id": "Readme.md"}, {"@id": "Readme.md"}, {"@id": "Readme.md"}, {"@id": "2018_OSD_Protocol_A_v2.0.pdf"}, {"@id": "2018_OSD_Protocol_B_v.2.0.pdf"}, {"@id": "Definitions of the OSD Metadata & Instructions to fill in.pdf"}, {"@id": "OSD2018_ABS.docx"}, {"@id": "OSD2018_Data Policy.pdf"}, {"@id": "OSD2018_Legal_Permits_Procedure.pdf"}, {"@id": "OSD2018_MTA.pdf"}, {"@id": "OSDHandbook_2016.pdf"}, {"@id": "OSDStations.csv"}, {"@id": "Readme.md"}, {"@id": "Readme.md"}, {"@id": "Readme.md"}, {"@id": "Readme.md"}]}, {"@id": "ReceivedInputs/", "@type": "Dataset", "hasPart": [{"@id": "FromHCMR/"}, {"@id": "FromHCMR_manualQC/"}, {"@id": "Readme.md"}, {"@id": "Readme.md"}, {"@id": "Readme.md"}, {"@id": "Readme.md"}, {"@id": "Readme.md"}, {"@id": "Readme.md"}, {"@id": "Readme.md"}, {"@id": "FromIvo/"}, {"@id": "Readme.md"}]}, {"@id": "FromHCMR/", "@type": "Dataset", "hasPart": [{"@id": "Readme.md"}, {"@id": "Readme.md"}, {"@id": "Readme.md"}, {"@id": "Readme.md"}, {"@id": "Readme.md"}, {"@id": "16S and 18S rRNA amplicon sequencing and Shotgun metagenome sequencing from the Ocean Sampling Day (OSD) campaign June 2018 - Sheet1.csv"}, {"@id": "Copy of OSD18 sampling and event data OLD.csv"}, {"@id": "OSD2018 ENV.Data (M2B3 RECOMMENDED).csv"}, {"@id": "OSD2018 ENV.Metadata(M2B3 RECOMMENDED).csv"}, {"@id": "Readme.md"}, {"@id": "Readme.md"}, {"@id": "Readme.md"}]}, {"@id": "FromHCMR_manualQC/", "@type": "Dataset", "hasPart": [{"@id": "Readme.md"}, {"@id": "Readme.md"}, {"@id": "Readme.md"}, {"@id": "Readme.md"}, {"@id": "Readme.md"}, {"@id": "Readme.md"}, {"@id": "OSD18_environmental_data.csv"}, {"@id": "OSD18_environmental_metadata.csv"}, {"@id": "OSD18_environmental_metadata.csvw.jsonld"}, {"@id": "OSD18_event_data.csv"}, {"@id": "OSD18_event_data.numbers"}, {"@id": "OSD18_event_metadata.csv"}, {"@id": "OSD18_event_metadata.csvw.jsonld"}, {"@id": "OSD18_omics_data.csv"}, {"@id": "OSD18_omics_metadata.csv"}, {"@id": "OSD_StationAddresses_data.csv"}, {"@id": "OSD_StationAddresses_metadata.csv"}, {"@id": "Readme.md"}, {"@id": "Readme.md"}]}, {"@id": "FromHCMR_manualQC/", "@type": "Dataset", "hasPart": [{"@id": "Readme.md"}, {"@id": "Readme.md"}, {"@id": "Readme.md"}, {"@id": "Readme.md"}, {"@id": "Readme.md"}, {"@id": "Readme.md"}, {"@id": "OSD18_environmental_data.csv"}, {"@id": "OSD18_environmental_metadata.csv"}, {"@id": "OSD18_environmental_metadata.csvw.jsonld"}, {"@id": "OSD18_event_data.csv"}, {"@id": "OSD18_event_data.numbers"}, {"@id": "OSD18_event_metadata.csv"}, {"@id": "OSD18_event_metadata.csvw.jsonld"}, {"@id": "OSD18_omics_data.csv"}, {"@id": "OSD18_omics_metadata.csv"}, {"@id": "OSD_StationAddresses_data.csv"}, {"@id": "OSD_StationAddresses_metadata.csv"}, {"@id": "Readme.md"}, {"@id": "Readme.md"}]}, {"@id": "2018_OSD_Protocol_A_v2.0.pdf", "@type": "File"}, {"@id": "2018_OSD_Protocol_B_v.2.0.pdf", "@type": "File"}, {"@id": "Definitions of the OSD Metadata & Instructions to fill in.pdf", "@type": "File"}, {"@id": "OSD2018_ABS.docx", "@type": "File"}, {"@id": "OSD2018_Data Policy.pdf", "@type": "File"}, {"@id": "OSD2018_Legal_Permits_Procedure.pdf", "@type": "File"}, {"@id": "OSD2018_MTA.pdf", "@type": "File"}, {"@id": "OSDHandbook_2016.pdf", "@type": "File"}, {"@id": "OSDStations.csv", "@type": "File"}, {"@id": "16S and 18S rRNA amplicon sequencing and Shotgun metagenome sequencing from the Ocean Sampling Day (OSD) campaign June 2018 - Sheet1.csv", "@type": "File"}, {"@id": "Copy of OSD18 sampling and event data OLD.csv", "@type": "File"}, {"@id": "OSD2018 ENV.Data (M2B3 RECOMMENDED).csv", "@type": "File"}, {"@id": "OSD2018 ENV.Metadata(M2B3 RECOMMENDED).csv", "@type": "File"}, {"@id": "OSD18_environmental_data.csv", "@type": "File"}, {"@id": "OSD18_environmental_metadata.csv", "@type": "File"}, {"@id": "OSD18_environmental_metadata.csvw.jsonld", "@type": "File"}, {"@id": "OSD18_event_data.csv", "@type": "File"}, {"@id": "OSD18_event_data.numbers", "@type": "File"}, {"@id": "OSD18_event_metadata.csv", "@type": "File"}, {"@id": "OSD18_event_metadata.csvw.jsonld", "@type": "File"}, {"@id": "OSD18_omics_data.csv", "@type": "File"}, {"@id": "OSD18_omics_metadata.csv", "@type": "File"}, {"@id": "OSD_StationAddresses_data.csv", "@type": "File"}, {"@id": "OSD_StationAddresses_metadata.csv", "@type": "File"}, {"@id": "Readme.md", "@type": "File"}, {"@id": "FromIvo/", "@type": "Dataset", "hasPart": [{"@id": "AccessionNumbersIVO.xlsx"}, {"@id": "OSD18_omicsAndIDs.csv"}, {"@id": "OSD2018-2019_studies.csv"}, {"@id": "OSD2018_16S_runs_full.csv"}, {"@id": "OSD2018_18S_runs_full.csv"}, {"@id": "OSD2018_MG_runs_full.csv"}, {"@id": "README.md"}, {"@id": "README.md"}]}, {"@id": "FromIvo/", "@type": "Dataset", "hasPart": [{"@id": "AccessionNumbersIVO.xlsx"}, {"@id": "OSD18_omicsAndIDs.csv"}, {"@id": "OSD2018-2019_studies.csv"}, {"@id": "OSD2018_16S_runs_full.csv"}, {"@id": "OSD2018_18S_runs_full.csv"}, {"@id": "OSD2018_MG_runs_full.csv"}, {"@id": "README.md"}, {"@id": "README.md"}]}, {"@id": "AccessionNumbersIVO.xlsx", "@type": "File"}, {"@id": "OSD18_omicsAndIDs.csv", "@type": "File"}, {"@id": "OSD2018-2019_studies.csv", "@type": "File"}, {"@id": "OSD2018_16S_runs_full.csv", "@type": "File"}, {"@id": "OSD2018_18S_runs_full.csv", "@type": "File"}, {"@id": "OSD2018_MG_runs_full.csv", "@type": "File"}, {"@id": "Readme.md", "@type": "File"}, {"@id": "OSD18Data_HumanReadable_version2.csv", "@type": "File"}, {"@id": "OSD18Data_MachineReadable_version2.csv", "@type": "File"}, {"@id": "OSD18Data_MachineReadable_version2.ldt", "@type": "File"}, {"@id": "OSD18Data_MachineReadable_version2.ttl", "@type": "File"}, {"@id": "OSD18Data_version1.csv", "@type": "File"}, {"@id": "OSD18Metadata_HumanReadable_version2.csv", "@type": "File"}, {"@id": "OSD18Metadata_MachineReadable_version2.csv", "@type": "File"}, {"@id": "OSD18Metadata_version1.csv", "@type": "File"}, {"@id": "README.md", "@type": "File"}]}
+{
+    "@context": "https://w3id.org/ro/crate/1.1/context",
+    "@graph": [
+        {
+            "@id": "./",
+            "@type": "Dataset",
+            "datePublished": "2021-11-25T11:27:08+00:00",
+            "hasPart": [
+                {
+                    "@id": "ConversionConfig/"
+                },
+                {
+                    "@id": "Documentation/"
+                },
+                {
+                    "@id": "ReceivedInputs/"
+                },
+                {
+                    "@id": "OSD18Data_HumanReadable_version2.csv"
+                },
+                {
+                    "@id": "OSD18Data_MachineReadable_version2.csv"
+                },
+                {
+                    "@id": "OSD18Data_MachineReadable_version2.ldt"
+                },
+                {
+                    "@id": "OSD18Data_MachineReadable_version2.ttl"
+                },
+                {
+                    "@id": "OSD18Data_version1.csv"
+                },
+                {
+                    "@id": "OSD18Metadata_HumanReadable_version2.csv"
+                },
+                {
+                    "@id": "OSD18Metadata_MachineReadable_version2.csv"
+                },
+                {
+                    "@id": "OSD18Metadata_version1.csv"
+                },
+                {
+                    "@id": "README.md"
+                }
+            ]
+        },
+        {
+            "@id": "ro-crate-metadata.json",
+            "@type": "CreativeWork",
+            "about": {
+                "@id": "./"
+            },
+            "conformsTo": {
+                "@id": "https://w3id.org/ro/crate/1.1"
+            }
+        },
+        {
+            "@id": "ConversionConfig/",
+            "@type": "Dataset",
+            "hasPart": [
+                {
+                    "@id": "pyConSem/"
+                },
+                {
+                    "@id": "pyKG2TBL/"
+                },
+                {
+                    "@id": "pysubyt/"
+                }
+            ]
+        },
+        {
+            "@id": "pyConSem/",
+            "@type": "Dataset",
+            "hasPart": [
+                {
+                    "@id": "Readmea.md"
+                }
+            ]
+        },
+        {
+            "@id": "Readmea.md",
+            "@type": "File"
+        },
+        {
+            "@id": "pyKG2TBL/",
+            "@type": "Dataset",
+            "hasPart": [
+                {
+                    "@id": "Readmep.md"
+                }
+            ]
+        },
+        {
+            "@id": "Readmep.md",
+            "@type": "File"
+        },
+        {
+            "@id": "pysubyt/",
+            "@type": "Dataset",
+            "hasPart": [
+                {
+                    "@id": "ReadmeC.md"
+                }
+            ]
+        },
+        {
+            "@id": "ReadmeC.md",
+            "@type": "File"
+        },
+        {
+            "@id": "Documentation/",
+            "@type": "Dataset",
+            "hasPart": [
+                {
+                    "@id": "2018_OSD_Protocol_A_v2.0.pdf"
+                },
+                {
+                    "@id": "2018_OSD_Protocol_B_v.2.0.pdf"
+                },
+                {
+                    "@id": "Definitions of the OSD Metadata & Instructions to fill in.pdf"
+                },
+                {
+                    "@id": "OSD2018_ABS.docx"
+                },
+                {
+                    "@id": "OSD2018_Data Policy.pdf"
+                },
+                {
+                    "@id": "OSD2018_Legal_Permits_Procedure.pdf"
+                },
+                {
+                    "@id": "OSD2018_MTA.pdf"
+                },
+                {
+                    "@id": "OSDHandbook_2016.pdf"
+                },
+                {
+                    "@id": "OSDStations.csv"
+                }
+            ]
+        },
+        {
+            "@id": "2018_OSD_Protocol_A_v2.0.pdf",
+            "@type": "File"
+        },
+        {
+            "@id": "2018_OSD_Protocol_B_v.2.0.pdf",
+            "@type": "File"
+        },
+        {
+            "@id": "Definitions of the OSD Metadata & Instructions to fill in.pdf",
+            "@type": "File"
+        },
+        {
+            "@id": "OSD2018_ABS.docx",
+            "@type": "File"
+        },
+        {
+            "@id": "OSD2018_Data Policy.pdf",
+            "@type": "File"
+        },
+        {
+            "@id": "OSD2018_Legal_Permits_Procedure.pdf",
+            "@type": "File"
+        },
+        {
+            "@id": "OSD2018_MTA.pdf",
+            "@type": "File"
+        },
+        {
+            "@id": "OSDHandbook_2016.pdf",
+            "@type": "File"
+        },
+        {
+            "@id": "OSDStations.csv",
+            "@type": "File"
+        },
+        {
+            "@id": "ReceivedInputs/",
+            "@type": "Dataset",
+            "hasPart": [
+                {
+                    "@id": "FromHCMR/"
+                },
+                {
+                    "@id": "FromHCMR_manualQC/"
+                },
+                {
+                    "@id": "FromIvo/"
+                }
+            ]
+        },
+        {
+            "@id": "FromHCMR/",
+            "@type": "Dataset",
+            "hasPart": [
+                {
+                    "@id": "16S and 18S rRNA amplicon sequencing and Shotgun metagenome sequencing from the Ocean Sampling Day (OSD) campaign June 2018 - Sheet1.csv"
+                },
+                {
+                    "@id": "Copy of OSD18 sampling and event data OLD.csv"
+                },
+                {
+                    "@id": "OSD2018 ENV.Data (M2B3 RECOMMENDED).csv"
+                },
+                {
+                    "@id": "OSD2018 ENV.Metadata(M2B3 RECOMMENDED).csv"
+                }
+            ]
+        },
+        {
+            "@id": "16S and 18S rRNA amplicon sequencing and Shotgun metagenome sequencing from the Ocean Sampling Day (OSD) campaign June 2018 - Sheet1.csv",
+            "@type": "File"
+        },
+        {
+            "@id": "Copy of OSD18 sampling and event data OLD.csv",
+            "@type": "File"
+        },
+        {
+            "@id": "OSD2018 ENV.Data (M2B3 RECOMMENDED).csv",
+            "@type": "File"
+        },
+        {
+            "@id": "OSD2018 ENV.Metadata(M2B3 RECOMMENDED).csv",
+            "@type": "File"
+        },
+        {
+            "@id": "FromHCMR_manualQC/",
+            "@type": "Dataset",
+            "hasPart": [
+                {
+                    "@id": "OSD18_environmental_data.csv"
+                },
+                {
+                    "@id": "OSD18_environmental_metadata.csv"
+                },
+                {
+                    "@id": "OSD18_environmental_metadata.csvw.jsonld"
+                },
+                {
+                    "@id": "OSD18_event_data.csv"
+                },
+                {
+                    "@id": "OSD18_event_data.numbers"
+                },
+                {
+                    "@id": "OSD18_event_metadata.csv"
+                },
+                {
+                    "@id": "OSD18_event_metadata.csvw.jsonld"
+                },
+                {
+                    "@id": "OSD18_omics_data.csv"
+                },
+                {
+                    "@id": "OSD18_omics_metadata.csv"
+                },
+                {
+                    "@id": "OSD_StationAddresses_data.csv"
+                },
+                {
+                    "@id": "OSD_StationAddresses_metadata.csv"
+                }
+            ]
+        },
+        {
+            "@id": "OSD18_environmental_data.csv",
+            "@type": "File"
+        },
+        {
+            "@id": "OSD18_environmental_metadata.csv",
+            "@type": "File"
+        },
+        {
+            "@id": "OSD18_environmental_metadata.csvw.jsonld",
+            "@type": "File"
+        },
+        {
+            "@id": "OSD18_event_data.csv",
+            "@type": "File"
+        },
+        {
+            "@id": "OSD18_event_data.numbers",
+            "@type": "File"
+        },
+        {
+            "@id": "OSD18_event_metadata.csv",
+            "@type": "File"
+        },
+        {
+            "@id": "OSD18_event_metadata.csvw.jsonld",
+            "@type": "File"
+        },
+        {
+            "@id": "OSD18_omics_data.csv",
+            "@type": "File"
+        },
+        {
+            "@id": "OSD18_omics_metadata.csv",
+            "@type": "File"
+        },
+        {
+            "@id": "OSD_StationAddresses_data.csv",
+            "@type": "File"
+        },
+        {
+            "@id": "OSD_StationAddresses_metadata.csv",
+            "@type": "File"
+        },
+        {
+            "@id": "FromIvo/",
+            "@type": "Dataset",
+            "hasPart": [
+                {
+                    "@id": "AccessionNumbersIVO.xlsx"
+                },
+                {
+                    "@id": "OSD18_omicsAndIDs.csv"
+                },
+                {
+                    "@id": "OSD2018-2019_studies.csv"
+                },
+                {
+                    "@id": "OSD2018_16S_runs_full.csv"
+                },
+                {
+                    "@id": "OSD2018_18S_runs_full.csv"
+                },
+                {
+                    "@id": "OSD2018_MG_runs_full.csv"
+                }
+            ]
+        },
+        {
+            "@id": "AccessionNumbersIVO.xlsx",
+            "@type": "File"
+        },
+        {
+            "@id": "OSD18_omicsAndIDs.csv",
+            "@type": "File"
+        },
+        {
+            "@id": "OSD2018-2019_studies.csv",
+            "@type": "File"
+        },
+        {
+            "@id": "OSD2018_16S_runs_full.csv",
+            "@type": "File"
+        },
+        {
+            "@id": "OSD2018_18S_runs_full.csv",
+            "@type": "File"
+        },
+        {
+            "@id": "OSD2018_MG_runs_full.csv",
+            "@type": "File"
+        },
+        {
+            "@id": "OSD18Data_HumanReadable_version2.csv",
+            "@type": "File"
+        },
+        {
+            "@id": "OSD18Data_MachineReadable_version2.csv",
+            "@type": "File"
+        },
+        {
+            "@id": "OSD18Data_MachineReadable_version2.ldt",
+            "@type": "File"
+        },
+        {
+            "@id": "OSD18Data_MachineReadable_version2.ttl",
+            "@type": "File"
+        },
+        {
+            "@id": "OSD18Data_version1.csv",
+            "@type": "File"
+        },
+        {
+            "@id": "OSD18Metadata_HumanReadable_version2.csv",
+            "@type": "File"
+        },
+        {
+            "@id": "OSD18Metadata_MachineReadable_version2.csv",
+            "@type": "File"
+        },
+        {
+            "@id": "OSD18Metadata_version1.csv",
+            "@type": "File"
+        },
+        {
+            "@id": "README.md",
+            "@type": "File"
+        }
+    ]
+}
