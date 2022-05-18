@@ -8,6 +8,6 @@ These are the second version of the OSD 2018 data, on which a slightly more exte
     * [OSD18Metadata_MachineReadable_version2.csv](https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version2/OSD18Metadata_MachineReadable_version2.csv), to accompany the equivalently-named Data file
 * A turtle file with the collected environmental, event and omics data described in RDF triples: [OSD19Data_MachineReadable_version2.ttl](https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version2/OSD18Data_MachineReadable_version2.ttl).  
 This file was generated using [this template](https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version2/OSD18Data_MachineReadable_version2.ldt) with [PySUByT](https://github.com/vliz-be-opsci/pysubyt).
-* An explanation of the conversions [UnitConversions.txt](https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version2/UnitConversions.txt)
+* An explanation of the conversions [UnitConversions.pdf](https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version2/UnitConversions.pdf)
 
 
