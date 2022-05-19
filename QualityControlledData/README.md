@@ -1,8 +1,11 @@
 These are the (meta)data for Ocean Sampling Day 2018. The metadata record for this event is published in the IMIS datasets catalogue: [OSD2018-record](https://www.vliz.be/en/imis?module=dataset&dasid=7916). The same data can be obtained as a direct download from that IMIS record, but a more annotated set of data (in particular the machine/developer-readable versions) are provided here.
-Also provided via this Github space are the [OSD2014 data](https://github.com/ocean-sampling-day/OSD2014) and [OSD2019 data](https://github.com/ocean-sampling-day/OSD2019).
+Also provided via this OSD Github space are the [OSD2014 data](https://github.com/ocean-sampling-day/OSD2014) and [OSD2019 data](https://github.com/ocean-sampling-day/OSD2019).
 
 All of the data collected here are are taken from the logsheets that were provided by each sampling station. Two versions of those same data are presented here:
 - **Version 1**: Before copying the logsheet values to these version 1 spreadsheets, a certain amount of QC was performed: where stations returned values in units that were not as requested in the SOPs and the OSD Handbook, we added a comment in the flag columns of the data spreadsheets to highlight this fact. The units themselves are included as separate columns along with each measured parameter in the data spreadsheets and are also explained in the metadata spreadsheets. Note that we did not perform any unit conversions, nor did we do any checking for potentially suspect values: the values here are exactly as provided on the logsheets from each station. 
 - **Version 2**: In this case, for values reported by stations that were recorded in different units to those requested, where possible a unit conversion has been carried out. Here the flag columns contain an indicator of the type of conversion done, and more information about the conversions is provided as an additional document 
 
-Scans of the original logsheets can be downloaded from the Marine Data Archive: [click here](https://mda.vliz.be/directlink.php?fid=VLIZ_00000615_625ebbe05686f491055780).
+Scans of the original logsheets can be downloaded from the Marine Data Archive: [click here](https://mda.vliz.be/directlink.php?fid=VLIZ_00000615_625ebbe05686f491055780). 
+
+A CSV file containing the ENA Sample and Run accession numbers, the sample title (aka SampleID), and the target gene (being 16S, 18S, or MG=metagenomics) is provided here as [OSD2018_AccessionNumbers.csv](https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/OSD2018_AccessionNumbers.csv). 
+
