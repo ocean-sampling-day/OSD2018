@@ -1,13 +1,13 @@
-{# Template 'OSD18Data_MachineReadable_version1.ldt' 
-Description: 'Template to generate triples from the quality controlled OSD2018 data.' 
+{#- Template 'OSD18Data_version2.ldt' 
+Description: 'Template to generate triples from version 2 of the quality controlled OSD2018 data.' 
 Author: Laurian Van Maldeghem
-Date: 08/04/2022
+Date: 16/06/2022
 Target vocabs: see within template
 Inputs: 
-    - input-file: OSD18Data_MachineReadable_version1.csv
-    - set-file(s): OSD18Metadata_MachineReadable_version1.csv as osd18metadata
+    - input-file: OSD18Data_version2.csv
+    - set-file(s): OSD18Metadata_machinereadable_version2.csv as osd18metadata
     - mode: (default)
-#}
+-#}
 
 @prefix csvw : <http://www.w3.org/ns/csvw> .
 @prefix schema : <https://schema.org/> . 
@@ -15,9 +15,9 @@ Inputs:
 @prefix qudt: <http://qudt.org/schema/qudt/> . 
 
 {%- if ctrl.isFirst %}
-<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv>
-	a csvw:table;
-	csvw:schema <https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Metadata_MachineReadable_version1.csv>>
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version2/OSD18Data_version2.csv>
+	a csvw:table ;
+	csvw:schema <https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version2/OSD18Metadata_version2.csv> ;
 	csvw:columns ( 
 	{%- for row in sets['osd18metadata'] %}		
 		[ a csvw:Column;
@@ -28,21 +28,19 @@ Inputs:
 .
 {%- endif %}
 
-<{{uritexpand("https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv{#SampleID}",_)}}>
+<{{uritexpand("https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version2/OSD18Data_version2.csv{#SampleID}",_)}}>
 	a schema:event, sosa:Sampling;
 	{%- for row in sets['osd18metadata'] %}
-	{%- if row['Property'] != '' and _[row['ColumnTitle']]  and _[row['ColumnTitle']] != 'not provided' %}
+	{%- if row['Property'] != '' and _[row['ColumnTitle']] and _[row['ColumnTitle']] != 'not provided' and _[row['ColumnTitle']] != 'discarded value' %}
 		
 	{%- if row['Property'] == 'qudt:numericValue' %}
 	sosa:hasResult [ a sosa:observation;
 		sosa:observedProperty {{row['ObservablePropertyUrl']}};
 		{{row['Property']}} {{ttl_fmt(_[row['ColumnTitle']], row['Datatype'])}};
-		{%- if _[row['UnitColumnUrl']] %}
-		qudt:hasUnit <{{_[row['UnitColumnUrl']]}}>;
-		{%- endif %}
+		qudt:hasUnit <{{row['UnitUrl']}}>;
 	],
 	{%- elif row['Property'] == 'sosa:madeBySampler' %}
-	{{row['Property']}} <{{uritexpand("https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv{#SampleID,EVENT_Device}",_)}}>;
+	{{row['Property']}} <{{uritexpand("https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version2/OSD18Data_version2.csv{#SampleID,EVENT_Device}",_)}}>;
 
 	{%- elif row['ColumnTitle'] == 'ENA_BioSampleID' %}
 	{{row['Property']}} <{{uritexpand("https://www.ebi.ac.uk/ena/browser/view/{#ENA_BioSampleID}", _)}}>;
@@ -53,7 +51,6 @@ Inputs:
 	{%- elif row['ColumnTitle'] == 'ENA_BioProjectID_TargetGene16S' %}
 	{{row['Property']}} <{{uritexpand("https://www.ebi.ac.uk/ena/browser/view/{#ENA_BioProjectID_TargetGene16S}", _)}}>;
 
-
 	{% else%}
 	{{row['Property']}} {{ttl_fmt(_[row['ColumnTitle']], row['Datatype'])}};
 	{%- endif %}
@@ -62,7 +59,7 @@ Inputs:
 	{%- endfor %}
 .
 
-<{{uritexpand("https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv{#SampleID,EVENT_Device}",_)}}> 
+<{{uritexpand("https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version2/OSD18Data_version2.csv{#SampleID,EVENT_Device}",_)}}> 
 	a sosa:Sampler;
 	sosa:ishostedBy {{ttl_fmt(_['Sampling Platform'], 'xsd:string')}};
 .
