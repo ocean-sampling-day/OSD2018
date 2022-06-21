@@ -5,7 +5,7 @@ on:
       - main  # Set a branch name to trigger deployment
   pull_request:
 jobs:
-  deploy:
+  build-html:
     runs-on: ubuntu-20.04
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
@@ -13,60 +13,12 @@ jobs:
       # Checkout this repo
       - uses: actions/checkout@v3 
       
-      # Setup python for this build
-      - name: Setup Python
-        uses: actions/setup-python@v3
-        with: 
-          python-version: '3.10'
-
-      # Show what the context is of this action. 
-      #   Good for troubleshooting
-      - name: Dump github context
-        run:   echo "$GITHUB_CONTEXT"
-        shell: bash
-        env:
-          GITHUB_CONTEXT: ${{ toJson(github) }}
-      
       # Build the preview.html file from the rocrate.json
       - name: Build Preview HTML
-        uses: vliz-be-opsci/rocrate-to-pages@v0.1.0
+        uses: vliz-be-opsci/rocrate-to-html@latest
+ 
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          crate_path: .
-          loglevel: DEBUG
-
-      # Get a shared theme from a repo and put it
-      # into /pages-theme/ folder
-      - name: Get Shared Theme
-        uses: actions/checkout@v3
-        with:
-          repository: ocean-sampling-day/pages-theme 
-          path: pages-theme
-
-      # Move template files into root dir
-      - name: Move template
-        run:   mv  pages-theme/* .
-        shell: bash
-
-      # Create config overrride file for
-      # this repo's name
-      - name: Create config
-        run: |
-            echo "baseurl: OSD2018" > repo.yml
-        shell: bash
-        
-      # Cache jekyll install to speed up builds
-      - name: Cache Action
-        uses: actions/cache@v3
-        with:
-          path: vendor/bundle
-          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile') }}
-          restore-keys: |
-            ${{ runner.os }}-gems-
-      
-      # Build and deploy to GH-pages
-      - name: Jekyll Build and Deploy  
-        uses: helaili/jekyll-action@2.3.1     
-        with:                                 
-          token: ${{ secrets.GITHUB_TOKEN }}
-          jekyll_src: . 
-          jekyll_build_options: "--config _config.yml,repo.yml"
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./unicornpages 
