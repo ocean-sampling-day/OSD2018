@@ -1,0 +1,113 @@
+<h1 id="language-test">Language Test</h1>
+
+<h2 id="python">Python</h2>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">microrequests</span>
+
+<span class="n">mr</span> <span class="o">=</span> <span class="n">microrequests</span><span class="p">.</span><span class="n">init</span><span class="p">()</span>
+<span class="c1"># mr is requests' session object and you can use it in similar manner
+</span><span class="n">res</span> <span class="o">=</span> <span class="n">mr</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="s">"http://httpbin.org/get"</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">res</span><span class="p">.</span><span class="n">text</span><span class="p">)</span> 
+</code></pre></div></div>
+
+<h2 id="ruby">Ruby</h2>
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">require</span> <span class="s1">'gmail'</span>
+<span class="nb">require</span> <span class="s1">'time'</span>
+<span class="nb">require</span> <span class="s1">'yaml'</span>
+<span class="nb">require</span> <span class="s1">'erb'</span>
+
+<span class="k">if</span> <span class="no">ARGV</span><span class="p">.</span><span class="nf">length</span> <span class="o">!=</span> <span class="mi">2</span>
+  <span class="nb">puts</span> <span class="s2">"Syntax: </span><span class="si">#{</span><span class="kp">__FILE__</span><span class="si">}</span><span class="s2"> gmail-username gmail-password"</span>
+  <span class="nb">exit</span>
+<span class="k">end</span>
+
+<span class="n">config</span> <span class="o">=</span> <span class="no">YAML</span><span class="p">.</span><span class="nf">load_file</span><span class="p">(</span><span class="s2">"</span><span class="si">#{</span><span class="no">File</span><span class="p">.</span><span class="nf">dirname</span><span class="p">(</span><span class="kp">__FILE__</span><span class="p">)</span><span class="si">}</span><span class="s2">/config.yaml"</span><span class="p">)</span>
+<span class="n">body</span> <span class="o">=</span> <span class="no">ERB</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="n">config</span><span class="p">[</span><span class="s1">'body'</span><span class="p">])</span>
+
+<span class="n">gmail</span> <span class="o">=</span> <span class="no">Gmail</span><span class="p">.</span><span class="nf">connect</span><span class="p">(</span><span class="no">ARGV</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="no">ARGV</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+
+<span class="c1"># variable 'name' is important given it is used in body as well</span>
+<span class="k">for</span> <span class="nb">name</span><span class="p">,</span> <span class="n">email_id</span> <span class="k">in</span> <span class="n">config</span><span class="p">[</span><span class="s1">'to'</span><span class="p">]</span> <span class="k">do</span>
+  <span class="nb">puts</span> <span class="s2">"sending to </span><span class="si">#{</span><span class="n">email_id</span><span class="si">}</span><span class="s2">"</span>
+  <span class="n">email</span> <span class="o">=</span> <span class="n">gmail</span><span class="p">.</span><span class="nf">compose</span> <span class="k">do</span>
+    <span class="n">to</span> <span class="n">email_id</span>
+    <span class="n">from</span> <span class="n">config</span><span class="p">[</span><span class="s1">'from'</span><span class="p">]</span>
+    <span class="n">subject</span> <span class="n">config</span><span class="p">[</span><span class="s1">'subject'</span><span class="p">]</span>
+    <span class="n">body</span> <span class="n">body</span><span class="p">.</span><span class="nf">result</span><span class="p">(</span><span class="nb">binding</span><span class="p">)</span>
+    <span class="k">end</span>
+  <span class="n">email</span><span class="p">.</span><span class="nf">deliver!</span>
+<span class="k">end</span>
+
+<span class="n">gmail</span><span class="p">.</span><span class="nf">logout</span>
+</code></pre></div></div>
+
+<h2 id="javascript">Javascript</h2>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">path</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">path</span><span class="dl">'</span><span class="p">);</span>
+<span class="kd">const</span> <span class="p">{</span> <span class="nx">merge</span> <span class="p">}</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">webpack-merge</span><span class="dl">'</span><span class="p">);</span>
+<span class="kd">const</span> <span class="nx">common</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">./webpack.common.js</span><span class="dl">'</span><span class="p">);</span>
+
+<span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="nx">merge</span><span class="p">(</span><span class="nx">common</span><span class="p">,</span> <span class="p">{</span>
+  <span class="na">mode</span><span class="p">:</span> <span class="dl">'</span><span class="s1">development</span><span class="dl">'</span><span class="p">,</span>
+  <span class="na">devtool</span><span class="p">:</span> <span class="dl">'</span><span class="s1">inline-source-map</span><span class="dl">'</span><span class="p">,</span>
+  <span class="na">devServer</span><span class="p">:</span> <span class="p">{</span>
+    <span class="na">writeToDisk</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="na">contentBase</span><span class="p">:</span> <span class="nx">path</span><span class="p">.</span><span class="nx">join</span><span class="p">(</span><span class="nx">__dirname</span><span class="p">,</span> <span class="dl">'</span><span class="s1">dist</span><span class="dl">'</span><span class="p">),</span>
+    <span class="na">publicPath</span><span class="p">:</span> <span class="nx">path</span><span class="p">.</span><span class="nx">join</span><span class="p">(</span><span class="nx">__dirname</span><span class="p">,</span> <span class="dl">'</span><span class="s1">dist</span><span class="dl">'</span><span class="p">),</span>
+    <span class="na">compress</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="na">port</span><span class="p">:</span> <span class="mi">8000</span><span class="p">,</span>
+  <span class="p">},</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+<h2 id="elixir">Elixir</h2>
+<div class="language-elixir highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">defmodule</span> <span class="no">MyAppWeb</span><span class="o">.</span><span class="no">BearerAuth</span> <span class="k">do</span>
+
+  <span class="kn">import</span> <span class="no">Plug</span><span class="o">.</span><span class="no">Conn</span>
+  <span class="n">alias</span> <span class="no">MyApp</span><span class="o">.</span><span class="no">Account</span>
+
+  <span class="k">def</span> <span class="n">init</span><span class="p">(</span><span class="n">options</span><span class="p">)</span> <span class="k">do</span>
+    <span class="n">options</span>
+  <span class="k">end</span>
+
+  <span class="k">def</span> <span class="n">call</span><span class="p">(</span><span class="n">conn</span><span class="p">,</span> <span class="n">_options</span><span class="p">)</span> <span class="k">do</span>
+    <span class="k">case</span> <span class="n">get_bearer_auth_token</span><span class="p">(</span><span class="n">conn</span><span class="p">)</span> <span class="k">do</span>
+      <span class="no">nil</span> <span class="o">-&gt;</span>
+        <span class="n">conn</span> <span class="o">|&gt;</span> <span class="n">unauthorized</span><span class="p">()</span>
+      <span class="ss">:error</span> <span class="o">-&gt;</span>
+        <span class="n">conn</span> <span class="o">|&gt;</span> <span class="n">unauthorized</span><span class="p">()</span>
+      <span class="n">auth_token</span> <span class="o">-&gt;</span>
+        <span class="n">account</span> <span class="o">=</span>
+          <span class="no">Account</span><span class="o">.</span><span class="n">get_from_token</span><span class="p">(</span><span class="n">auth_token</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">account</span> <span class="k">do</span>
+          <span class="n">assign</span><span class="p">(</span><span class="n">conn</span><span class="p">,</span> <span class="ss">:current_account</span><span class="p">,</span> <span class="n">account</span><span class="p">)</span>
+        <span class="k">else</span>
+          <span class="n">conn</span> <span class="o">|&gt;</span> <span class="n">unauthorized</span><span class="p">()</span>
+        <span class="k">end</span>
+    <span class="k">end</span>
+  <span class="k">end</span>
+
+  <span class="k">defp</span> <span class="n">get_bearer_auth_token</span><span class="p">(</span><span class="n">conn</span><span class="p">)</span> <span class="k">do</span>
+    <span class="n">with</span> <span class="p">[</span><span class="s2">"Bearer "</span> <span class="o">&lt;&gt;</span> <span class="n">auth_token</span><span class="p">]</span> <span class="o">&lt;-</span> <span class="n">get_req_header</span><span class="p">(</span><span class="n">conn</span><span class="p">,</span> <span class="s2">"authorization"</span><span class="p">)</span> <span class="k">do</span>
+      <span class="n">auth_token</span>
+    <span class="k">else</span>
+      <span class="n">_</span> <span class="o">-&gt;</span> <span class="ss">:error</span>
+    <span class="k">end</span>
+  <span class="k">end</span>
+
+  <span class="k">defp</span> <span class="n">unauthorized</span><span class="p">(</span><span class="n">conn</span><span class="p">)</span> <span class="k">do</span>
+    <span class="n">conn</span>
+    <span class="o">|&gt;</span> <span class="n">resp</span><span class="p">(</span><span class="mi">401</span><span class="p">,</span> <span class="s2">"Unauthorized"</span><span class="p">)</span>
+    <span class="o">|&gt;</span> <span class="n">halt</span><span class="p">()</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+
+</code></pre></div></div>
+
+<h2 id="css">CSS</h2>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">.highlight</span><span class="o">,</span> <span class="nt">pre</span> <span class="nt">code</span><span class="o">,</span> <span class="nt">blockquote</span> <span class="p">{</span>
+  <span class="nl">border-radius</span><span class="p">:</span> <span class="m">0.5em</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">blockquote</span> <span class="p">{</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--bg-secondary</span><span class="p">);</span>
+  <span class="nl">border</span><span class="p">:</span> <span class="m">1px</span> <span class="n">var</span><span class="p">(</span><span class="n">--border</span><span class="p">)</span> <span class="nb">solid</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>

@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en" class="html" data-theme="dark"><head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>
+    
+      Ocean Sampling Day
+    
+  </title>
+
+  <!-- Begin Jekyll SEO tag v2.7.3 -->
+<meta name="generator" content="Jekyll v4.2.0" />
+<meta property="og:title" content="Ocean Sampling Day" />
+<meta name="author" content="Rory Meyer / Cedric Decruw" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="OSD + ROCrates" />
+<meta property="og:description" content="OSD + ROCrates" />
+<link rel="canonical" href="https://data.ocean-sampling-day.org//OSD2018/" />
+<meta property="og:url" content="https://data.ocean-sampling-day.org//OSD2018/" />
+<meta property="og:site_name" content="OSD" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Ocean Sampling Day" />
+<script type="application/ld+json">
+{"author":{"@type":"Person","name":"Rory Meyer / Cedric Decruw"},"description":"OSD + ROCrates","url":"https://data.ocean-sampling-day.org//OSD2018/","headline":"Ocean Sampling Day","@type":"WebSite","name":"OSD","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  <link type="application/atom+xml" rel="alternate" href="https://data.ocean-sampling-day.org//OSD2018/feed.xml" title="OSD" />
+
+  <link rel="shortcut icon" type="image/x-icon" href="/" />
+  <link rel="stylesheet" href="/OSD2018/assets/css/main.css" />
+  
+</head>
+<body>
+    <main class="page-content" aria-label="Content">
+      <div class="w">
+        <!--
+  Author: rory.meyer@vliz.be
+  This is the template for the OSD ro-crates. This index.html file is used as the default
+  entry point for the github pages and inherits all the styling from the template
+  jekyll project this was forked from. 
+
+  The jekyll building tool would need to cp/mv the README.md and ro-crate-preview.html
+  files from the OSD project into the correct paths for this to work.
+-->
+
+<!doctype html>
+<html lang="en">
+  <body>
+    <section>
+
+      
+
+<html>
+<head>
+
+
+<script type="application/ld+json"> 
+  {
+  "@context": "https://w3id.org/ro/crate/1.1/context",
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "about": {
+        "@id": "./"
+      },
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.1"
+      }
+    },
+    {
+      "@id": "./",
+      "@type": "Dataset",
+      "datePublished": "2021-11-25T11:27:08+00:00",
+      "hasPart": [
+        {
+          "@id": "ConversionConfig/"
+        },
+        {
+          "@id": "Documentation/"
+        },
+        {
+          "@id": "QualityControlledData/"
+        },
+        {
+          "@id": "README.md"
+        },
+        {
+          "@id": "LICENSE"
+        }
+      ],
+      "@reverse": {
+        "about": [
+          {
+            "@id": "ro-crate-metadata.json"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "pyConSem/",
+      "@type": "Dataset",
+      "hasPart": [
+        {
+          "@id": "Readmea.md"
+        }
+      ],
+      "@reverse": {
+        "hasPart": [
+          {
+            "@id": "ConversionConfig/"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "ConversionConfig/",
+      "@type": "Dataset",
+      "hasPart": [
+        {
+          "@id": "pyConSem/"
+        },
+        {
+          "@id": "pyKG2TBL/"
+        },
+        {
+          "@id": "pysubyt/"
+        }
+      ],
+      "@reverse": {
+        "hasPart": [
+          {
+            "@id": "./"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "Readmea.md",
+      "@type": "File",
+      "@reverse": {
+        "hasPart": [
+          {
+            "@id": "pyConSem/"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "pyKG2TBL/",
+      "@type": "Dataset",
+      "hasPart": [
+        {
+          "@id": "Readmep.md"
+        }
+      ],
+      "@reverse": {
+        "hasPart": [
+          {
+            "@id": "ConversionConfig/"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "Readmep.md",
+      "@type": "File",
+      "@reverse": {
+        "hasPart": [
+          {
+            "@id": "pyKG2TBL/"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "pysubyt/",
+      "@type": "Dataset",
+      "hasPart": [
+        {
+          "@id": "ReadmeC.md"
+        }
+      ],
+      "@reverse": {
+        "hasPart": [
+          {
+            "@id": "ConversionConfig/"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "ReadmeC.md",
+      "@type": "File",
+      "@reverse": {
+        "hasPart": [
+          {
+            "@id": "pysubyt/"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "Documentation/",
+      "@type": "Dataset",
+      "hasPart": [
+        {
+          "@id": "2018_OSD_Protocol_A_v2.0.pdf"
+        },
+        {
+          "@id": "2018_OSD_Protocol_B_v.2.0.pdf"
+        },
+        {
+          "@id": "Definitions of the OSD Metadata & Instructions to fill in.pdf"
+        },
+        {
+          "@id": "OSD2018_ABS.docx"
+        },
+        {
+          "@id": "OSD2018_Data Policy.pdf"
+        },
+        {
+          "@id": "OSD2018_Legal_Permits_Procedure.pdf"
+        },
+        {
+          "@id": "OSD2018_MTA.pdf"
+        },
+        {
+          "@id": "OSDHandbook_2016.pdf"
+        },
+        {
+          "@id": "OSDStations.csv"
+        },
+        {
+          "@id": "README.md"
+        }
+      ],
+      "@reverse": {
+        "hasPart": [
+          {
+            "@id": "./"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "2018_OSD_Protocol_A_v2.0.pdf",
+      "@type": "File",
+      "@reverse": {
+        "hasPart": [
+          {
+            "@id": "Documentation/"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "2018_OSD_Protocol_B_v.2.0.pdf",
+      "@type": "File",
+      "@reverse": {
+        "hasPart": [
+          {
+            "@id": "Documentation/"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "Definitions of the OSD Metadata & Instructions to fill in.pdf",
+      "@type": "File",
+      "@reverse": {
+        "hasPart": [
+          {
+            "@id": "Documentation/"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "OSD2018_ABS.docx",
+      "@type": "File",
+      "@reverse": {
+        "hasPart": [
+          {
+            "@id": "Documentation/"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "OSD2018_Data Policy.pdf",
+      "@type": "File",
+      "@reverse": {
+        "hasPart": [
+          {
+            "@id": "Documentation/"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "OSD2018_Legal_Permits_Procedure.pdf",
+      "@type": "File",
+      "@reverse": {
+        "hasPart": [
+          {
+            "@id": "Documentation/"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "OSD2018_MTA.pdf",
+      "@type": "File",
+      "@reverse": {
+        "hasPart": [
+          {
+            "@id": "Documentation/"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "OSDHandbook_2016.pdf",
+      "@type": "File",
+      "@reverse": {
+        "hasPart": [
+          {
+            "@id": "Documentation/"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "OSDStations.csv",
+      "@type": "File",
+      "@reverse": {
+        "hasPart": [
+          {
+            "@id": "Documentation/"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "QualityControlledData/",
+      "@type": "Dataset",
+      "hasPart": [
+        {
+          "@id": "version1/"
+        },
+        {
+          "@id": "version2/"
+        },
+        {
+          "@id": "README.md"
+        }
+      ],
+      "@reverse": {
+        "hasPart": [
+          {
+            "@id": "./"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "version1/",
+      "@type": "Dataset",
+      "hasPart": [
+        {
+          "@id": "README.md"
+        },
+        {
+          "@id": "OSD18Data_HumanReadable_version1.csv"
+        },
+        {
+          "@id": "OSD18Data_MachineReadable_version1.csv"
+        },
+        {
+          "@id": "OSD18Data_MachineReadable_version1.ldt"
+        },
+        {
+          "@id": "OSD18Data_MachineReadable_version1.ttl"
+        },
+        {
+          "@id": "OSD18Metadata_HumanReadable_version1.csv"
+        },
+        {
+          "@id": "OSD18Metadata_MachineReadable_version1.csv"
+        }
+      ],
+      "@reverse": {
+        "hasPart": [
+          {
+            "@id": "QualityControlledData/"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "version2/",
+      "@type": "Dataset",
+      "hasPart": [
+        {
+          "@id": "README.md"
+        }
+      ],
+      "@reverse": {
+        "hasPart": [
+          {
+            "@id": "QualityControlledData/"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "OSD18Data_HumanReadable_version1.csv",
+      "@type": "File",
+      "@reverse": {
+        "hasPart": [
+          {
+            "@id": "version1/"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "OSD18Data_MachineReadable_version1.csv",
+      "@type": "File",
+      "@reverse": {
+        "hasPart": [
+          {
+            "@id": "version1/"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "OSD18Data_MachineReadable_version1.ldt",
+      "@type": "File",
+      "@reverse": {
+        "hasPart": [
+          {
+            "@id": "version1/"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "OSD18Data_MachineReadable_version1.ttl",
+      "@type": "File",
+      "@reverse": {
+        "hasPart": [
+          {
+            "@id": "version1/"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "OSD18Metadata_HumanReadable_version1.csv",
+      "@type": "File",
+      "@reverse": {
+        "hasPart": [
+          {
+            "@id": "version1/"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "OSD18Metadata_MachineReadable_version1.csv",
+      "@type": "File",
+      "@reverse": {
+        "hasPart": [
+          {
+            "@id": "version1/"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "README.md",
+      "@type": "File",
+      "@reverse": {
+        "hasPart": [
+          {
+            "@id": "./"
+          },
+          {
+            "@id": "Documentation/"
+          },
+          {
+            "@id": "QualityControlledData/"
+          },
+          {
+            "@id": "version1/"
+          },
+          {
+            "@id": "version2/"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "LICENSE",
+      "@type": "File",
+      "@reverse": {
+        "hasPart": [
+          {
+            "@id": "./"
+          }
+        ]
+      }
+    }
+  ]
+}
+</script>
+
+    
+<!-- script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script -->
+<script src="https://unpkg.com/ro-crate-html-js/dist/ro-crate-dynamic.js"></script>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<meta charset='utf-8'/>
+<style>
+
+table.table {
+  padding-bottom: 300px;
+}
+</style>
+</head>
+
+
+<body>
+
+  <nav class="navbar">
+
+    <ul class="nav navbar-nav" >
+        <li ><a href="#"><span class="glyphicon glyphicon-home dataset_name">&nbsp;</span></a></li>
+    </ul>
+
+  </nav>
+<div class="container">
+<div class="jumbotron">
+<h4 class="citation"></h3>
+<h3 class="item_name"></h4>
+
+
+<a href="./ro-crate-metadata.json">⬇️🏷️ Download all the metadata for <span class='name'></span> in JSON-LD format</a>
+
+
+<div id="check"></div>
+
+
+</div>
+
+
+
+<div id="summary">
+<div class='all-meta'>
+           <div>
+            <h3> ./</h3>
+            
+            
+            
+            
+        <div id="./">
+            
+            <table class="table metadata table-striped" >
+                <tbody><tr>
+            <th style="text-align:left;" class="prop">@id</th>
+            <td style='text-align:left'><span>./</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">@type</th>
+            <td style='text-align:left'><span>Dataset</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">datePublished<span>&nbsp;</span><a href="http://schema.org/datePublished">[?]</a></th>
+            <td style='text-align:left'><span>2021-11-25T11:27:08+00:00</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">hasPart<span>&nbsp;</span><a href="http://schema.org/hasPart">[?]</a></th>
+            <td style='text-align:left'><ul>
+                        <li><a href="#ConversionConfig/">ConversionConfig/</a></li>
+                        
+                        <li><a href="#Documentation/">Documentation/</a></li>
+                        
+                        <li><a href="#QualityControlledData/">QualityControlledData/</a></li>
+                        
+                        <li><a href="#README.md">README.md</a></li>
+                        
+                        <li><a href="#LICENSE">LICENSE</a></li>
+                        </ul></td>
+            </tr><tr><th colspan="2" style="text-align:center">Items that reference this one</th><tr><tr>
+            <th style="text-align:left;" class="prop">about<span>&nbsp;</span><a href="http://schema.org/about">[?]</a></th>
+            <td style='text-align:left'><a href="#ro-crate-metadata.json">ro-crate-metadata.json</a></td>
+            </tr></tbody>
+            </table>
+        </div>
+
+        </div>
+        <hr/><br/><br/>
+           <div>
+            <h3> ConversionConfig/</h3>
+            
+            
+            
+            
+        <div id="ConversionConfig/">
+            
+            <table class="table metadata table-striped" >
+                <tbody><tr>
+            <th style="text-align:left;" class="prop">@id</th>
+            <td style='text-align:left'><span>ConversionConfig/</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">@type</th>
+            <td style='text-align:left'><span>Dataset</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">hasPart<span>&nbsp;</span><a href="http://schema.org/hasPart">[?]</a></th>
+            <td style='text-align:left'><ul>
+                        <li><a href="#pyConSem/">pyConSem/</a></li>
+                        
+                        <li><a href="#pyKG2TBL/">pyKG2TBL/</a></li>
+                        
+                        <li><a href="#pysubyt/">pysubyt/</a></li>
+                        </ul></td>
+            </tr><tr><th colspan="2" style="text-align:center">Items that reference this one</th><tr><tr>
+            <th style="text-align:left;" class="prop">hasPart<span>&nbsp;</span><a href="http://schema.org/hasPart">[?]</a></th>
+            <td style='text-align:left'><a href="#./">./</a></td>
+            </tr></tbody>
+            </table>
+        </div>
+
+        </div>
+        <hr/><br/><br/>
+           <div>
+            <h3> Documentation/</h3>
+            
+            
+            
+            
+        <div id="Documentation/">
+            
+            <table class="table metadata table-striped" >
+                <tbody><tr>
+            <th style="text-align:left;" class="prop">@id</th>
+            <td style='text-align:left'><span>Documentation/</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">@type</th>
+            <td style='text-align:left'><span>Dataset</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">hasPart<span>&nbsp;</span><a href="http://schema.org/hasPart">[?]</a></th>
+            <td style='text-align:left'><ul>
+                        <li><a href="#2018_OSD_Protocol_A_v2.0.pdf">2018_OSD_Protocol_A_v2.0.pdf</a></li>
+                        
+                        <li><a href="#2018_OSD_Protocol_B_v.2.0.pdf">2018_OSD_Protocol_B_v.2.0.pdf</a></li>
+                        
+                        <li><a href="#Definitions%20of%20the%20OSD%20Metadata%20%26%20Instructions%20to%20fill%20in.pdf">Definitions of the OSD Metadata & Instructions to fill in.pdf</a></li>
+                        
+                        <li><a href="#OSD2018_ABS.docx">OSD2018_ABS.docx</a></li>
+                        
+                        <li><a href="#OSD2018_Data%20Policy.pdf">OSD2018_Data Policy.pdf</a></li>
+                        
+                        <li><a href="#OSD2018_Legal_Permits_Procedure.pdf">OSD2018_Legal_Permits_Procedure.pdf</a></li>
+                        
+                        <li><a href="#OSD2018_MTA.pdf">OSD2018_MTA.pdf</a></li>
+                        
+                        <li><a href="#OSDHandbook_2016.pdf">OSDHandbook_2016.pdf</a></li>
+                        
+                        <li><a href="#OSDStations.csv">OSDStations.csv</a></li>
+                        
+                        <li><a href="#README.md">README.md</a></li>
+                        </ul></td>
+            </tr><tr><th colspan="2" style="text-align:center">Items that reference this one</th><tr><tr>
+            <th style="text-align:left;" class="prop">hasPart<span>&nbsp;</span><a href="http://schema.org/hasPart">[?]</a></th>
+            <td style='text-align:left'><a href="#./">./</a></td>
+            </tr></tbody>
+            </table>
+        </div>
+
+        </div>
+        <hr/><br/><br/>
+           <div>
+            <h3> QualityControlledData/</h3>
+            
+            
+            
+            
+        <div id="QualityControlledData/">
+            
+            <table class="table metadata table-striped" >
+                <tbody><tr>
+            <th style="text-align:left;" class="prop">@id</th>
+            <td style='text-align:left'><span>QualityControlledData/</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">@type</th>
+            <td style='text-align:left'><span>Dataset</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">hasPart<span>&nbsp;</span><a href="http://schema.org/hasPart">[?]</a></th>
+            <td style='text-align:left'><ul>
+                        <li><a href="#version1/">version1/</a></li>
+                        
+                        <li><a href="#version2/">version2/</a></li>
+                        
+                        <li><a href="#README.md">README.md</a></li>
+                        </ul></td>
+            </tr><tr><th colspan="2" style="text-align:center">Items that reference this one</th><tr><tr>
+            <th style="text-align:left;" class="prop">hasPart<span>&nbsp;</span><a href="http://schema.org/hasPart">[?]</a></th>
+            <td style='text-align:left'><a href="#./">./</a></td>
+            </tr></tbody>
+            </table>
+        </div>
+
+        </div>
+        <hr/><br/><br/>
+           <div>
+            <h3><a href="README.md">⬇️ Download: </a> README.md</h3>
+            
+            
+            
+            
+        <div id="README.md">
+            
+            <table class="table metadata table-striped" >
+                <tbody><tr>
+            <th style="text-align:left;" class="prop">@id</th>
+            <td style='text-align:left'><span>README.md</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">@type</th>
+            <td style='text-align:left'><span>File</span></td>
+            </tr><tr><th colspan="2" style="text-align:center">Items that reference this one</th><tr><tr>
+            <th style="text-align:left;" class="prop">hasPart<span>&nbsp;</span><a href="http://schema.org/hasPart">[?]</a></th>
+            <td style='text-align:left'><ul>
+                        <li><a href="#./">./</a></li>
+                        
+                        <li><a href="#Documentation/">Documentation/</a></li>
+                        
+                        <li><a href="#QualityControlledData/">QualityControlledData/</a></li>
+                        
+                        <li><a href="#version1/">version1/</a></li>
+                        
+                        <li><a href="#version2/">version2/</a></li>
+                        </ul></td>
+            </tr></tbody>
+            </table>
+        </div>
+
+        </div>
+        <hr/><br/><br/>
+           <div>
+            <h3><a href="LICENSE">⬇️ Download: </a> LICENSE</h3>
+            
+            
+            
+            
+        <div id="LICENSE">
+            
+            <table class="table metadata table-striped" >
+                <tbody><tr>
+            <th style="text-align:left;" class="prop">@id</th>
+            <td style='text-align:left'><span>LICENSE</span></td>
+            </tr><tr>
+            <th style="text-align:left;" class="prop">@type</th>
+            <td style='text-align:left'><span>File</span></td>
+            </tr><tr><th colspan="2" style="text-align:center">Items that reference this one</th><tr><tr>
+            <th style="text-align:left;" class="prop">hasPart<span>&nbsp;</span><a href="http://schema.org/hasPart">[?]</a></th>
+            <td style='text-align:left'><a href="#./">./</a></td>
+            </tr></tbody>
+            </table>
+        </div>
+
+        </div>
+        <hr/><br/><br/></div>
+</div>
+
+
+
+
+
+</body>
+</html>
+
+
+    </section> 
+  </body>
+</html>
+
+        
+        <div class="credits">Theme&nbsp; <a href="https://github.com/abhinavs/moonwalk" target="_blank" rel="noreferrer">Moonwalk</a>
+        </div>
+      </div>
+    </main></body>
+</html>

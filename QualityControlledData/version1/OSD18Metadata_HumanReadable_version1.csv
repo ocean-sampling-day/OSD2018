@@ -1,0 +1,98 @@
+ColumnTitle,Description,Unit
+EventID,Event ID,
+SampleID,"Sample ID, harmonised over all OSD years",
+SampleID_ENA,"Sample ID, with structure as in ENA (Sample Title)",
+SiteID,Site ID (site details provided on the OSDStations spreadsheet),
+DateTime,Start date and time of the event,
+Latitude,Latitude of the station,decimal degree
+Longitude,Longitude of the station,decimal degree
+environment (biome),ENVO type for the biome sampled,
+environment (material),ENVO type for the material sampled,
+environment (feature),ENVO type for the feature sampled,
+project name,Name of the project,
+Marine Region,URL of the Marine Region of the sampling site,
+Sampling Platform,Name or type of the sampling platform,
+Depth,Depth of the water sampled ,metre
+Depth_unit,Actually recorded unit for value in column: Depth,
+Depth_flag,"Flag for when the recorded unit differs from the proposed unit, for column: Depth",
+Protocol Label,"OSD protocol used (NPL022 = Protocol A, NE08 = Protocol B)",
+Sampling Campaign,Sampling campaign name,
+SAMPLE_Objective,Objective comments,
+EVENT_Device,Sampling device,
+EVENT_Method,Sampling method,
+EVENT_Comment,Event comments,
+SAMPLE_Quantity,Quantity of sampled water,litres
+SAMPLE_Quantity_unit,Actually recorded unit for value in column: SAMPLE_Quantity,
+SAMPLE_Quantity_flag,"Flag for when the recorded unit differs from the proposed unit, for column: SAMPLE_Quantity",
+SAMPLE_FiltrationTime,Filtration time,minutes
+SAMPLE_FiltrationTime_unit,Actually recorded unit for value in column: SAMPLE_FiltrationTime,
+SAMPLE_FiltrationTime_flag,"Flag for when the recorded unit differs from the proposed unit, for column: SAMPLE_FiltrationTime",
+SAMPLE_Container,Container used for the sampling,
+SAMPLE_Content,Content comments,
+SAMPLE_Size-Fraction_UpperThreshold,Mesh size upper limit for pre-filtration (larger material is excluded),micrometres (microns)
+SAMPLE_Size-Fraction_LowerThreshold,Mesh size lower limit for pre-filtration (smaller material are excluded),micrometres (microns)
+SAMPLE_Size-Fraction_LowerThreshold_unit,Actually recorded unit for value in column: SAMPLE_Size-Fraction_LowerThreshold,
+SAMPLE_Size-Fraction_LowerThreshold_flag,"Flag for when the recorded unit differs from the proposed unit, for column: SAMPLE_Size-Fraction_LowerThreshold",
+SAMPLE_Treatment_Chemicals,Treatment chemicals added to the sample,
+SAMPLE_Treatment_Storage,Storage temperature or type,centigrade
+Temperature,Temperature of the sampled water,centigrade
+Temperature_unit,Actually recorded unit for value in column: Temperature,
+Temperature_flag,"Flag for when the recorded unit differs from the proposed unit, for column: Temperature",
+Salinity,Salinity of the sampled water,PSU or g/kg
+Salinity_unit,Actually recorded unit for value in column: Salinity,
+Salinity_flag,"Flag for when the recorded unit differs from the proposed unit, for column: Salinity",
+CTD_Conductivity,Electrical conductivity of H2O,mS/cm
+CTD_Conductivity_unit,Actually recorded unit for value in column: CTD_Conductivity,
+CTD_Conductivity_flag,"Flag for when the recorded unit differs from the proposed unit, for column: CTD_Conductivity",
+CTD_Fluorescence,Raw (volts) OR converted (mg Chla/m^3) fluorescence of the H2O,volt
+CTD_Fluorescence_unit,Actually recorded unit for value in column: CTD_Fluorescence,
+CTD_Fluorescence_flag,"Flag for when the recorded unit differs from the proposed unit, for column: CTD_Fluorescence",
+CTD_Depth,Vertical depth as measured by a CTD,metre
+CTD_Depth_unit,Actually recorded unit for value in column: CTD_Depth,
+CTD_Depth_flag,"Flag for when the recorded unit differs from the proposed unit, for column: CTD_Depth",
+Seawater Nutrients Concentration_Ammonium,Ammonium concentration parameters in the H2O column,micromol/l
+Seawater Nutrients Concentration_Ammonium_unit,Actually recorded unit for value in column: Seawater Nutrients Concentration_Ammonium,
+Seawater Nutrients Concentration_Ammonium_flag,"Flag for when the recorded unit differs from the proposed unit, for column: Seawater Nutrients Concentration_Silicate",
+Seawater Nutrients Concentration_Nitrate,Nitrate concentration parameters in the H2O column,micromol/l
+Seawater Nutrients Concentration_Nitrate_unit,Actually recorded unit for value in column: Seawater Nutrients Concentration_Nitrate,
+Seawater Nutrients Concentration_Nitrate_flag,"Flag for when the recorded unit differs from the proposed unit, for column: Seawater Nutrients Concentration_Nitrate",
+Seawater Nutrients Concentration_Nitrite,Nitrite concentration parameters in the H2O column,micromol/l
+Seawater Nutrients Concentration_Nitrite_unit,Actually recorded unit for value in column: Seawater Nutrients Concentration_Nitrite,
+Seawater Nutrients Concentration_Nitrite_flag,"Flag for when the recorded unit differs from the proposed unit, for column: Seawater Nutrients Concentration_Nitrite",
+Seawater Nutrients Concentration_Phosphate,Phosphate concentration parameters in the H2O column,micromol/l
+Seawater Nutrients Concentration_Phosphate_unit,Actually recorded unit for value in column: Seawater Nutrients Concentration_Phosphate,
+Seawater Nutrients Concentration_Phosphate_flag,"Flag for when the recorded unit differs from the proposed unit, for column: Seawater Nutrients Concentration_Ammonium",
+Seawater Nutrients Concentration_Silicate,Silicate concentration parameters in the H2O column,micromol/l
+Seawater Nutrients Concentration_Silicate_unit,Actually recorded unit for value in column: Seawater Nutrients Concentration_Silicate,
+Seawater Nutrients Concentration_Silicate_flag,"Flag for when the recorded unit differs from the proposed unit, for column: Seawater Nutrients Concentration_Phosphate",
+Seawater Chemical Properties_pH,"Alkalinity, acidity and pH of the H2O column",dimensionless
+Seawater Chemical Properties_pH_unit,Actually recorded unit for value in column: Seawater Chemical Properties_pH,
+Seawater Chemical Properties_pH_flag,"Flag for when the recorded unit differs from the proposed unit, for column: Seawater Chemical Properties_pH",
+Seawater Chemical Properties_Dissolved Oxygen concentration,Dissolved oxygen concentration in the H2O column,micromol/kg
+Seawater Chemical Properties_Dissolved Oxygen concentration_unit,Actually recorded unit for value in column: Seawater Chemical Properties_Dissolved Oxygen concentration,
+Seawater Chemical Properties_Dissolved Oxygen concentration_flag,"Flag for when the recorded unit differs from the proposed unit, for column: Seawater Chemical Properties_Dissolved Oxygen concentration",
+Seawater Optical Properties_Downward PAR,Visible waveband radiance and irradiance measurements in the H2O column,microE/m^2/s
+Seawater Optical Properties_Downward PAR_unit,Actually recorded unit for value in column: Seawater Optical Properties_Downward PAR,
+Seawater Optical Properties_Downward PAR_flag,"Flag for when the recorded unit differs from the proposed unit, for column: Seawater Optical Properties_Downward PAR",
+Seawater Optical Properties_Turbidity,Transmittance and attenuance of the H2O column,FTU
+Seawater Optical Properties_Turbidity_unit,Actually recorded unit for value in column: Seawater Optical Properties_Turbidity,
+Seawater Optical Properties_Turbidity_flag,"Flag for when the recorded unit differs from the proposed unit, for column: Seawater Optical Properties_Turbidity",
+Organic Matter Concentration (Amount or Mass)_DON,Dissolved organic nitrogen concentration in the H2O column,mg/l
+Organic Matter Concentration (Amount or Mass)_DON_unit,Actually recorded unit for value in column: Organic Matter Concentration (Amount or Mass)_DON,
+Organic Matter Concentration (Amount or Mass)_DON_flag,"Flag for when the recorded unit differs from the proposed unit, for column: Organic Matter Concentration (Amount or Mass)_DON",
+Organic Matter Concentration (Amount or Mass)_POC,Particulate organic carbon concentration in the H2O column,microg/l
+Organic Matter Concentration (Amount or Mass)_POC_unit,Actually recorded unit for value in column: Organic Matter Concentration (Amount or Mass)_POC,
+Organic Matter Concentration (Amount or Mass)_POC_flag,"Flag for when the recorded unit differs from the proposed unit, for column: Organic Matter Concentration (Amount or Mass)_POC",
+Organic Matter Concentration (Amount or Mass)_PON,Particulate organic nitrogen concentration in the H2O column,microg/l
+Organic Matter Concentration (Amount or Mass)_PON_unit,Actually recorded unit for value in column: Organic Matter Concentration (Amount or Mass)_PON,
+Organic Matter Concentration (Amount or Mass)_PON_flag,"Flag for when the recorded unit differs from the proposed unit, for column: Organic Matter Concentration (Amount or Mass)_PON",
+Organism Concentration (Amount Volume or Mass)_Pigment concentrations,Concentration of pigments (e.g. chlorophyll a) extracted and analysed by fluorometry or HPLC,mg/m^3
+Organism Concentration (Amount Volume or Mass)_Pigment concentrations_unit,"Actually recorded unit for value in column: Organism Concentration (Amount, Volume or Mass)_Pigment concentrations",
+Organism Concentration (Amount Volume or Mass)_Pigment concentrations_flag,"Flag for when the recorded unit differs from the proposed unit, for column: Organism Concentration (Amount, Volume or Mass)_Pigment concentrations",
+Organism Concentration (Amount Volume or Mass)_Nano/Microplankton,Abundance of cells in the H2O column (+other avail. cell properties),per m^3
+Organism Concentration (Amount Volume or Mass)_Nano/Microplankton_unit,"Actually recorded unit for value in column: Organism Concentration (Amount, Volume or Mass)_Nano/Microplakton",
+Organism Concentration (Amount Volume or Mass)_Nano/Microplankton_flag,"Flag for when the recorded unit differs from the proposed unit, for column: Organism Concentration (Amount, Volume or Mass)_Nano/Microplakton",
+ENA_BioSampleID,ENA biosample accession number,
+ENA_BioProjectID_TargetGene18S,ENA bioproject accession number for the 18S target gene,
+ENA_BioProjectID_TargetGeneMG,ENA bioproject accession number for the metagenomics work,
+ENA_BioProjectID_TargetGene16S,ENA bioproject accession number for the 16S target gene,
