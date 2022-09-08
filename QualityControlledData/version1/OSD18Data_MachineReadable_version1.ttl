@@ -1,120 +1,316 @@
+
+
 @prefix csvw : <http://www.w3.org/ns/csvw> .
 @prefix schema : <https://schema.org/> . 
 @prefix sosa: <http://www.w3.org/ns/sosa/> . 
 @prefix qudt: <http://qudt.org/schema/qudt/> .
-
-<https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv> 
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv>
 	a csvw:table;
-	csvw:schema <https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Metadata_version2.csv>;
-	csvw:columns [
-		EventID,
-		SampleID,
-		SiteID,
-		DateTime,
-		Latitude,
-		Longitude,
-		environment (biome),
-		environment (material),
-		environment (feature),
-		project name,
-		Marine Region,
-		Sampling Platform,
-		Depth,
-		Depth_unit,
-		Depth_flag,
-		Protocol Label,
-		MaterialSampleID,
-		Sampling Campaign,
-		SAMPLE_Objective,
-		EVENT_Device,
-		EVENT_Method,
-		EVENT_Comment,
-		SAMPLE_Quantity,
-		SAMPLE_Quantity_unit,
-		SAMPLE_Quantity_flag,
-		SAMPLE_FiltrationTime,
-		SAMPLE_FiltrationTime_unit,
-		SAMPLE_FiltrationTime_flag,
-		SAMPLE_Container,
-		SAMPLE_Content,
-		SAMPLE_Size-Fraction_UpperThreshold,
-		SAMPLE_Size-Fraction_LowerThreshold,
-		SAMPLE_Size-Fraction_LowerThreshold_unit,
-		SAMPLE_Size-Fraction_LowerThreshold_flag,
-		SAMPLE_Treatment_Chemicals,
-		SAMPLE_Treatment_Storage,
-		Temperature,
-		Temperature_unit,
-		Temperature_flag,
-		Salinity,
-		Salinity_unit,
-		Salinity_flag,
-		CTD_Conductivity,
-		CTD_Conductivity_unit,
-		CTD_Conductivity_flag,
-		CTD_Fluorescence,
-		CTD_Fluorescence_unit,
-		CTD_Fluorescence_flag,
-		CTD_Depth,
-		CTD_Depth_unit,
-		CTD_Depth_flag,
-		Seawater Nutrients Concentration_Ammonium,
-		Seawater Nutrients Concentration_Ammonium_unit,
-		Seawater Nutrients Concentration_Ammonium_flag,
-		Seawater Nutrients Concentration_Nitrate,
-		Seawater Nutrients Concentration_Nitrate_unit,
-		Seawater Nutrients Concentration_Nitrate_flag,
-		Seawater Nutrients Concentration_Nitrite,
-		Seawater Nutrients Concentration_Nitrite_unit,
-		Seawater Nutrients Concentration_Nitrite_flag,
-		Seawater Nutrients Concentration_Phosphate,
-		Seawater Nutrients Concentration_Phosphate_unit,
-		Seawater Nutrients Concentration_Phosphate_flag,
-		Seawater Nutrients Concentration_Silicate,
-		Seawater Nutrients Concentration_Silicate_unit,
-		Seawater Nutrients Concentration_Silicate_flag,
-		Seawater Chemical Properties_pH,
-		Seawater Chemical Properties_pH_unit,
-		Seawater Chemical Properties_pH_flag,
-		Seawater Chemical Properties_Dissolved Oxygen concentration,
-		Seawater Chemical Properties_Dissolved Oxygen concentration_unit,
-		Seawater Chemical Properties_Dissolved Oxygen concentration_flag,
-		Seawater Optical Properties_Downward PAR,
-		Seawater Optical Properties_Downward PAR_unit,
-		Seawater Optical Properties_Downward PAR_flag,
-		Seawater Optical Properties_Turbidity,
-		Seawater Optical Properties_Turbidity_unit,
-		Seawater Optical Properties_Turbidity_flag,
-		Organic Matter Concentration (Amount or Mass)_DON,
-		Organic Matter Concentration (Amount or Mass)_DON_unit,
-		Organic Matter Concentration (Amount or Mass)_DON_flag,
-		Organic Matter Concentration (Amount or Mass)_POC,
-		Organic Matter Concentration (Amount or Mass)_POC_unit,
-		Organic Matter Concentration (Amount or Mass)_POC_flag,
-		Organic Matter Concentration (Amount or Mass)_PON,
-		Organic Matter Concentration (Amount or Mass)_PON_unit,
-		Organic Matter Concentration (Amount or Mass)_PON_flag,
-		Organism Concentration (Amount Volume or Mass)_Pigment concentrations,
-		Organism Concentration (Amount Volume or Mass)_Pigment concentrations_unit,
-		Organism Concentration (Amount Volume or Mass)_Pigment concentrations_flag,
-		Organism Concentration (Amount Volume or Mass)_Nano/Microplankton,
-		Organism Concentration (Amount Volume or Mass)_Nano/Microplankton_unit,
-		Organism Concentration (Amount Volume or Mass)_Nano/Microplankton_flag,
-		ENA_BioSampleID,
-		ENA_BioProjectID_TargetGene18S,
-		ENA_BioProjectID_TargetGeneMG,
-		ENA_BioProjectID_TargetGene16S, 
-	];
+	csvw:schema <https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Metadata_MachineReadable_version1.csv>>
+	csvw:columns (		
+		[ a csvw:Column;
+		csvw:name 'EventID'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'SampleID'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'SampleID_ENA'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'SiteID'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'DateTime'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'Latitude'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'Longitude'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'environment (biome)'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'environment (material)'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'environment (feature)'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'project name'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'Marine Region'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'Sampling Platform'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'Depth'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'Depth_unit'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'Depth_flag'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'Protocol Label'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'Sampling Campaign'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'SAMPLE_Objective'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'EVENT_Device'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'EVENT_Method'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'EVENT_Comment'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'SAMPLE_Quantity'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'SAMPLE_Quantity_unit'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'SAMPLE_Quantity_flag'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'SAMPLE_FiltrationTime'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'SAMPLE_FiltrationTime_unit'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'SAMPLE_FiltrationTime_flag'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'SAMPLE_Container'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'SAMPLE_Content'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'SAMPLE_Size-Fraction_UpperThreshold'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'SAMPLE_Size-Fraction_LowerThreshold'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'SAMPLE_Size-Fraction_LowerThreshold_unit'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'SAMPLE_Size-Fraction_LowerThreshold_flag'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'SAMPLE_Treatment_Chemicals'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'SAMPLE_Treatment_Storage'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'Temperature'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'Temperature_unit'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'Temperature_flag'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'Salinity'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'Salinity_unit'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'Salinity_flag'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'CTD_Conductivity'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'CTD_Conductivity_unit'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'CTD_Conductivity_flag'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'CTD_Fluorescence'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'CTD_Fluorescence_unit'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'CTD_Fluorescence_flag'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'CTD_Depth'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'CTD_Depth_unit'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'CTD_Depth_flag'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'Seawater Nutrients Concentration_Ammonium'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'Seawater Nutrients Concentration_Ammonium_unit'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'Seawater Nutrients Concentration_Ammonium_flag'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'Seawater Nutrients Concentration_Nitrate'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'Seawater Nutrients Concentration_Nitrate_unit'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'Seawater Nutrients Concentration_Nitrate_flag'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'Seawater Nutrients Concentration_Nitrite'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'Seawater Nutrients Concentration_Nitrite_unit'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'Seawater Nutrients Concentration_Nitrite_flag'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'Seawater Nutrients Concentration_Phosphate'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'Seawater Nutrients Concentration_Phosphate_unit'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'Seawater Nutrients Concentration_Phosphate_flag'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'Seawater Nutrients Concentration_Silicate'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'Seawater Nutrients Concentration_Silicate_unit'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'Seawater Nutrients Concentration_Silicate_flag'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'Seawater Chemical Properties_pH'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'Seawater Chemical Properties_pH_unit'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'Seawater Chemical Properties_pH_flag'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'Seawater Chemical Properties_Dissolved Oxygen concentration'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'Seawater Chemical Properties_Dissolved Oxygen concentration_unit'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'Seawater Chemical Properties_Dissolved Oxygen concentration_flag'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'Seawater Optical Properties_Downward PAR'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'Seawater Optical Properties_Downward PAR_unit'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'Seawater Optical Properties_Downward PAR_flag'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'Seawater Optical Properties_Turbidity'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'Seawater Optical Properties_Turbidity_unit'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'Seawater Optical Properties_Turbidity_flag'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'Organic Matter Concentration (Amount or Mass)_DON'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'Organic Matter Concentration (Amount or Mass)_DON_unit'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'Organic Matter Concentration (Amount or Mass)_DON_flag'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'Organic Matter Concentration (Amount or Mass)_POC'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'Organic Matter Concentration (Amount or Mass)_POC_unit'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'Organic Matter Concentration (Amount or Mass)_POC_flag'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'Organic Matter Concentration (Amount or Mass)_PON'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'Organic Matter Concentration (Amount or Mass)_PON_unit'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'Organic Matter Concentration (Amount or Mass)_PON_flag'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'Organism Concentration (Amount Volume or Mass)_Pigment concentrations'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'Organism Concentration (Amount Volume or Mass)_Pigment concentrations_unit'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'Organism Concentration (Amount Volume or Mass)_Pigment concentrations_flag'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'Organism Concentration (Amount Volume or Mass)_Nano/Microplankton'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'Organism Concentration (Amount Volume or Mass)_Nano/Microplankton_unit'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'Organism Concentration (Amount Volume or Mass)_Nano/Microplankton_flag'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'ENA_BioSampleID'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'ENA_BioProjectID_TargetGene18S'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'ENA_BioProjectID_TargetGeneMG'^^xsd:string ; 
+		]		
+		[ a csvw:Column;
+		csvw:name 'ENA_BioProjectID_TargetGene16S'^^xsd:string ; 
+		] 
+	)
 .
 
-<https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD1_2018-06_NPL022_1>
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD1_2018-06_NPL022_1>
 	a schema:event, sosa:Sampling;
 	schema:identifier 'OSD1_2018-06'^^xsd:string;
 	schema:identifier 'OSD1_2018-06_NPL022_1'^^xsd:string;
+	schema:identifier 'OSD1_2018-06_1_NPL022'^^xsd:string;
 	schema:identifier 'OSD1'^^xsd:string;
 	schema:startDate '2018-06-18T09:45:00+00:00'^^xsd:datetime;
-	schema:latitude '50.25'^^xsd:double;
-	schema:longitude '-4.22'^^xsd:double;
+	schema:latitude '50.2505'^^xsd:double;
+	schema:longitude '-4.2201'^^xsd:double;
 	schema:location 'marine biome [ENVO:00000447]'^^xsd:string;
 	schema:description ' sea water [ENVO:00002149]'^^xsd:string;
 	schema:description ' microbial community [PCO:1000004]'^^xsd:string;
@@ -126,9 +322,8 @@
 		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/ULAA/>;
 	],
 	schema:description 'NPL022'^^xsd:string;
-	schema:identifier 'OSD1_2018-06_1_NPL022'^^xsd:string;
 	schema:description 'OSD-Jun-2018'^^xsd:string;
-	sosa:madeBySampler <https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD1_2018-06_NPL022_1,CTD%20Rosette>;
+	sosa:madeBySampler <https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD1_2018-06_NPL022_1,CTD%20Rosette>;
 	schema:description '2.0'^^xsd:double;
 	schema:description 'Sterivex'^^xsd:string;
 	schema:description 'particulate matter'^^xsd:string;
@@ -167,14 +362,14 @@
 		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/USTU/>;
 	],
 	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#SAMEA7392483>;
-	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40759>;
+	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#to%20be%20added>;
 	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40757>;
 
 
 	
 .
 
-<https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD1_2018-06_NPL022_1,CTD%20Rosette> 
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD1_2018-06_NPL022_1,CTD%20Rosette> 
 	a sosa:Sampler;
 	sosa:ishostedBy 'not provided'^^xsd:string;
 .
@@ -184,10 +379,11 @@
 @prefix sosa: <http://www.w3.org/ns/sosa/> . 
 @prefix qudt: <http://qudt.org/schema/qudt/> .
 
-<https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD100_2018-06_NPL022_1>
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD100_2018-06_NPL022_1>
 	a schema:event, sosa:Sampling;
 	schema:identifier 'OSD100_2018-06'^^xsd:string;
 	schema:identifier 'OSD100_2018-06_NPL022_1'^^xsd:string;
+	schema:identifier 'OSD100_2018-06_1_NPL022'^^xsd:string;
 	schema:identifier 'OSD100'^^xsd:string;
 	schema:startDate '2018-06-21T09:00:00+00:00'^^xsd:datetime;
 	schema:latitude '35.35'^^xsd:double;
@@ -203,10 +399,9 @@
 		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/ULAA/>;
 	],
 	schema:description 'NPL022'^^xsd:string;
-	schema:identifier 'OSD100_2018-06_1_NPL022'^^xsd:string;
 	schema:description 'OSD-Jun-2018'^^xsd:string;
 	schema:description 'surface water sampling (100lt) CTD cost zooplankton net sampling'^^xsd:string;
-	sosa:madeBySampler <https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD100_2018-06_NPL022_1,Niskin%20bottles%20/%20CTD%20/%20zooplankton%20net>;
+	sosa:madeBySampler <https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD100_2018-06_NPL022_1,Niskin%20bottles%20/%20CTD%20/%20zooplankton%20net>;
 	sosa:usedProcedure 'surface water sampling with niskin 100lt CTD cost / vertical sampling zooplankton'^^xsd:string;
 	schema:description '20.0'^^xsd:double;
 	schema:Duration '60'^^xsd:integer;
@@ -227,7 +422,7 @@
 	],
 	sosa:hasResult [ a sosa:observation;
 		sosa:observedProperty http://vocab.nerc.ac.uk/collection/P02/current/CNDC/;
-		qudt:numericValue '5.817'^^xsd:double;
+		qudt:numericValue '40.5'^^xsd:double;
 		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/MSPM/>;
 	],
 	sosa:hasResult [ a sosa:observation;
@@ -241,7 +436,7 @@
 		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/UUUU/>;
 	],
 	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#SAMEA7392454>;
-	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40759>;
+	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#to%20be%20added>;
 	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40760>;
 	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40757>;
 
@@ -249,7 +444,7 @@
 	
 .
 
-<https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD100_2018-06_NPL022_1,Niskin%20bottles%20/%20CTD%20/%20zooplankton%20net> 
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD100_2018-06_NPL022_1,Niskin%20bottles%20/%20CTD%20/%20zooplankton%20net> 
 	a sosa:Sampler;
 	sosa:ishostedBy 'HCMR dinghy boat'^^xsd:string;
 .
@@ -259,14 +454,15 @@
 @prefix sosa: <http://www.w3.org/ns/sosa/> . 
 @prefix qudt: <http://qudt.org/schema/qudt/> .
 
-<https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD122_2018-06_NPL022_1>
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD122_2018-06_NPL022_1>
 	a schema:event, sosa:Sampling;
 	schema:identifier 'OSD122_2018-06'^^xsd:string;
 	schema:identifier 'OSD122_2018-06_NPL022_1'^^xsd:string;
+	schema:identifier 'OSD122_2018-06_1_NPL022'^^xsd:string;
 	schema:identifier 'OSD122'^^xsd:string;
 	schema:startDate '2018-06-21T08:01:00+00:00'^^xsd:datetime;
-	schema:latitude '29.47'^^xsd:double;
-	schema:longitude '34.93'^^xsd:double;
+	schema:latitude '29.4661'^^xsd:double;
+	schema:longitude '34.9282'^^xsd:double;
 	schema:location 'marine pelagic biome [ENVO:01000023]'^^xsd:string;
 	schema:description ' sea water [ENVO:00002149]'^^xsd:string;
 	schema:description ' microbial community [PCO:1000004]'^^xsd:string;
@@ -278,10 +474,9 @@
 		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/ULAA/>;
 	],
 	schema:description 'NPL022'^^xsd:string;
-	schema:identifier 'OSD122_2018-06_1_NPL022'^^xsd:string;
 	schema:description 'OSD-Jun-2018'^^xsd:string;
 	schema:description 'sampling for Prokaryotes'^^xsd:string;
-	sosa:madeBySampler <https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD122_2018-06_NPL022_1,25L%20Jerrycan>;
+	sosa:madeBySampler <https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD122_2018-06_NPL022_1,25L%20Jerrycan>;
 	sosa:usedProcedure 'three 25L Jerrycans were deployed by hand from a boat'^^xsd:string;
 	rdfs:comment 'sampling done at open sea on surface. Water depth at sampling location is 700m'^^xsd:string;
 	schema:description '6.0'^^xsd:double;
@@ -313,7 +508,7 @@
 		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/ULAA/>;
 	],
 	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#SAMEA7392453>;
-	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40759>;
+	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#to%20be%20added>;
 	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40760>;
 	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40757>;
 
@@ -321,7 +516,7 @@
 	
 .
 
-<https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD122_2018-06_NPL022_1,25L%20Jerrycan> 
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD122_2018-06_NPL022_1,25L%20Jerrycan> 
 	a sosa:Sampler;
 	sosa:ishostedBy 'Self-propelled boat. 48182'^^xsd:string;
 .
@@ -331,14 +526,15 @@
 @prefix sosa: <http://www.w3.org/ns/sosa/> . 
 @prefix qudt: <http://qudt.org/schema/qudt/> .
 
-<https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD13_2018-06_NPL022_1>
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD13_2018-06_NPL022_1>
 	a schema:event, sosa:Sampling;
 	schema:identifier 'OSD13_2018-06'^^xsd:string;
 	schema:identifier 'OSD13_2018-06_NPL022_1'^^xsd:string;
+	schema:identifier 'OSD13_2018-06_1_NPL022'^^xsd:string;
 	schema:identifier 'OSD13'^^xsd:string;
 	schema:startDate '2018-06-21T11:30:00+00:00'^^xsd:datetime;
-	schema:latitude '43.18'^^xsd:double;
-	schema:longitude '27.9'^^xsd:double;
+	schema:latitude '43.1838'^^xsd:double;
+	schema:longitude '27.9004'^^xsd:double;
 	schema:location 'marine biome [ENVO:00000447]'^^xsd:string;
 	schema:description ' sea water [ENVO:00002149]'^^xsd:string;
 	schema:description ' microbial community [PCO:1000004]'^^xsd:string;
@@ -350,7 +546,6 @@
 		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/ULAA/>;
 	],
 	schema:description 'NPL022'^^xsd:string;
-	schema:identifier 'OSD13_2018-06_1_NPL022'^^xsd:string;
 	schema:description 'OSD-Jun-2018'^^xsd:string;
 	schema:description '1.06'^^xsd:double;
 	schema:Duration '60'^^xsd:integer;
@@ -381,7 +576,7 @@
 		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/UUUU/>;
 	],
 	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#SAMEA7392479>;
-	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40759>;
+	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#to%20be%20added>;
 	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40760>;
 	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40757>;
 
@@ -389,7 +584,7 @@
 	
 .
 
-<https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD13_2018-06_NPL022_1,not%20provided> 
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD13_2018-06_NPL022_1,not%20provided> 
 	a sosa:Sampler;
 	sosa:ishostedBy 'not provided'^^xsd:string;
 .
@@ -399,14 +594,15 @@
 @prefix sosa: <http://www.w3.org/ns/sosa/> . 
 @prefix qudt: <http://qudt.org/schema/qudt/> .
 
-<https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD14_2018-06_NPL022_1>
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD14_2018-06_NPL022_1>
 	a schema:event, sosa:Sampling;
 	schema:identifier 'OSD14_2018-06'^^xsd:string;
 	schema:identifier 'OSD14_2018-06_NPL022_1'^^xsd:string;
+	schema:identifier 'OSD14_2018-06_1_NPL022'^^xsd:string;
 	schema:identifier 'OSD14'^^xsd:string;
 	schema:startDate '2018-06-19T07:30:00+00:00'^^xsd:datetime;
-	schema:latitude '42.48'^^xsd:double;
-	schema:longitude '3.14'^^xsd:double;
+	schema:latitude '42.484'^^xsd:double;
+	schema:longitude '3.135'^^xsd:double;
 	schema:location 'marine biome [ENVO:00000447]'^^xsd:string;
 	schema:description ' sea water [ENVO:00002149]'^^xsd:string;
 	schema:description ' microbial community [PCO:1000004]'^^xsd:string;
@@ -418,10 +614,9 @@
 		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/ULAA/>;
 	],
 	schema:description 'NPL022'^^xsd:string;
-	schema:identifier 'OSD14_2018-06_1_NPL022'^^xsd:string;
 	schema:description 'OSD-Jun-2018'^^xsd:string;
 	schema:description 'frequently monitored coastal lagoons'^^xsd:string;
-	sosa:madeBySampler <https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD14_2018-06_NPL022_1,CTD%20probe%20Seabird%2019%20and%2012L%20Niskin%20bottle>;
+	sosa:madeBySampler <https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD14_2018-06_NPL022_1,CTD%20probe%20Seabird%2019%20and%2012L%20Niskin%20bottle>;
 	sosa:usedProcedure 'sampling and sterivex filtration'^^xsd:string;
 	schema:description '3.0'^^xsd:double;
 	schema:Duration '180'^^xsd:integer;
@@ -491,7 +686,7 @@
 		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/UGPL/>;
 	],
 	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#SAMEA7392478>;
-	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40759>;
+	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#to%20be%20added>;
 	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40760>;
 	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40757>;
 
@@ -499,7 +694,7 @@
 	
 .
 
-<https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD14_2018-06_NPL022_1,CTD%20probe%20Seabird%2019%20and%2012L%20Niskin%20bottle> 
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD14_2018-06_NPL022_1,CTD%20probe%20Seabird%2019%20and%2012L%20Niskin%20bottle> 
 	a sosa:Sampler;
 	sosa:ishostedBy 'not provided'^^xsd:string;
 .
@@ -509,14 +704,15 @@
 @prefix sosa: <http://www.w3.org/ns/sosa/> . 
 @prefix qudt: <http://qudt.org/schema/qudt/> .
 
-<https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD141_2018-06_NPL022_1>
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD141_2018-06_NPL022_1>
 	a schema:event, sosa:Sampling;
 	schema:identifier 'OSD141_2018-06'^^xsd:string;
 	schema:identifier 'OSD141_2018-06_NPL022_1'^^xsd:string;
+	schema:identifier 'OSD141_2018-06_1_NPL022'^^xsd:string;
 	schema:identifier 'OSD141'^^xsd:string;
 	schema:startDate '2018-06-21T10:30:00+00:00'^^xsd:datetime;
-	schema:latitude '60.16'^^xsd:double;
-	schema:longitude '5.12'^^xsd:double;
+	schema:latitude '60.1612'^^xsd:double;
+	schema:longitude '5.115'^^xsd:double;
 	schema:location 'marine pelagic biome [ENVO:01000023]'^^xsd:string;
 	schema:description ' sea water [ENVO:00002149]'^^xsd:string;
 	schema:description ' microbial community [PCO:1000004]'^^xsd:string;
@@ -528,9 +724,8 @@
 		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/ULAA/>;
 	],
 	schema:description 'NPL022'^^xsd:string;
-	schema:identifier 'OSD141_2018-06_1_NPL022'^^xsd:string;
 	schema:description 'OSD-Jun-2018'^^xsd:string;
-	sosa:madeBySampler <https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD141_2018-06_NPL022_1,CTD%20/%20Niskin%20bottle>;
+	sosa:madeBySampler <https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD141_2018-06_NPL022_1,CTD%20/%20Niskin%20bottle>;
 	sosa:usedProcedure 'collect sample with a Niskin bottle'^^xsd:string;
 	schema:description '3.0'^^xsd:double;
 	schema:Duration '60'^^xsd:integer;
@@ -590,7 +785,7 @@
 		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/USTU/>;
 	],
 	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#SAMEA7392452>;
-	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40759>;
+	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#to%20be%20added>;
 	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40760>;
 	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40757>;
 
@@ -598,7 +793,7 @@
 	
 .
 
-<https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD141_2018-06_NPL022_1,CTD%20/%20Niskin%20bottle> 
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD141_2018-06_NPL022_1,CTD%20/%20Niskin%20bottle> 
 	a sosa:Sampler;
 	sosa:ishostedBy 'boat'^^xsd:string;
 .
@@ -608,14 +803,15 @@
 @prefix sosa: <http://www.w3.org/ns/sosa/> . 
 @prefix qudt: <http://qudt.org/schema/qudt/> .
 
-<https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD152_2018-06_NPL022_1>
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD152_2018-06_NPL022_1>
 	a schema:event, sosa:Sampling;
 	schema:identifier 'OSD152_2018-06'^^xsd:string;
 	schema:identifier 'OSD152_2018-06_NPL022_1'^^xsd:string;
+	schema:identifier 'OSD152_2018-06_1_NPL022'^^xsd:string;
 	schema:identifier 'OSD152'^^xsd:string;
 	schema:startDate '2018-06-20T13:00:00+00:00'^^xsd:datetime;
-	schema:latitude '44.69'^^xsd:double;
-	schema:longitude '-63.64'^^xsd:double;
+	schema:latitude '44.6936'^^xsd:double;
+	schema:longitude '-63.6403'^^xsd:double;
 	schema:location 'neritic epipelagic zone biome [ENVO:01000042]'^^xsd:string;
 	schema:description ' sea water [ENVO:00002149]'^^xsd:string;
 	schema:description ' microbial community [PCO:1000004]'^^xsd:string;
@@ -627,10 +823,9 @@
 		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/ULAA/>;
 	],
 	schema:description 'NPL022'^^xsd:string;
-	schema:identifier 'OSD152_2018-06_1_NPL022'^^xsd:string;
 	schema:description 'OSD-Jun-2018'^^xsd:string;
 	schema:description 'Compass Buoy Station has been sampled weekly since 1992 as parrt of the Bedford Basin monitoring Program'^^xsd:string;
-	sosa:madeBySampler <https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD152_2018-06_NPL022_1,30L%20Niskin%20bottle>;
+	sosa:madeBySampler <https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD152_2018-06_NPL022_1,30L%20Niskin%20bottle>;
 	sosa:usedProcedure 'Niskin deployed via cable Winch'^^xsd:string;
 	rdfs:comment 'Compass Buoy Station has been sampled weekly since 1992 as part of the Bedford basin monitoring program /filtered peristaltic pump'^^xsd:string;
 	schema:description '3.1'^^xsd:double;
@@ -687,7 +882,7 @@
 		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/UM2S/>;
 	],
 	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#SAMEA7392451>;
-	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40759>;
+	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#to%20be%20added>;
 	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40760>;
 	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40757>;
 
@@ -695,7 +890,7 @@
 	
 .
 
-<https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD152_2018-06_NPL022_1,30L%20Niskin%20bottle> 
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD152_2018-06_NPL022_1,30L%20Niskin%20bottle> 
 	a sosa:Sampler;
 	sosa:ishostedBy 'CGS SIGMA T'^^xsd:string;
 .
@@ -705,14 +900,15 @@
 @prefix sosa: <http://www.w3.org/ns/sosa/> . 
 @prefix qudt: <http://qudt.org/schema/qudt/> .
 
-<https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD153_2018-06_NPL022_1>
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD153_2018-06_NPL022_1>
 	a schema:event, sosa:Sampling;
 	schema:identifier 'OSD153_2018-06'^^xsd:string;
 	schema:identifier 'OSD153_2018-06_NPL022_1'^^xsd:string;
+	schema:identifier 'OSD153_2018-06_1_NPL022'^^xsd:string;
 	schema:identifier 'OSD153'^^xsd:string;
 	schema:startDate '2018-06-21T10:28:00+00:00'^^xsd:datetime;
-	schema:latitude '37.0'^^xsd:double;
-	schema:longitude '-7.98'^^xsd:double;
+	schema:latitude '36.9978'^^xsd:double;
+	schema:longitude '-7.9817'^^xsd:double;
 	schema:location 'marine biome [ENVO:00000447]'^^xsd:string;
 	schema:description ' sea water [ENVO:00002149]'^^xsd:string;
 	schema:description ' microbial community [PCO:1000004]'^^xsd:string;
@@ -724,7 +920,6 @@
 		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/ULAA/>;
 	],
 	schema:description 'NPL022'^^xsd:string;
-	schema:identifier 'OSD153_2018-06_1_NPL022'^^xsd:string;
 	schema:description 'OSD-Jun-2018'^^xsd:string;
 	schema:description '1.5'^^xsd:double;
 	schema:Duration '40'^^xsd:integer;
@@ -763,7 +958,7 @@
 		qudt:hasUnit <http://qudt.org/vocab/unit/PERCENT>;
 	],
 	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#SAMEA7392450>;
-	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40759>;
+	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#to%20be%20added>;
 	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40760>;
 	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40757>;
 
@@ -771,7 +966,7 @@
 	
 .
 
-<https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD153_2018-06_NPL022_1,not%20provided> 
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD153_2018-06_NPL022_1,not%20provided> 
 	a sosa:Sampler;
 	sosa:ishostedBy 'on shore'^^xsd:string;
 .
@@ -781,26 +976,26 @@
 @prefix sosa: <http://www.w3.org/ns/sosa/> . 
 @prefix qudt: <http://qudt.org/schema/qudt/> .
 
-<https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD159_2018-06_NPL022_1>
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD159_2018-06_NPL022_1>
 	a schema:event, sosa:Sampling;
 	schema:identifier 'OSD159_2018-06'^^xsd:string;
 	schema:identifier 'OSD159_2018-06_NPL022_1'^^xsd:string;
+	schema:identifier 'OSD159_2018-06_1_NPL022'^^xsd:string;
 	schema:identifier 'OSD159'^^xsd:string;
-	schema:latitude '48.36'^^xsd:double;
-	schema:longitude '-4.55'^^xsd:double;
+	schema:latitude '48.359'^^xsd:double;
+	schema:longitude '-4.552'^^xsd:double;
 	schema:location 'marine biome [ENVO:00000447]'^^xsd:string;
 	schema:description ' sea water [ENVO:00002149]'^^xsd:string;
 	schema:description ' microbial community [PCO:1000004]'^^xsd:string;
 	schema:description 'Ocean Sampling Day'^^xsd:string;
 	schema:location 'https://www.marineregions.org/gazetteer.php?p=details&id=8762'^^xsd:anyURI;
 	schema:description 'NPL022'^^xsd:string;
-	schema:identifier 'OSD159_2018-06_1_NPL022'^^xsd:string;
 	schema:description 'OSD-Jun-2018'^^xsd:string;
 	schema:description '0.22'^^xsd:double;
 	schema:description 'no treatment'^^xsd:string;
 	schema:description '-80'^^xsd:string;
 	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#SAMEA7392449>;
-	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40759>;
+	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#to%20be%20added>;
 	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40760>;
 	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40757>;
 
@@ -808,7 +1003,7 @@
 	
 .
 
-<https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD159_2018-06_NPL022_1,not%20provided> 
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD159_2018-06_NPL022_1,not%20provided> 
 	a sosa:Sampler;
 	sosa:ishostedBy 'not provided'^^xsd:string;
 .
@@ -818,14 +1013,15 @@
 @prefix sosa: <http://www.w3.org/ns/sosa/> . 
 @prefix qudt: <http://qudt.org/schema/qudt/> .
 
-<https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD17_2018-06_NPL022_1>
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD17_2018-06_NPL022_1>
 	a schema:event, sosa:Sampling;
 	schema:identifier 'OSD17_2018-06'^^xsd:string;
 	schema:identifier 'OSD17_2018-06_NPL022_1'^^xsd:string;
+	schema:identifier 'OSD17_2018-06_1_NPL022'^^xsd:string;
 	schema:identifier 'OSD17'^^xsd:string;
 	schema:startDate '2018-06-20T08:46:08+00:00'^^xsd:datetime;
-	schema:latitude '51.43'^^xsd:double;
-	schema:longitude '2.81'^^xsd:double;
+	schema:latitude '51.4335'^^xsd:double;
+	schema:longitude '2.8082'^^xsd:double;
 	schema:location 'marine biome [ENVO:00000447]'^^xsd:string;
 	schema:description ' sea water [ENVO:00002149]'^^xsd:string;
 	schema:description ' microbial community [PCO:1000004]'^^xsd:string;
@@ -837,9 +1033,8 @@
 		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/ULAA/>;
 	],
 	schema:description 'NPL022'^^xsd:string;
-	schema:identifier 'OSD17_2018-06_1_NPL022'^^xsd:string;
 	schema:description 'OSD-Jun-2018'^^xsd:string;
-	sosa:madeBySampler <https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD17_2018-06_NPL022_1,6%20x%205L%20Niksin%20bottle%20mounted%20on%20CTD>;
+	sosa:madeBySampler <https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD17_2018-06_NPL022_1,6%20x%205L%20Niksin%20bottle%20mounted%20on%20CTD>;
 	sosa:usedProcedure 'water is taken from Nisking. Protocol NPL22 is followed'^^xsd:string;
 	rdfs:comment 'site 330'^^xsd:string;
 	schema:description '0.78'^^xsd:double;
@@ -895,7 +1090,7 @@
 		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/UPOX/>;
 	],
 	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#SAMEA7392477>;
-	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40759>;
+	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#to%20be%20added>;
 	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40760>;
 	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40757>;
 
@@ -903,7 +1098,7 @@
 	
 .
 
-<https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD17_2018-06_NPL022_1,6%20x%205L%20Niksin%20bottle%20mounted%20on%20CTD> 
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD17_2018-06_NPL022_1,6%20x%205L%20Niksin%20bottle%20mounted%20on%20CTD> 
 	a sosa:Sampler;
 	sosa:ishostedBy 'RV Simon Stevin'^^xsd:string;
 .
@@ -913,14 +1108,15 @@
 @prefix sosa: <http://www.w3.org/ns/sosa/> . 
 @prefix qudt: <http://qudt.org/schema/qudt/> .
 
-<https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD170_2018-06_NPL022_1>
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD170_2018-06_NPL022_1>
 	a schema:event, sosa:Sampling;
 	schema:identifier 'OSD170_2018-06'^^xsd:string;
 	schema:identifier 'OSD170_2018-06_NPL022_1'^^xsd:string;
+	schema:identifier 'OSD170_2018-06_1_NPL022'^^xsd:string;
 	schema:identifier 'OSD170'^^xsd:string;
 	schema:startDate '2018-06-20T07:05:28+00:00'^^xsd:datetime;
-	schema:latitude '51.27'^^xsd:double;
-	schema:longitude '2.91'^^xsd:double;
+	schema:latitude '51.2706'^^xsd:double;
+	schema:longitude '2.9064'^^xsd:double;
 	schema:location 'marine biome [ENVO:00000447]'^^xsd:string;
 	schema:description ' sea water [ENVO:00002149]'^^xsd:string;
 	schema:description ' microbial community [PCO:1000004]'^^xsd:string;
@@ -932,9 +1128,8 @@
 		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/ULAA/>;
 	],
 	schema:description 'NPL022'^^xsd:string;
-	schema:identifier 'OSD170_2018-06_1_NPL022'^^xsd:string;
 	schema:description 'OSD-Jun-2018'^^xsd:string;
-	sosa:madeBySampler <https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD170_2018-06_NPL022_1,6%20x%205L%20Niksin%20bottle%20mounted%20on%20CTD>;
+	sosa:madeBySampler <https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD170_2018-06_NPL022_1,6%20x%205L%20Niksin%20bottle%20mounted%20on%20CTD>;
 	sosa:usedProcedure 'water is taken from Nisking. Protocol NPL22 is followed'^^xsd:string;
 	rdfs:comment 'site 130'^^xsd:string;
 	schema:description '0.48'^^xsd:double;
@@ -990,7 +1185,7 @@
 		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/UPOX/>;
 	],
 	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#SAMEA7392448>;
-	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40759>;
+	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#to%20be%20added>;
 	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40760>;
 	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40757>;
 
@@ -998,7 +1193,7 @@
 	
 .
 
-<https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD170_2018-06_NPL022_1,6%20x%205L%20Niksin%20bottle%20mounted%20on%20CTD> 
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD170_2018-06_NPL022_1,6%20x%205L%20Niksin%20bottle%20mounted%20on%20CTD> 
 	a sosa:Sampler;
 	sosa:ishostedBy 'RV Simon Stevin'^^xsd:string;
 .
@@ -1008,14 +1203,15 @@
 @prefix sosa: <http://www.w3.org/ns/sosa/> . 
 @prefix qudt: <http://qudt.org/schema/qudt/> .
 
-<https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD171_2018-06_NPL022_1>
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD171_2018-06_NPL022_1>
 	a schema:event, sosa:Sampling;
 	schema:identifier 'OSD171_2018-06'^^xsd:string;
 	schema:identifier 'OSD171_2018-06_NPL022_1'^^xsd:string;
+	schema:identifier 'OSD171_2018-06_1_NPL022'^^xsd:string;
 	schema:identifier 'OSD171'^^xsd:string;
 	schema:startDate '2018-06-20T07:47:03+00:00'^^xsd:datetime;
-	schema:latitude '51.31'^^xsd:double;
-	schema:longitude '2.85'^^xsd:double;
+	schema:latitude '51.3085'^^xsd:double;
+	schema:longitude '2.8508'^^xsd:double;
 	schema:location 'marine biome [ENVO:00000447]'^^xsd:string;
 	schema:description ' sea water [ENVO:00002149]'^^xsd:string;
 	schema:description ' microbial community [PCO:1000004]'^^xsd:string;
@@ -1027,9 +1223,8 @@
 		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/ULAA/>;
 	],
 	schema:description 'NPL022'^^xsd:string;
-	schema:identifier 'OSD171_2018-06_1_NPL022'^^xsd:string;
 	schema:description 'OSD-Jun-2018'^^xsd:string;
-	sosa:madeBySampler <https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD171_2018-06_NPL022_1,6%20x%205L%20Niksin%20bottle%20mounted%20on%20CTD>;
+	sosa:madeBySampler <https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD171_2018-06_NPL022_1,6%20x%205L%20Niksin%20bottle%20mounted%20on%20CTD>;
 	sosa:usedProcedure 'water is taken from Nisking. Protocol NPL22 is followed'^^xsd:string;
 	rdfs:comment 'site 230'^^xsd:string;
 	schema:description '0.66'^^xsd:double;
@@ -1085,7 +1280,7 @@
 		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/UPOX/>;
 	],
 	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#SAMEA7392447>;
-	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40759>;
+	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#to%20be%20added>;
 	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40760>;
 	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40757>;
 
@@ -1093,7 +1288,7 @@
 	
 .
 
-<https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD171_2018-06_NPL022_1,6%20x%205L%20Niksin%20bottle%20mounted%20on%20CTD> 
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD171_2018-06_NPL022_1,6%20x%205L%20Niksin%20bottle%20mounted%20on%20CTD> 
 	a sosa:Sampler;
 	sosa:ishostedBy 'RV Simon Stevin'^^xsd:string;
 .
@@ -1103,14 +1298,15 @@
 @prefix sosa: <http://www.w3.org/ns/sosa/> . 
 @prefix qudt: <http://qudt.org/schema/qudt/> .
 
-<https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD175_2018-06_NPL022_1>
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD175_2018-06_NPL022_1>
 	a schema:event, sosa:Sampling;
 	schema:identifier 'OSD175_2018-06'^^xsd:string;
 	schema:identifier 'OSD175_2018-06_NPL022_1'^^xsd:string;
+	schema:identifier 'OSD175_2018-06_1_NPL022'^^xsd:string;
 	schema:identifier 'OSD175'^^xsd:string;
 	schema:startDate '2018-06-20T10:46:48+00:00'^^xsd:datetime;
-	schema:latitude '51.33'^^xsd:double;
-	schema:longitude '2.5'^^xsd:double;
+	schema:latitude '51.3336'^^xsd:double;
+	schema:longitude '2.499'^^xsd:double;
 	schema:location 'marine biome [ENVO:00000447]'^^xsd:string;
 	schema:description ' sea water [ENVO:00002149]'^^xsd:string;
 	schema:description ' microbial community [PCO:1000004]'^^xsd:string;
@@ -1122,9 +1318,8 @@
 		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/ULAA/>;
 	],
 	schema:description 'NPL022'^^xsd:string;
-	schema:identifier 'OSD175_2018-06_1_NPL022'^^xsd:string;
 	schema:description 'OSD-Jun-2018'^^xsd:string;
-	sosa:madeBySampler <https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD175_2018-06_NPL022_1,6%20x%205L%20Niksin%20bottle%20mounted%20on%20CTD>;
+	sosa:madeBySampler <https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD175_2018-06_NPL022_1,6%20x%205L%20Niksin%20bottle%20mounted%20on%20CTD>;
 	sosa:usedProcedure 'water is taken from Nisking. Protocol NPL22 is followed'^^xsd:string;
 	rdfs:comment 'site ZG02'^^xsd:string;
 	schema:description '1.02'^^xsd:double;
@@ -1180,7 +1375,7 @@
 		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/UPOX/>;
 	],
 	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#SAMEA7392446>;
-	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40759>;
+	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#to%20be%20added>;
 	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40760>;
 	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40757>;
 
@@ -1188,7 +1383,7 @@
 	
 .
 
-<https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD175_2018-06_NPL022_1,6%20x%205L%20Niksin%20bottle%20mounted%20on%20CTD> 
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD175_2018-06_NPL022_1,6%20x%205L%20Niksin%20bottle%20mounted%20on%20CTD> 
 	a sosa:Sampler;
 	sosa:ishostedBy 'RV Simon Stevin'^^xsd:string;
 .
@@ -1198,14 +1393,15 @@
 @prefix sosa: <http://www.w3.org/ns/sosa/> . 
 @prefix qudt: <http://qudt.org/schema/qudt/> .
 
-<https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD176_2018-06_NPL022_1>
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD176_2018-06_NPL022_1>
 	a schema:event, sosa:Sampling;
 	schema:identifier 'OSD176_2018-06'^^xsd:string;
 	schema:identifier 'OSD176_2018-06_NPL022_1'^^xsd:string;
+	schema:identifier 'OSD176_2018-06_1_NPL022'^^xsd:string;
 	schema:identifier 'OSD176'^^xsd:string;
 	schema:startDate '2018-06-20T11:36:53+00:00'^^xsd:datetime;
-	schema:latitude '51.28'^^xsd:double;
-	schema:longitude '2.61'^^xsd:double;
+	schema:latitude '51.277'^^xsd:double;
+	schema:longitude '2.612'^^xsd:double;
 	schema:location 'marine biome [ENVO:00000447]'^^xsd:string;
 	schema:description ' sea water [ENVO:00002149]'^^xsd:string;
 	schema:description ' microbial community [PCO:1000004]'^^xsd:string;
@@ -1217,9 +1413,8 @@
 		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/ULAA/>;
 	],
 	schema:description 'NPL022'^^xsd:string;
-	schema:identifier 'OSD176_2018-06_1_NPL022'^^xsd:string;
 	schema:description 'OSD-Jun-2018'^^xsd:string;
-	sosa:madeBySampler <https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD176_2018-06_NPL022_1,6%20x%205L%20Niksin%20bottle%20mounted%20on%20CTD>;
+	sosa:madeBySampler <https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD176_2018-06_NPL022_1,6%20x%205L%20Niksin%20bottle%20mounted%20on%20CTD>;
 	sosa:usedProcedure 'water is taken from Nisking. Protocol NPL22 is followed'^^xsd:string;
 	rdfs:comment 'site 215'^^xsd:string;
 	schema:description '0.9'^^xsd:double;
@@ -1275,7 +1470,7 @@
 		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/UPOX/>;
 	],
 	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#SAMEA7392445>;
-	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40759>;
+	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#to%20be%20added>;
 	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40760>;
 	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40757>;
 
@@ -1283,7 +1478,7 @@
 	
 .
 
-<https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD176_2018-06_NPL022_1,6%20x%205L%20Niksin%20bottle%20mounted%20on%20CTD> 
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD176_2018-06_NPL022_1,6%20x%205L%20Niksin%20bottle%20mounted%20on%20CTD> 
 	a sosa:Sampler;
 	sosa:ishostedBy 'RV Simon Stevin'^^xsd:string;
 .
@@ -1293,14 +1488,15 @@
 @prefix sosa: <http://www.w3.org/ns/sosa/> . 
 @prefix qudt: <http://qudt.org/schema/qudt/> .
 
-<https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD177_2018-06_NPL022_1>
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD177_2018-06_NPL022_1>
 	a schema:event, sosa:Sampling;
 	schema:identifier 'OSD177_2018-06'^^xsd:string;
 	schema:identifier 'OSD177_2018-06_NPL022_1'^^xsd:string;
+	schema:identifier 'OSD177_2018-06_1_NPL022'^^xsd:string;
 	schema:identifier 'OSD177'^^xsd:string;
 	schema:startDate '2018-06-20T12:59:23+00:00'^^xsd:datetime;
-	schema:latitude '51.18'^^xsd:double;
-	schema:longitude '2.7'^^xsd:double;
+	schema:latitude '51.1832'^^xsd:double;
+	schema:longitude '2.7011'^^xsd:double;
 	schema:location 'marine biome [ENVO:00000447]'^^xsd:string;
 	schema:description ' sea water [ENVO:00002149]'^^xsd:string;
 	schema:description ' microbial community [PCO:1000004]'^^xsd:string;
@@ -1312,9 +1508,8 @@
 		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/ULAA/>;
 	],
 	schema:description 'NPL022'^^xsd:string;
-	schema:identifier 'OSD177_2018-06_1_NPL022'^^xsd:string;
 	schema:description 'OSD-Jun-2018'^^xsd:string;
-	sosa:madeBySampler <https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD177_2018-06_NPL022_1,6%20x%205L%20Niksin%20bottle%20mounted%20on%20CTD>;
+	sosa:madeBySampler <https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD177_2018-06_NPL022_1,6%20x%205L%20Niksin%20bottle%20mounted%20on%20CTD>;
 	sosa:usedProcedure 'water is taken from Nisking. Protocol NPL22 is followed'^^xsd:string;
 	rdfs:comment 'site 120'^^xsd:string;
 	schema:description '0.6'^^xsd:double;
@@ -1370,7 +1565,7 @@
 		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/UPOX/>;
 	],
 	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#SAMEA7392444>;
-	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40759>;
+	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#to%20be%20added>;
 	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40760>;
 	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40757>;
 
@@ -1378,7 +1573,7 @@
 	
 .
 
-<https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD177_2018-06_NPL022_1,6%20x%205L%20Niksin%20bottle%20mounted%20on%20CTD> 
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD177_2018-06_NPL022_1,6%20x%205L%20Niksin%20bottle%20mounted%20on%20CTD> 
 	a sosa:Sampler;
 	sosa:ishostedBy 'RV Simon Stevin'^^xsd:string;
 .
@@ -1388,14 +1583,15 @@
 @prefix sosa: <http://www.w3.org/ns/sosa/> . 
 @prefix qudt: <http://qudt.org/schema/qudt/> .
 
-<https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD178_2018-06_NPL022_1>
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD178_2018-06_NPL022_1>
 	a schema:event, sosa:Sampling;
 	schema:identifier 'OSD178_2018-06'^^xsd:string;
 	schema:identifier 'OSD178_2018-06_NPL022_1'^^xsd:string;
+	schema:identifier 'OSD178_2018-06_1_NPL022'^^xsd:string;
 	schema:identifier 'OSD178'^^xsd:string;
 	schema:startDate '2018-06-25T10:42:51+00:00'^^xsd:datetime;
-	schema:latitude '51.58'^^xsd:double;
-	schema:longitude '2.79'^^xsd:double;
+	schema:latitude '51.583'^^xsd:double;
+	schema:longitude '2.7942'^^xsd:double;
 	schema:location 'marine biome [ENVO:00000447]'^^xsd:string;
 	schema:description ' sea water [ENVO:00002149]'^^xsd:string;
 	schema:description ' microbial community [PCO:1000004]'^^xsd:string;
@@ -1407,9 +1603,8 @@
 		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/ULAA/>;
 	],
 	schema:description 'NPL022'^^xsd:string;
-	schema:identifier 'OSD178_2018-06_1_NPL022'^^xsd:string;
 	schema:description 'OSD-Jun-2018'^^xsd:string;
-	sosa:madeBySampler <https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD178_2018-06_NPL022_1,6%20x%205L%20Niksin%20bottle%20mounted%20on%20CTD>;
+	sosa:madeBySampler <https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD178_2018-06_NPL022_1,6%20x%205L%20Niksin%20bottle%20mounted%20on%20CTD>;
 	sosa:usedProcedure 'water is taken from Nisking. Protocol NPL22 is followed'^^xsd:string;
 	rdfs:comment 'site 435'^^xsd:string;
 	schema:description '0.6'^^xsd:double;
@@ -1465,7 +1660,7 @@
 		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/UPOX/>;
 	],
 	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#SAMEA7392443>;
-	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40759>;
+	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#to%20be%20added>;
 	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40760>;
 	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40757>;
 
@@ -1473,7 +1668,7 @@
 	
 .
 
-<https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD178_2018-06_NPL022_1,6%20x%205L%20Niksin%20bottle%20mounted%20on%20CTD> 
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD178_2018-06_NPL022_1,6%20x%205L%20Niksin%20bottle%20mounted%20on%20CTD> 
 	a sosa:Sampler;
 	sosa:ishostedBy 'RV Simon Stevin'^^xsd:string;
 .
@@ -1483,14 +1678,15 @@
 @prefix sosa: <http://www.w3.org/ns/sosa/> . 
 @prefix qudt: <http://qudt.org/schema/qudt/> .
 
-<https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD179_2018-06_NPL022_1>
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD179_2018-06_NPL022_1>
 	a schema:event, sosa:Sampling;
 	schema:identifier 'OSD179_2018-06'^^xsd:string;
 	schema:identifier 'OSD179_2018-06_NPL022_1'^^xsd:string;
+	schema:identifier 'OSD179_2018-06_1_NPL022'^^xsd:string;
 	schema:identifier 'OSD179'^^xsd:string;
 	schema:startDate '2018-06-26T00:31:19+00:00'^^xsd:datetime;
-	schema:latitude '51.57'^^xsd:double;
-	schema:longitude '2.26'^^xsd:double;
+	schema:latitude '51.5697'^^xsd:double;
+	schema:longitude '2.2573'^^xsd:double;
 	schema:location 'marine biome [ENVO:00000447]'^^xsd:string;
 	schema:description ' sea water [ENVO:00002149]'^^xsd:string;
 	schema:description ' microbial community [PCO:1000004]'^^xsd:string;
@@ -1502,9 +1698,8 @@
 		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/ULAA/>;
 	],
 	schema:description 'NPL022'^^xsd:string;
-	schema:identifier 'OSD179_2018-06_1_NPL022'^^xsd:string;
 	schema:description 'OSD-Jun-2018'^^xsd:string;
-	sosa:madeBySampler <https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD179_2018-06_NPL022_1,6%20x%205L%20Niksin%20bottle%20mounted%20on%20CTD>;
+	sosa:madeBySampler <https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD179_2018-06_NPL022_1,6%20x%205L%20Niksin%20bottle%20mounted%20on%20CTD>;
 	sosa:usedProcedure 'water is taken from Nisking. Protocol NPL22 is followed'^^xsd:string;
 	rdfs:comment 'site LW01'^^xsd:string;
 	schema:description '0.48'^^xsd:double;
@@ -1560,7 +1755,7 @@
 		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/UPOX/>;
 	],
 	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#SAMEA7392442>;
-	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40759>;
+	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#to%20be%20added>;
 	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40760>;
 	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40757>;
 
@@ -1568,7 +1763,7 @@
 	
 .
 
-<https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD179_2018-06_NPL022_1,6%20x%205L%20Niksin%20bottle%20mounted%20on%20CTD> 
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD179_2018-06_NPL022_1,6%20x%205L%20Niksin%20bottle%20mounted%20on%20CTD> 
 	a sosa:Sampler;
 	sosa:ishostedBy 'RV Simon Stevin'^^xsd:string;
 .
@@ -1578,14 +1773,15 @@
 @prefix sosa: <http://www.w3.org/ns/sosa/> . 
 @prefix qudt: <http://qudt.org/schema/qudt/> .
 
-<https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD180_2018-06_NPL022_1>
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD180_2018-06_NPL022_1>
 	a schema:event, sosa:Sampling;
 	schema:identifier 'OSD180_2018-06'^^xsd:string;
 	schema:identifier 'OSD180_2018-06_NPL022_1'^^xsd:string;
+	schema:identifier 'OSD180_2018-06_1_NPL022'^^xsd:string;
 	schema:identifier 'OSD180'^^xsd:string;
 	schema:startDate '2018-06-25T21:59:09+00:00'^^xsd:datetime;
-	schema:latitude '51.8'^^xsd:double;
-	schema:longitude '2.56'^^xsd:double;
+	schema:latitude '51.7999'^^xsd:double;
+	schema:longitude '2.5569'^^xsd:double;
 	schema:location 'marine biome [ENVO:00000447]'^^xsd:string;
 	schema:description ' sea water [ENVO:00002149]'^^xsd:string;
 	schema:description ' microbial community [PCO:1000004]'^^xsd:string;
@@ -1597,9 +1793,8 @@
 		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/ULAA/>;
 	],
 	schema:description 'NPL022'^^xsd:string;
-	schema:identifier 'OSD180_2018-06_1_NPL022'^^xsd:string;
 	schema:description 'OSD-Jun-2018'^^xsd:string;
-	sosa:madeBySampler <https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD180_2018-06_NPL022_1,6%20x%205L%20Niksin%20bottle%20mounted%20on%20CTD>;
+	sosa:madeBySampler <https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD180_2018-06_NPL022_1,6%20x%205L%20Niksin%20bottle%20mounted%20on%20CTD>;
 	sosa:usedProcedure 'water is taken from Nisking. Protocol NPL22 is followed'^^xsd:string;
 	rdfs:comment 'site LW02'^^xsd:string;
 	schema:description '0.48'^^xsd:double;
@@ -1655,14 +1850,14 @@
 		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/UPOX/>;
 	],
 	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#SAMEA7392441>;
-	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40759>;
+	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#to%20be%20added>;
 	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40757>;
 
 
 	
 .
 
-<https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD180_2018-06_NPL022_1,6%20x%205L%20Niksin%20bottle%20mounted%20on%20CTD> 
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD180_2018-06_NPL022_1,6%20x%205L%20Niksin%20bottle%20mounted%20on%20CTD> 
 	a sosa:Sampler;
 	sosa:ishostedBy 'RV Simon Stevin'^^xsd:string;
 .
@@ -1672,14 +1867,15 @@
 @prefix sosa: <http://www.w3.org/ns/sosa/> . 
 @prefix qudt: <http://qudt.org/schema/qudt/> .
 
-<https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD182_2018-06_NPL022_1>
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD182_2018-06_NPL022_1>
 	a schema:event, sosa:Sampling;
 	schema:identifier 'OSD182_2018-06'^^xsd:string;
 	schema:identifier 'OSD182_2018-06_NPL022_1'^^xsd:string;
+	schema:identifier 'OSD182_2018-06_1_NPL022'^^xsd:string;
 	schema:identifier 'OSD182'^^xsd:string;
 	schema:startDate '2018-06-26T01:27:04+00:00'^^xsd:datetime;
-	schema:latitude '51.46'^^xsd:double;
-	schema:longitude '2.35'^^xsd:double;
+	schema:latitude '51.4601'^^xsd:double;
+	schema:longitude '2.3519'^^xsd:double;
 	schema:location 'marine biome [ENVO:00000447]'^^xsd:string;
 	schema:description ' sea water [ENVO:00002149]'^^xsd:string;
 	schema:description ' microbial community [PCO:1000004]'^^xsd:string;
@@ -1691,9 +1887,8 @@
 		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/ULAA/>;
 	],
 	schema:description 'NPL022'^^xsd:string;
-	schema:identifier 'OSD182_2018-06_1_NPL022'^^xsd:string;
 	schema:description 'OSD-Jun-2018'^^xsd:string;
-	sosa:madeBySampler <https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD182_2018-06_NPL022_1,6%20x%205L%20Niksin%20bottle%20mounted%20on%20CTD>;
+	sosa:madeBySampler <https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD182_2018-06_NPL022_1,6%20x%205L%20Niksin%20bottle%20mounted%20on%20CTD>;
 	sosa:usedProcedure 'water is taken from Nisking. Protocol NPL22 is followed'^^xsd:string;
 	rdfs:comment 'site W08'^^xsd:string;
 	schema:description '0.48'^^xsd:double;
@@ -1749,7 +1944,7 @@
 		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/UPOX/>;
 	],
 	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#SAMEA7392440>;
-	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40759>;
+	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#to%20be%20added>;
 	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40760>;
 	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40757>;
 
@@ -1757,7 +1952,7 @@
 	
 .
 
-<https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD182_2018-06_NPL022_1,6%20x%205L%20Niksin%20bottle%20mounted%20on%20CTD> 
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD182_2018-06_NPL022_1,6%20x%205L%20Niksin%20bottle%20mounted%20on%20CTD> 
 	a sosa:Sampler;
 	sosa:ishostedBy 'RV Simon Stevin'^^xsd:string;
 .
@@ -1767,14 +1962,15 @@
 @prefix sosa: <http://www.w3.org/ns/sosa/> . 
 @prefix qudt: <http://qudt.org/schema/qudt/> .
 
-<https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD183_2018-06_NPL022_1>
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD183_2018-06_NPL022_1>
 	a schema:event, sosa:Sampling;
 	schema:identifier 'OSD183_2018-06'^^xsd:string;
 	schema:identifier 'OSD183_2018-06_NPL022_1'^^xsd:string;
+	schema:identifier 'OSD183_2018-06_1_NPL022'^^xsd:string;
 	schema:identifier 'OSD183'^^xsd:string;
 	schema:startDate '2018-06-25T21:10:44+00:00'^^xsd:datetime;
-	schema:latitude '51.75'^^xsd:double;
-	schema:longitude '2.7'^^xsd:double;
+	schema:latitude '51.7482'^^xsd:double;
+	schema:longitude '2.7011'^^xsd:double;
 	schema:location 'marine biome [ENVO:00000447]'^^xsd:string;
 	schema:description ' sea water [ENVO:00002149]'^^xsd:string;
 	schema:description ' microbial community [PCO:1000004]'^^xsd:string;
@@ -1786,9 +1982,8 @@
 		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/ULAA/>;
 	],
 	schema:description 'NPL022'^^xsd:string;
-	schema:identifier 'OSD183_2018-06_1_NPL022'^^xsd:string;
 	schema:description 'OSD-Jun-2018'^^xsd:string;
-	sosa:madeBySampler <https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD183_2018-06_NPL022_1,6%20x%205L%20Niksin%20bottle%20mounted%20on%20CTD>;
+	sosa:madeBySampler <https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD183_2018-06_NPL022_1,6%20x%205L%20Niksin%20bottle%20mounted%20on%20CTD>;
 	sosa:usedProcedure 'water is taken from Nisking. Protocol NPL22 is followed'^^xsd:string;
 	rdfs:comment 'site W09'^^xsd:string;
 	schema:description '0.42'^^xsd:double;
@@ -1844,7 +2039,7 @@
 		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/UPOX/>;
 	],
 	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#SAMEA7392439>;
-	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40759>;
+	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#to%20be%20added>;
 	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40760>;
 	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40757>;
 
@@ -1852,7 +2047,7 @@
 	
 .
 
-<https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD183_2018-06_NPL022_1,6%20x%205L%20Niksin%20bottle%20mounted%20on%20CTD> 
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD183_2018-06_NPL022_1,6%20x%205L%20Niksin%20bottle%20mounted%20on%20CTD> 
 	a sosa:Sampler;
 	sosa:ishostedBy 'RV Simon Stevin'^^xsd:string;
 .
@@ -1862,14 +2057,15 @@
 @prefix sosa: <http://www.w3.org/ns/sosa/> . 
 @prefix qudt: <http://qudt.org/schema/qudt/> .
 
-<https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD184_2018-06_NPL022_1>
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD184_2018-06_NPL022_1>
 	a schema:event, sosa:Sampling;
 	schema:identifier 'OSD184_2018-06'^^xsd:string;
 	schema:identifier 'OSD184_2018-06_NPL022_1'^^xsd:string;
+	schema:identifier 'OSD184_2018-06_1_NPL022'^^xsd:string;
 	schema:identifier 'OSD184'^^xsd:string;
 	schema:startDate '2018-06-25T23:12:24+00:00'^^xsd:datetime;
-	schema:latitude '51.68'^^xsd:double;
-	schema:longitude '2.42'^^xsd:double;
+	schema:latitude '51.6847'^^xsd:double;
+	schema:longitude '2.4193'^^xsd:double;
 	schema:location 'marine biome [ENVO:00000447]'^^xsd:string;
 	schema:description ' sea water [ENVO:00002149]'^^xsd:string;
 	schema:description ' microbial community [PCO:1000004]'^^xsd:string;
@@ -1881,9 +2077,8 @@
 		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/ULAA/>;
 	],
 	schema:description 'NPL022'^^xsd:string;
-	schema:identifier 'OSD184_2018-06_1_NPL022'^^xsd:string;
 	schema:description 'OSD-Jun-2018'^^xsd:string;
-	sosa:madeBySampler <https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD184_2018-06_NPL022_1,6%20x%205L%20Niksin%20bottle%20mounted%20on%20CTD>;
+	sosa:madeBySampler <https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD184_2018-06_NPL022_1,6%20x%205L%20Niksin%20bottle%20mounted%20on%20CTD>;
 	sosa:usedProcedure 'water is taken from Nisking. Protocol NPL22 is followed'^^xsd:string;
 	rdfs:comment 'site W10'^^xsd:string;
 	schema:description '0.42'^^xsd:double;
@@ -1939,14 +2134,14 @@
 		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/UPOX/>;
 	],
 	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#SAMEA7392438>;
-	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40759>;
+	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#to%20be%20added>;
 	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40757>;
 
 
 	
 .
 
-<https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD184_2018-06_NPL022_1,6%20x%205L%20Niksin%20bottle%20mounted%20on%20CTD> 
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD184_2018-06_NPL022_1,6%20x%205L%20Niksin%20bottle%20mounted%20on%20CTD> 
 	a sosa:Sampler;
 	sosa:ishostedBy 'RV Simon Stevin'^^xsd:string;
 .
@@ -1956,14 +2151,15 @@
 @prefix sosa: <http://www.w3.org/ns/sosa/> . 
 @prefix qudt: <http://qudt.org/schema/qudt/> .
 
-<https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD185_2018-06_NPL022_1>
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD185_2018-06_NPL022_1>
 	a schema:event, sosa:Sampling;
 	schema:identifier 'OSD185_2018-06'^^xsd:string;
 	schema:identifier 'OSD185_2018-06_NPL022_1'^^xsd:string;
+	schema:identifier 'OSD185_2018-06_1_NPL022'^^xsd:string;
 	schema:identifier 'OSD185'^^xsd:string;
 	schema:startDate '2018-06-26T02:04:34+00:00'^^xsd:datetime;
-	schema:latitude '51.48'^^xsd:double;
-	schema:longitude '2.45'^^xsd:double;
+	schema:latitude '51.4819'^^xsd:double;
+	schema:longitude '2.4512'^^xsd:double;
 	schema:location 'marine biome [ENVO:00000447]'^^xsd:string;
 	schema:description ' sea water [ENVO:00002149]'^^xsd:string;
 	schema:description ' microbial community [PCO:1000004]'^^xsd:string;
@@ -1975,9 +2171,8 @@
 		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/ULAA/>;
 	],
 	schema:description 'NPL022'^^xsd:string;
-	schema:identifier 'OSD185_2018-06_1_NPL022'^^xsd:string;
 	schema:description 'OSD-Jun-2018'^^xsd:string;
-	sosa:madeBySampler <https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD185_2018-06_NPL022_1,6%20x%205L%20Niksin%20bottle%20mounted%20on%20CTD>;
+	sosa:madeBySampler <https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD185_2018-06_NPL022_1,6%20x%205L%20Niksin%20bottle%20mounted%20on%20CTD>;
 	sosa:usedProcedure 'water is taken from Nisking. Protocol NPL22 is followed'^^xsd:string;
 	rdfs:comment 'site 421'^^xsd:string;
 	schema:description '0.42'^^xsd:double;
@@ -2033,7 +2228,7 @@
 		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/UPOX/>;
 	],
 	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#SAMEA7392437>;
-	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40759>;
+	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#to%20be%20added>;
 	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40760>;
 	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40757>;
 
@@ -2041,7 +2236,7 @@
 	
 .
 
-<https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD185_2018-06_NPL022_1,6%20x%205L%20Niksin%20bottle%20mounted%20on%20CTD> 
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD185_2018-06_NPL022_1,6%20x%205L%20Niksin%20bottle%20mounted%20on%20CTD> 
 	a sosa:Sampler;
 	sosa:ishostedBy 'RV Simon Stevin'^^xsd:string;
 .
@@ -2051,14 +2246,15 @@
 @prefix sosa: <http://www.w3.org/ns/sosa/> . 
 @prefix qudt: <http://qudt.org/schema/qudt/> .
 
-<https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD2_2018-06_NPL022_1>
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD2_2018-06_NPL022_1>
 	a schema:event, sosa:Sampling;
 	schema:identifier 'OSD2_2018-06'^^xsd:string;
 	schema:identifier 'OSD2_2018-06_NPL022_1'^^xsd:string;
+	schema:identifier 'OSD2_2018-06_1_NPL022'^^xsd:string;
 	schema:identifier 'OSD2'^^xsd:string;
 	schema:startDate '2018-06-22T12:45:00+00:00'^^xsd:datetime;
-	schema:latitude '48.78'^^xsd:double;
-	schema:longitude '-3.94'^^xsd:double;
+	schema:latitude '48.7778'^^xsd:double;
+	schema:longitude '-3.9375'^^xsd:double;
 	schema:location 'neritic epipelagic zone biome [ENVO:01000042]'^^xsd:string;
 	schema:description ' sea water [ENVO:00002149]'^^xsd:string;
 	schema:description ' microbial community [PCO:1000004]'^^xsd:string;
@@ -2070,9 +2266,8 @@
 		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/ULAA/>;
 	],
 	schema:description 'NPL022'^^xsd:string;
-	schema:identifier 'OSD2_2018-06_1_NPL022'^^xsd:string;
 	schema:description 'OSD-Jun-2018'^^xsd:string;
-	sosa:madeBySampler <https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD2_2018-06_NPL022_1,Hand%20pump>;
+	sosa:madeBySampler <https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD2_2018-06_NPL022_1,Hand%20pump>;
 	rdfs:comment 'A few wind and sunny'^^xsd:string;
 	schema:description '5.25'^^xsd:double;
 	schema:Duration '50'^^xsd:integer;
@@ -2112,7 +2307,7 @@
 		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/UM2S/>;
 	],
 	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#SAMEA7392482>;
-	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40759>;
+	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#to%20be%20added>;
 	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40760>;
 	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40757>;
 
@@ -2120,7 +2315,7 @@
 	
 .
 
-<https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD2_2018-06_NPL022_1,Hand%20pump> 
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD2_2018-06_NPL022_1,Hand%20pump> 
 	a sosa:Sampler;
 	sosa:ishostedBy 'RV Neomysis'^^xsd:string;
 .
@@ -2130,14 +2325,15 @@
 @prefix sosa: <http://www.w3.org/ns/sosa/> . 
 @prefix qudt: <http://qudt.org/schema/qudt/> .
 
-<https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD210_2018-06_NPL022_1>
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD210_2018-06_NPL022_1>
 	a schema:event, sosa:Sampling;
 	schema:identifier 'OSD210_2018-06'^^xsd:string;
 	schema:identifier 'OSD210_2018-06_NPL022_1'^^xsd:string;
+	schema:identifier 'OSD210_2018-06_1_NPL022'^^xsd:string;
 	schema:identifier 'OSD210'^^xsd:string;
 	schema:startDate '2018-06-21T07:30:00+00:00'^^xsd:datetime;
-	schema:latitude '43.11'^^xsd:double;
-	schema:longitude '3.08'^^xsd:double;
+	schema:latitude '43.108'^^xsd:double;
+	schema:longitude '3.081'^^xsd:double;
 	schema:location 'coastal wetland ecosystem [ENVO:00000230]'^^xsd:string;
 	schema:description ' sea water [ENVO:00002149]'^^xsd:string;
 	schema:description ' microbial community [PCO:1000004]'^^xsd:string;
@@ -2149,10 +2345,9 @@
 		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/ULAA/>;
 	],
 	schema:description 'NPL022'^^xsd:string;
-	schema:identifier 'OSD210_2018-06_1_NPL022'^^xsd:string;
 	schema:description 'OSD-Jun-2018'^^xsd:string;
 	schema:description 'frequently monitored coastal lagoons'^^xsd:string;
-	sosa:madeBySampler <https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD210_2018-06_NPL022_1,acid%20washed%20carboy>;
+	sosa:madeBySampler <https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD210_2018-06_NPL022_1,acid%20washed%20carboy>;
 	sosa:usedProcedure 'sampling and sterivex filtration'^^xsd:string;
 	schema:description '2.8'^^xsd:double;
 	schema:Duration '60'^^xsd:integer;
@@ -2192,7 +2387,7 @@
 		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/UPOX/>;
 	],
 	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#SAMEA7392436>;
-	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40759>;
+	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#to%20be%20added>;
 	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40760>;
 	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40757>;
 
@@ -2200,7 +2395,7 @@
 	
 .
 
-<https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD210_2018-06_NPL022_1,acid%20washed%20carboy> 
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD210_2018-06_NPL022_1,acid%20washed%20carboy> 
 	a sosa:Sampler;
 	sosa:ishostedBy 'not provided'^^xsd:string;
 .
@@ -2210,14 +2405,15 @@
 @prefix sosa: <http://www.w3.org/ns/sosa/> . 
 @prefix qudt: <http://qudt.org/schema/qudt/> .
 
-<https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD211_2018-06_NPL022_1>
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD211_2018-06_NPL022_1>
 	a schema:event, sosa:Sampling;
 	schema:identifier 'OSD211_2018-06'^^xsd:string;
 	schema:identifier 'OSD211_2018-06_NPL022_1'^^xsd:string;
+	schema:identifier 'OSD211_2018-06_1_NPL022'^^xsd:string;
 	schema:identifier 'OSD211'^^xsd:string;
 	schema:startDate '2018-06-21T08:30:00+00:00'^^xsd:datetime;
-	schema:latitude '42.97'^^xsd:double;
-	schema:longitude '3.0'^^xsd:double;
+	schema:latitude '42.967'^^xsd:double;
+	schema:longitude '3.003'^^xsd:double;
 	schema:location 'coastal wetland ecosystem [ENVO:00000230]'^^xsd:string;
 	schema:description ' sea water [ENVO:00002149]'^^xsd:string;
 	schema:description ' microbial community [PCO:1000004]'^^xsd:string;
@@ -2229,7 +2425,6 @@
 		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/ULAA/>;
 	],
 	schema:description 'NPL022'^^xsd:string;
-	schema:identifier 'OSD211_2018-06_1_NPL022'^^xsd:string;
 	schema:description 'OSD-Jun-2018'^^xsd:string;
 	schema:description 'frequently monitored coastal lagoons'^^xsd:string;
 	schema:description '1.1'^^xsd:double;
@@ -2270,7 +2465,7 @@
 		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/UPOX/>;
 	],
 	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#SAMEA7392435>;
-	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40759>;
+	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#to%20be%20added>;
 	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40760>;
 	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40757>;
 
@@ -2278,7 +2473,7 @@
 	
 .
 
-<https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD211_2018-06_NPL022_1,not%20provided> 
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD211_2018-06_NPL022_1,not%20provided> 
 	a sosa:Sampler;
 	sosa:ishostedBy 'not provided'^^xsd:string;
 .
@@ -2288,14 +2483,15 @@
 @prefix sosa: <http://www.w3.org/ns/sosa/> . 
 @prefix qudt: <http://qudt.org/schema/qudt/> .
 
-<https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD212_2018-06_NPL022_1>
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD212_2018-06_NPL022_1>
 	a schema:event, sosa:Sampling;
 	schema:identifier 'OSD212_2018-06'^^xsd:string;
 	schema:identifier 'OSD212_2018-06_NPL022_1'^^xsd:string;
+	schema:identifier 'OSD212_2018-06_1_NPL022'^^xsd:string;
 	schema:identifier 'OSD212'^^xsd:string;
 	schema:startDate '2018-06-21T10:44:00+00:00'^^xsd:datetime;
-	schema:latitude '55.73'^^xsd:double;
-	schema:longitude '12.58068'^^xsd:double;
+	schema:latitude '55.7321'^^xsd:double;
+	schema:longitude '12.5807'^^xsd:double;
 	schema:location 'marine biome [ENVO:00000447]'^^xsd:string;
 	schema:description ' sea water [ENVO:00002149]'^^xsd:string;
 	schema:description ' microbial community [PCO:1000004]'^^xsd:string;
@@ -2307,10 +2503,9 @@
 		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/ULAA/>;
 	],
 	schema:description 'NPL022'^^xsd:string;
-	schema:identifier 'OSD212_2018-06_1_NPL022'^^xsd:string;
 	schema:description 'OSD-Jun-2018'^^xsd:string;
 	schema:description 'monitoring of often sampled site for isolation of bioactive marine bacteria'^^xsd:string;
-	sosa:madeBySampler <https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD212_2018-06_NPL022_1,Sterile%2010L%20Nalgene%20carboy>;
+	sosa:madeBySampler <https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD212_2018-06_NPL022_1,Sterile%2010L%20Nalgene%20carboy>;
 	sosa:usedProcedure 'Nalgene carboy was submerged into surface water'^^xsd:string;
 	rdfs:comment 'windy and water rather clear'^^xsd:string;
 	schema:description '0.5'^^xsd:double;
@@ -2342,7 +2537,7 @@
 		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/UMGL/>;
 	],
 	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#SAMEA7392434>;
-	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40759>;
+	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#to%20be%20added>;
 	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40760>;
 	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40757>;
 
@@ -2350,7 +2545,7 @@
 	
 .
 
-<https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD212_2018-06_NPL022_1,Sterile%2010L%20Nalgene%20carboy> 
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD212_2018-06_NPL022_1,Sterile%2010L%20Nalgene%20carboy> 
 	a sosa:Sampler;
 	sosa:ishostedBy 'Harbour pier'^^xsd:string;
 .
@@ -2360,22 +2555,22 @@
 @prefix sosa: <http://www.w3.org/ns/sosa/> . 
 @prefix qudt: <http://qudt.org/schema/qudt/> .
 
-<https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD214_2018-06_NPL022_1>
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD214_2018-06_NPL022_1>
 	a schema:event, sosa:Sampling;
 	schema:identifier 'OSD214_2018-06'^^xsd:string;
 	schema:identifier 'OSD214_2018-06_NPL022_1'^^xsd:string;
+	schema:identifier 'OSD214_2018-06_1_NPL022'^^xsd:string;
 	schema:identifier 'OSD214'^^xsd:string;
-	schema:latitude '35.21'^^xsd:double;
-	schema:longitude '-2.85'^^xsd:double;
+	schema:latitude '35.2135'^^xsd:double;
+	schema:longitude '-2.8461'^^xsd:double;
 	schema:location 'marine biome [ENVO:00000447]'^^xsd:string;
 	schema:description ' sea water [ENVO:00002149]'^^xsd:string;
 	schema:description ' microbial community [PCO:1000004]'^^xsd:string;
 	schema:description 'Ocean Sampling Day'^^xsd:string;
 	schema:location 'https://www.marineregions.org/gazetteer.php?p=details&id=25602'^^xsd:anyURI;
 	schema:description 'NPL022'^^xsd:string;
-	schema:identifier 'OSD214_2018-06_1_NPL022'^^xsd:string;
 	schema:description 'OSD-Jun-2018'^^xsd:string;
-	sosa:madeBySampler <https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD214_2018-06_NPL022_1,5L%20bucket>;
+	sosa:madeBySampler <https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD214_2018-06_NPL022_1,5L%20bucket>;
 	sosa:usedProcedure 'the water was collected in a 5L buckets in a specific geolocation using a boat'^^xsd:string;
 	schema:description 'Cryovial 5ml'^^xsd:string;
 	schema:description 'particulate matter on a 142 mm PC membrane'^^xsd:string;
@@ -2384,7 +2579,7 @@
 	schema:description 'no treatment'^^xsd:string;
 	schema:description '-80'^^xsd:string;
 	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#SAMEA7392433>;
-	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40759>;
+	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#to%20be%20added>;
 	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40760>;
 	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40757>;
 
@@ -2392,7 +2587,7 @@
 	
 .
 
-<https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD214_2018-06_NPL022_1,5L%20bucket> 
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD214_2018-06_NPL022_1,5L%20bucket> 
 	a sosa:Sampler;
 	sosa:ishostedBy 'not provided'^^xsd:string;
 .
@@ -2402,14 +2597,15 @@
 @prefix sosa: <http://www.w3.org/ns/sosa/> . 
 @prefix qudt: <http://qudt.org/schema/qudt/> .
 
-<https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD216_2018-06_NPL022_1>
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD216_2018-06_NPL022_1>
 	a schema:event, sosa:Sampling;
 	schema:identifier 'OSD216_2018-06'^^xsd:string;
 	schema:identifier 'OSD216_2018-06_NPL022_1'^^xsd:string;
+	schema:identifier 'OSD216_2018-06_1_NPL022'^^xsd:string;
 	schema:identifier 'OSD216'^^xsd:string;
 	schema:startDate '2018-06-21T11:00:00+00:00'^^xsd:datetime;
-	schema:latitude '43.76'^^xsd:double;
-	schema:longitude '13.21'^^xsd:double;
+	schema:latitude '43.7558'^^xsd:double;
+	schema:longitude '13.209'^^xsd:double;
 	schema:location 'marine biome [ENVO:00000447]'^^xsd:string;
 	schema:description ' sea water [ENVO:00002149]'^^xsd:string;
 	schema:description ' microbial community [PCO:1000004]'^^xsd:string;
@@ -2421,9 +2617,8 @@
 		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/ULAA/>;
 	],
 	schema:description 'NPL022'^^xsd:string;
-	schema:identifier 'OSD216_2018-06_1_NPL022'^^xsd:string;
 	schema:description 'OSD-Jun-2018'^^xsd:string;
-	sosa:madeBySampler <https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD216_2018-06_NPL022_1,5L%20Single%20bottle>;
+	sosa:madeBySampler <https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD216_2018-06_NPL022_1,5L%20Single%20bottle>;
 	sosa:usedProcedure 'Pump'^^xsd:string;
 	schema:description '0.7'^^xsd:double;
 	schema:Duration '20'^^xsd:integer;
@@ -2434,7 +2629,7 @@
 	schema:description 'no treatment'^^xsd:string;
 	schema:description '-80'^^xsd:string;
 	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#SAMEA7392432>;
-	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40759>;
+	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#to%20be%20added>;
 	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40760>;
 	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40757>;
 
@@ -2442,7 +2637,7 @@
 	
 .
 
-<https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD216_2018-06_NPL022_1,5L%20Single%20bottle> 
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD216_2018-06_NPL022_1,5L%20Single%20bottle> 
 	a sosa:Sampler;
 	sosa:ishostedBy 'Tecnopesca boat'^^xsd:string;
 .
@@ -2452,14 +2647,15 @@
 @prefix sosa: <http://www.w3.org/ns/sosa/> . 
 @prefix qudt: <http://qudt.org/schema/qudt/> .
 
-<https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD217_2018-06_NPL022_1>
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD217_2018-06_NPL022_1>
 	a schema:event, sosa:Sampling;
 	schema:identifier 'OSD217_2018-06'^^xsd:string;
 	schema:identifier 'OSD217_2018-06_NPL022_1'^^xsd:string;
+	schema:identifier 'OSD217_2018-06_1_NPL022'^^xsd:string;
 	schema:identifier 'OSD217'^^xsd:string;
 	schema:startDate '2018-06-21T13:45:00+00:00'^^xsd:datetime;
-	schema:latitude '44.5'^^xsd:double;
-	schema:longitude '-63.52'^^xsd:double;
+	schema:latitude '44.4973'^^xsd:double;
+	schema:longitude '-63.5245'^^xsd:double;
 	schema:location 'neritic epipelagic zone biome [ENVO:01000042]'^^xsd:string;
 	schema:description ' sea water [ENVO:00002149]'^^xsd:string;
 	schema:description ' microbial community [PCO:1000004]'^^xsd:string;
@@ -2471,9 +2667,8 @@
 		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/ULAA/>;
 	],
 	schema:description 'NPL022'^^xsd:string;
-	schema:identifier 'OSD217_2018-06_1_NPL022'^^xsd:string;
 	schema:description 'OSD-Jun-2018'^^xsd:string;
-	sosa:madeBySampler <https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD217_2018-06_NPL022_1,OSD%205%20galon%20bucket>;
+	sosa:madeBySampler <https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD217_2018-06_NPL022_1,OSD%205%20galon%20bucket>;
 	sosa:usedProcedure 'collect at surface'^^xsd:string;
 	rdfs:comment 'filter with syringe'^^xsd:string;
 	schema:description '0.85'^^xsd:double;
@@ -2520,7 +2715,7 @@
 		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/UUUU/>;
 	],
 	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#SAMEA7392431>;
-	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40759>;
+	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#to%20be%20added>;
 	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40760>;
 	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40757>;
 
@@ -2528,7 +2723,7 @@
 	
 .
 
-<https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD217_2018-06_NPL022_1,OSD%205%20galon%20bucket> 
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD217_2018-06_NPL022_1,OSD%205%20galon%20bucket> 
 	a sosa:Sampler;
 	sosa:ishostedBy 'Dock'^^xsd:string;
 .
@@ -2538,14 +2733,15 @@
 @prefix sosa: <http://www.w3.org/ns/sosa/> . 
 @prefix qudt: <http://qudt.org/schema/qudt/> .
 
-<https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD218_2018-06_NPL022_1>
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD218_2018-06_NPL022_1>
 	a schema:event, sosa:Sampling;
 	schema:identifier 'OSD218_2018-06'^^xsd:string;
 	schema:identifier 'OSD218_2018-06_NPL022_1'^^xsd:string;
+	schema:identifier 'OSD218_2018-06_1_NPL022'^^xsd:string;
 	schema:identifier 'OSD218'^^xsd:string;
 	schema:startDate '2018-06-21T13:15:00+00:00'^^xsd:datetime;
-	schema:latitude '43.94'^^xsd:double;
-	schema:longitude '-60.0'^^xsd:double;
+	schema:latitude '43.9351'^^xsd:double;
+	schema:longitude '-60.0044'^^xsd:double;
 	schema:location 'neritic epipelagic zone biome [ENVO:01000042]'^^xsd:string;
 	schema:description ' sea water [ENVO:00002149]'^^xsd:string;
 	schema:description ' microbial community [PCO:1000004]'^^xsd:string;
@@ -2557,9 +2753,8 @@
 		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/ULAA/>;
 	],
 	schema:description 'NPL022'^^xsd:string;
-	schema:identifier 'OSD218_2018-06_1_NPL022'^^xsd:string;
 	schema:description 'OSD-Jun-2018'^^xsd:string;
-	sosa:madeBySampler <https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD218_2018-06_NPL022_1,Bucket>;
+	sosa:madeBySampler <https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD218_2018-06_NPL022_1,Bucket>;
 	sosa:usedProcedure 'Collect at surface (~60 cm depth)'^^xsd:string;
 	rdfs:comment 'filter with syringe'^^xsd:string;
 	schema:description '2.0'^^xsd:double;
@@ -2606,14 +2801,14 @@
 		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/UUUU/>;
 	],
 	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#SAMEA7392430>;
-	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40759>;
+	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#to%20be%20added>;
 	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40757>;
 
 
 	
 .
 
-<https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD218_2018-06_NPL022_1,Bucket> 
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD218_2018-06_NPL022_1,Bucket> 
 	a sosa:Sampler;
 	sosa:ishostedBy 'Shore'^^xsd:string;
 .
@@ -2623,14 +2818,15 @@
 @prefix sosa: <http://www.w3.org/ns/sosa/> . 
 @prefix qudt: <http://qudt.org/schema/qudt/> .
 
-<https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD219_2018-06_NPL022_1>
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD219_2018-06_NPL022_1>
 	a schema:event, sosa:Sampling;
 	schema:identifier 'OSD219_2018-06'^^xsd:string;
 	schema:identifier 'OSD219_2018-06_NPL022_1'^^xsd:string;
+	schema:identifier 'OSD219_2018-06_1_NPL022'^^xsd:string;
 	schema:identifier 'OSD219'^^xsd:string;
 	schema:startDate '2018-06-21T12:12:00+00:00'^^xsd:datetime;
-	schema:latitude '53.24'^^xsd:double;
-	schema:longitude '-9.31'^^xsd:double;
+	schema:latitude '53.2403'^^xsd:double;
+	schema:longitude '-9.3123'^^xsd:double;
 	schema:location 'marine biome [ENVO:00000447]'^^xsd:string;
 	schema:description ' sea water [ENVO:00002149]'^^xsd:string;
 	schema:description ' microbial community [PCO:1000004]'^^xsd:string;
@@ -2642,9 +2838,8 @@
 		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/ULAA/>;
 	],
 	schema:description 'NPL022'^^xsd:string;
-	schema:identifier 'OSD219_2018-06_1_NPL022'^^xsd:string;
 	schema:description 'OSD-Jun-2018'^^xsd:string;
-	sosa:madeBySampler <https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD219_2018-06_NPL022_1,Bucket>;
+	sosa:madeBySampler <https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD219_2018-06_NPL022_1,Bucket>;
 	sosa:usedProcedure 'Suface sample'^^xsd:string;
 	rdfs:comment 'overcast and northerly breeze'^^xsd:string;
 	schema:description '2.5'^^xsd:double;
@@ -2652,7 +2847,7 @@
 	schema:description '0.22'^^xsd:double;
 	schema:description 'no treatment'^^xsd:string;
 	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#SAMEA7392429>;
-	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40759>;
+	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#to%20be%20added>;
 	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40760>;
 	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40757>;
 
@@ -2660,7 +2855,7 @@
 	
 .
 
-<https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD219_2018-06_NPL022_1,Bucket> 
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD219_2018-06_NPL022_1,Bucket> 
 	a sosa:Sampler;
 	sosa:ishostedBy 'not provided'^^xsd:string;
 .
@@ -2670,14 +2865,15 @@
 @prefix sosa: <http://www.w3.org/ns/sosa/> . 
 @prefix qudt: <http://qudt.org/schema/qudt/> .
 
-<https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD22_2018-06_NPL022_1>
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD22_2018-06_NPL022_1>
 	a schema:event, sosa:Sampling;
 	schema:identifier 'OSD22_2018-06'^^xsd:string;
 	schema:identifier 'OSD22_2018-06_NPL022_1'^^xsd:string;
+	schema:identifier 'OSD22_2018-06_1_NPL022'^^xsd:string;
 	schema:identifier 'OSD22'^^xsd:string;
 	schema:startDate '2018-06-20T11:30:00+00:00'^^xsd:datetime;
-	schema:latitude '43.24'^^xsd:double;
-	schema:longitude '5.29'^^xsd:double;
+	schema:latitude '43.239'^^xsd:double;
+	schema:longitude '5.2888'^^xsd:double;
 	schema:location 'marine biome [ENVO:00000447]'^^xsd:string;
 	schema:description ' sea water [ENVO:00002149]'^^xsd:string;
 	schema:description ' microbial community [PCO:1000004]'^^xsd:string;
@@ -2689,10 +2885,9 @@
 		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/ULAA/>;
 	],
 	schema:description 'NPL022'^^xsd:string;
-	schema:identifier 'OSD22_2018-06_1_NPL022'^^xsd:string;
 	schema:description 'OSD-Jun-2018'^^xsd:string;
 	schema:description 'collecting Prokaryotes on 0.22μm pore size filters using Sterivex carbidges'^^xsd:string;
-	sosa:madeBySampler <https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD22_2018-06_NPL022_1,Niskin%20bottle>;
+	sosa:madeBySampler <https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD22_2018-06_NPL022_1,Niskin%20bottle>;
 	schema:description '6.0'^^xsd:double;
 	schema:Duration '60'^^xsd:integer;
 	schema:description 'Sterivex'^^xsd:string;
@@ -2736,7 +2931,7 @@
 		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/USTU/>;
 	],
 	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#SAMEA7392475>;
-	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40759>;
+	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#to%20be%20added>;
 	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40760>;
 	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40757>;
 
@@ -2744,7 +2939,7 @@
 	
 .
 
-<https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD22_2018-06_NPL022_1,Niskin%20bottle> 
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD22_2018-06_NPL022_1,Niskin%20bottle> 
 	a sosa:Sampler;
 	sosa:ishostedBy 'Reasearch boat Antedon II'^^xsd:string;
 .
@@ -2754,14 +2949,15 @@
 @prefix sosa: <http://www.w3.org/ns/sosa/> . 
 @prefix qudt: <http://qudt.org/schema/qudt/> .
 
-<https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD220_2018-06_NPL022_1>
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD220_2018-06_NPL022_1>
 	a schema:event, sosa:Sampling;
 	schema:identifier 'OSD220_2018-06'^^xsd:string;
 	schema:identifier 'OSD220_2018-06_NPL022_1'^^xsd:string;
+	schema:identifier 'OSD220_2018-06_1_NPL022'^^xsd:string;
 	schema:identifier 'OSD220'^^xsd:string;
 	schema:startDate '2018-06-21T09:40:00+00:00'^^xsd:datetime;
-	schema:latitude '42.23'^^xsd:double;
-	schema:longitude '-8.78'^^xsd:double;
+	schema:latitude '42.2285'^^xsd:double;
+	schema:longitude '-8.7788'^^xsd:double;
 	schema:location 'temperate marine upwelling biome [ENVO:01000860]'^^xsd:string;
 	schema:description ' sea water [ENVO:00002149]'^^xsd:string;
 	schema:description ' microbial community [PCO:1000004]'^^xsd:string;
@@ -2773,7 +2969,6 @@
 		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/ULAA/>;
 	],
 	schema:description 'NPL022'^^xsd:string;
-	schema:identifier 'OSD220_2018-06_1_NPL022'^^xsd:string;
 	schema:description 'OSD-Jun-2018'^^xsd:string;
 	sosa:usedProcedure 'Niskin bottle'^^xsd:string;
 	schema:description '1.4'^^xsd:double;
@@ -2805,7 +3000,7 @@
 		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/ULAA/>;
 	],
 	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#SAMEA7392428>;
-	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40759>;
+	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#to%20be%20added>;
 	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40760>;
 	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40757>;
 
@@ -2813,7 +3008,7 @@
 	
 .
 
-<https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD220_2018-06_NPL022_1,not%20provided> 
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD220_2018-06_NPL022_1,not%20provided> 
 	a sosa:Sampler;
 	sosa:ishostedBy 'not provided'^^xsd:string;
 .
@@ -2823,14 +3018,15 @@
 @prefix sosa: <http://www.w3.org/ns/sosa/> . 
 @prefix qudt: <http://qudt.org/schema/qudt/> .
 
-<https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD223_2018-06_NPL022_1>
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD223_2018-06_NPL022_1>
 	a schema:event, sosa:Sampling;
 	schema:identifier 'OSD223_2018-06'^^xsd:string;
 	schema:identifier 'OSD223_2018-06_NPL022_1'^^xsd:string;
+	schema:identifier 'OSD223_2018-06_1_NPL022'^^xsd:string;
 	schema:identifier 'OSD223'^^xsd:string;
 	schema:startDate '2018-06-21T13:20:00+00:00'^^xsd:datetime;
-	schema:latitude '54.49'^^xsd:double;
-	schema:longitude '18.57'^^xsd:double;
+	schema:latitude '54.4853'^^xsd:double;
+	schema:longitude '18.5711'^^xsd:double;
 	schema:location 'marginal sea biome [ENVO:01000046]'^^xsd:string;
 	schema:description ' sea water [ENVO:00002149]'^^xsd:string;
 	schema:description ' microbial community [PCO:1000004]'^^xsd:string;
@@ -2842,10 +3038,9 @@
 		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/ULAA/>;
 	],
 	schema:description 'NPL022'^^xsd:string;
-	schema:identifier 'OSD223_2018-06_1_NPL022'^^xsd:string;
 	schema:description 'OSD-Jun-2018'^^xsd:string;
 	schema:description 'Prokaryotes'^^xsd:string;
-	sosa:madeBySampler <https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD223_2018-06_NPL022_1,10%25%20acid%20washed%20buckets>;
+	sosa:madeBySampler <https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD223_2018-06_NPL022_1,10%25%20acid%20washed%20buckets>;
 	sosa:usedProcedure 'Filters 1 and 2 with water vacuum pump. Filters 3 and 4 with mechanical vacuum pump'^^xsd:string;
 	schema:description '1.3'^^xsd:double;
 	schema:Duration '30'^^xsd:integer;
@@ -2873,7 +3068,7 @@
 	
 .
 
-<https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD223_2018-06_NPL022_1,10%25%20acid%20washed%20buckets> 
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD223_2018-06_NPL022_1,10%25%20acid%20washed%20buckets> 
 	a sosa:Sampler;
 	sosa:ishostedBy 'not provided'^^xsd:string;
 .
@@ -2883,14 +3078,15 @@
 @prefix sosa: <http://www.w3.org/ns/sosa/> . 
 @prefix qudt: <http://qudt.org/schema/qudt/> .
 
-<https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD227_2018-06_NPL022_1>
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD227_2018-06_NPL022_1>
 	a schema:event, sosa:Sampling;
 	schema:identifier 'OSD227_2018-06'^^xsd:string;
 	schema:identifier 'OSD227_2018-06_NPL022_1'^^xsd:string;
+	schema:identifier 'OSD227_2018-06_1_NPL022'^^xsd:string;
 	schema:identifier 'OSD227'^^xsd:string;
 	schema:startDate '2018-06-21T11:40:00+00:00'^^xsd:datetime;
-	schema:latitude '48.67'^^xsd:double;
-	schema:longitude '-3.89'^^xsd:double;
+	schema:latitude '48.6698'^^xsd:double;
+	schema:longitude '-3.886'^^xsd:double;
 	schema:location 'estuarine biome [ENVO:01000020]'^^xsd:string;
 	schema:description ' sea water [ENVO:00002149]'^^xsd:string;
 	schema:description ' microbial community [PCO:1000004]'^^xsd:string;
@@ -2902,9 +3098,8 @@
 		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/ULAA/>;
 	],
 	schema:description 'NPL022'^^xsd:string;
-	schema:identifier 'OSD227_2018-06_1_NPL022'^^xsd:string;
 	schema:description 'OSD-Jun-2018'^^xsd:string;
-	sosa:madeBySampler <https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD227_2018-06_NPL022_1,Hand%20pump>;
+	sosa:madeBySampler <https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD227_2018-06_NPL022_1,Hand%20pump>;
 	rdfs:comment 'NE wind 25-30km/h sunny all filters are coloured light brown time of filtration (UTC) 13:10'^^xsd:string;
 	schema:description '2.76'^^xsd:double;
 	schema:Duration '30'^^xsd:integer;
@@ -2940,7 +3135,7 @@
 		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/UM2S/>;
 	],
 	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#SAMEA7392426>;
-	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40759>;
+	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#to%20be%20added>;
 	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40760>;
 	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40757>;
 
@@ -2948,7 +3143,7 @@
 	
 .
 
-<https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD227_2018-06_NPL022_1,Hand%20pump> 
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD227_2018-06_NPL022_1,Hand%20pump> 
 	a sosa:Sampler;
 	sosa:ishostedBy 'RV Neomysis'^^xsd:string;
 .
@@ -2958,24 +3153,24 @@
 @prefix sosa: <http://www.w3.org/ns/sosa/> . 
 @prefix qudt: <http://qudt.org/schema/qudt/> .
 
-<https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD228_2018-06_NPL022_1>
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD228_2018-06_NPL022_1>
 	a schema:event, sosa:Sampling;
 	schema:identifier 'OSD228_2018-06'^^xsd:string;
 	schema:identifier 'OSD228_2018-06_NPL022_1'^^xsd:string;
+	schema:identifier 'OSD228_2018-06_1_NPL022'^^xsd:string;
 	schema:identifier 'OSD228'^^xsd:string;
 	schema:startDate '2018-06-21T09:00:00+00:00'^^xsd:datetime;
-	schema:latitude '35.46'^^xsd:double;
-	schema:longitude '24.2'^^xsd:double;
+	schema:latitude '35.464'^^xsd:double;
+	schema:longitude '24.1996'^^xsd:double;
 	schema:location 'marine biome [ENVO:00000447]'^^xsd:string;
 	schema:description ' sea water [ENVO:00002149]'^^xsd:string;
 	schema:description ' microbial community [PCO:1000004]'^^xsd:string;
 	schema:description 'Ocean Sampling Day'^^xsd:string;
 	schema:location 'https://www.marineregions.org/gazetteer.php?p=details&id=3339'^^xsd:anyURI;
 	schema:description 'NPL022'^^xsd:string;
-	schema:identifier 'OSD228_2018-06_1_NPL022'^^xsd:string;
 	schema:description 'OSD-Jun-2018'^^xsd:string;
 	schema:description 'surface water sampling (100lt) CTD cost zooplankton net sampling'^^xsd:string;
-	sosa:madeBySampler <https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD228_2018-06_NPL022_1,Niskin%20bottles%20/%20CTD%20/%20zooplankton%20net>;
+	sosa:madeBySampler <https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD228_2018-06_NPL022_1,Niskin%20bottles%20/%20CTD%20/%20zooplankton%20net>;
 	sosa:usedProcedure 'surface water sampling with niskin 100lt CTD cost / vertical sampling zooplankton'^^xsd:string;
 	schema:description 'particulate matter'^^xsd:string;
 	schema:description 'no prefiltration'^^xsd:string;
@@ -2993,14 +3188,14 @@
 		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/UGKG/>;
 	],
 	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#SAMEA7392425>;
-	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40759>;
+	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#to%20be%20added>;
 	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40757>;
 
 
 	
 .
 
-<https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD228_2018-06_NPL022_1,Niskin%20bottles%20/%20CTD%20/%20zooplankton%20net> 
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD228_2018-06_NPL022_1,Niskin%20bottles%20/%20CTD%20/%20zooplankton%20net> 
 	a sosa:Sampler;
 	sosa:ishostedBy 'HCMR dinghy boat'^^xsd:string;
 .
@@ -3010,24 +3205,24 @@
 @prefix sosa: <http://www.w3.org/ns/sosa/> . 
 @prefix qudt: <http://qudt.org/schema/qudt/> .
 
-<https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD229_2018-06_NPL022_1>
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD229_2018-06_NPL022_1>
 	a schema:event, sosa:Sampling;
 	schema:identifier 'OSD229_2018-06'^^xsd:string;
 	schema:identifier 'OSD229_2018-06_NPL022_1'^^xsd:string;
+	schema:identifier 'OSD229_2018-06_1_NPL022'^^xsd:string;
 	schema:identifier 'OSD229'^^xsd:string;
 	schema:startDate '2018-06-21T09:00:00+00:00'^^xsd:datetime;
-	schema:latitude '35.55'^^xsd:double;
-	schema:longitude '24.31'^^xsd:double;
+	schema:latitude '35.5455'^^xsd:double;
+	schema:longitude '24.3088'^^xsd:double;
 	schema:location 'marine biome [ENVO:00000447]'^^xsd:string;
 	schema:description ' sea water [ENVO:00002149]'^^xsd:string;
 	schema:description ' microbial community [PCO:1000004]'^^xsd:string;
 	schema:description 'Ocean Sampling Day'^^xsd:string;
 	schema:location 'https://www.marineregions.org/gazetteer.php?p=details&id=3339'^^xsd:anyURI;
 	schema:description 'NPL022'^^xsd:string;
-	schema:identifier 'OSD229_2018-06_1_NPL022'^^xsd:string;
 	schema:description 'OSD-Jun-2018'^^xsd:string;
 	schema:description 'surface water sampling (100lt) CTD cost zooplankton net sampling'^^xsd:string;
-	sosa:madeBySampler <https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD229_2018-06_NPL022_1,Niskin%20bottles%20/%20CTD%20/%20zooplankton%20net>;
+	sosa:madeBySampler <https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD229_2018-06_NPL022_1,Niskin%20bottles%20/%20CTD%20/%20zooplankton%20net>;
 	sosa:usedProcedure 'surface water sampling with niskin 100lt CTD cost / vertical sampling zooplankton'^^xsd:string;
 	schema:description 'particulate matter'^^xsd:string;
 	schema:description 'no prefiltration'^^xsd:string;
@@ -3035,7 +3230,7 @@
 	schema:description 'no treatment'^^xsd:string;
 	schema:description '-80'^^xsd:string;
 	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#SAMEA7392424>;
-	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40759>;
+	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#to%20be%20added>;
 	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40760>;
 	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40757>;
 
@@ -3043,7 +3238,7 @@
 	
 .
 
-<https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD229_2018-06_NPL022_1,Niskin%20bottles%20/%20CTD%20/%20zooplankton%20net> 
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD229_2018-06_NPL022_1,Niskin%20bottles%20/%20CTD%20/%20zooplankton%20net> 
 	a sosa:Sampler;
 	sosa:ishostedBy 'HCMR dinghy boat'^^xsd:string;
 .
@@ -3053,14 +3248,15 @@
 @prefix sosa: <http://www.w3.org/ns/sosa/> . 
 @prefix qudt: <http://qudt.org/schema/qudt/> .
 
-<https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD231_2018-06_NPL022_1>
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD231_2018-06_NPL022_1>
 	a schema:event, sosa:Sampling;
 	schema:identifier 'OSD231_2018-06'^^xsd:string;
 	schema:identifier 'OSD231_2018-06_NPL022_1'^^xsd:string;
+	schema:identifier 'OSD231_2018-06_1_NPL022'^^xsd:string;
 	schema:identifier 'OSD231'^^xsd:string;
 	schema:startDate '2018-06-21T10:00:00+00:00'^^xsd:datetime;
-	schema:latitude '37.87'^^xsd:double;
-	schema:longitude '12.48'^^xsd:double;
+	schema:latitude '37.8652'^^xsd:double;
+	schema:longitude '12.481'^^xsd:double;
 	schema:location 'marine biome [ENVO:00000447]'^^xsd:string;
 	schema:description ' sea water [ENVO:00002149]'^^xsd:string;
 	schema:description ' microbial community [PCO:1000004]'^^xsd:string;
@@ -3072,7 +3268,6 @@
 		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/ULAA/>;
 	],
 	schema:description 'NPL022'^^xsd:string;
-	schema:identifier 'OSD231_2018-06_1_NPL022'^^xsd:string;
 	schema:description 'OSD-Jun-2018'^^xsd:string;
 	schema:Duration '40'^^xsd:integer;
 	schema:description 'tube'^^xsd:string;
@@ -3089,7 +3284,7 @@
 	
 .
 
-<https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD231_2018-06_NPL022_1,not%20provided> 
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD231_2018-06_NPL022_1,not%20provided> 
 	a sosa:Sampler;
 	sosa:ishostedBy 'not provided'^^xsd:string;
 .
@@ -3099,13 +3294,14 @@
 @prefix sosa: <http://www.w3.org/ns/sosa/> . 
 @prefix qudt: <http://qudt.org/schema/qudt/> .
 
-<https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD232_2018-06_NPL022_1>
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD232_2018-06_NPL022_1>
 	a schema:event, sosa:Sampling;
 	schema:identifier 'OSD232_2018-06'^^xsd:string;
 	schema:identifier 'OSD232_2018-06_NPL022_1'^^xsd:string;
+	schema:identifier 'OSD232_2018-06_1_NPL022'^^xsd:string;
 	schema:identifier 'OSD232'^^xsd:string;
 	schema:startDate '2018-06-21T10:40:00+00:00'^^xsd:datetime;
-	schema:latitude '40.8'^^xsd:double;
+	schema:latitude '40.8031'^^xsd:double;
 	schema:longitude '14.34'^^xsd:double;
 	schema:location 'marine biome [ENVO:00000447]'^^xsd:string;
 	schema:description ' sea water [ENVO:00002149]'^^xsd:string;
@@ -3118,10 +3314,9 @@
 		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/ULAA/>;
 	],
 	schema:description 'NPL022'^^xsd:string;
-	schema:identifier 'OSD232_2018-06_1_NPL022'^^xsd:string;
 	schema:description 'OSD-Jun-2018'^^xsd:string;
 	schema:description 'OSD-232-PROK'^^xsd:string;
-	sosa:madeBySampler <https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD232_2018-06_NPL022_1,Boat>;
+	sosa:madeBySampler <https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD232_2018-06_NPL022_1,Boat>;
 	sosa:usedProcedure 'sampling water from a boat'^^xsd:string;
 	rdfs:comment 'water mass very clear. Low content from NW'^^xsd:string;
 	schema:description '4.0'^^xsd:double;
@@ -3152,7 +3347,7 @@
 		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/ULAA/>;
 	],
 	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#SAMEA7392422>;
-	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40759>;
+	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#to%20be%20added>;
 	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40760>;
 	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40757>;
 
@@ -3160,7 +3355,7 @@
 	
 .
 
-<https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD232_2018-06_NPL022_1,Boat> 
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD232_2018-06_NPL022_1,Boat> 
 	a sosa:Sampler;
 	sosa:ishostedBy 'not provided'^^xsd:string;
 .
@@ -3170,14 +3365,15 @@
 @prefix sosa: <http://www.w3.org/ns/sosa/> . 
 @prefix qudt: <http://qudt.org/schema/qudt/> .
 
-<https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD233_2018-06_NPL022_1>
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD233_2018-06_NPL022_1>
 	a schema:event, sosa:Sampling;
 	schema:identifier 'OSD233_2018-06'^^xsd:string;
 	schema:identifier 'OSD233_2018-06_NPL022_1'^^xsd:string;
+	schema:identifier 'OSD233_2018-06_1_NPL022'^^xsd:string;
 	schema:identifier 'OSD233'^^xsd:string;
 	schema:startDate '2018-06-21T11:00:00+00:00'^^xsd:datetime;
-	schema:latitude '38.2'^^xsd:double;
-	schema:longitude '15.57'^^xsd:double;
+	schema:latitude '38.1953'^^xsd:double;
+	schema:longitude '15.5736'^^xsd:double;
 	schema:location 'marine biome [ENVO:00000447]'^^xsd:string;
 	schema:description ' sea water [ENVO:00002149]'^^xsd:string;
 	schema:description ' microbial community [PCO:1000004]'^^xsd:string;
@@ -3189,9 +3385,8 @@
 		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/ULAA/>;
 	],
 	schema:description 'NPL022'^^xsd:string;
-	schema:identifier 'OSD233_2018-06_1_NPL022'^^xsd:string;
 	schema:description 'OSD-Jun-2018'^^xsd:string;
-	sosa:madeBySampler <https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD233_2018-06_NPL022_1,GO-FLO%20Sampling%20bottle>;
+	sosa:madeBySampler <https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD233_2018-06_NPL022_1,GO-FLO%20Sampling%20bottle>;
 	schema:description '7.1'^^xsd:double;
 	schema:Duration '55'^^xsd:integer;
 	schema:description '50ml vials'^^xsd:string;
@@ -3201,7 +3396,7 @@
 	schema:description 'no treatment'^^xsd:string;
 	schema:description '-80'^^xsd:string;
 	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#SAMEA7392421>;
-	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40759>;
+	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#to%20be%20added>;
 	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40760>;
 	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40757>;
 
@@ -3209,7 +3404,7 @@
 	
 .
 
-<https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD233_2018-06_NPL022_1,GO-FLO%20Sampling%20bottle> 
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD233_2018-06_NPL022_1,GO-FLO%20Sampling%20bottle> 
 	a sosa:Sampler;
 	sosa:ishostedBy 'not provided'^^xsd:string;
 .
@@ -3219,13 +3414,14 @@
 @prefix sosa: <http://www.w3.org/ns/sosa/> . 
 @prefix qudt: <http://qudt.org/schema/qudt/> .
 
-<https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD24_2018-06_NPL022_1>
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD24_2018-06_NPL022_1>
 	a schema:event, sosa:Sampling;
 	schema:identifier 'OSD24_2018-06'^^xsd:string;
 	schema:identifier 'OSD24_2018-06_NPL022_1'^^xsd:string;
+	schema:identifier 'OSD24_2018-06_1_NPL022'^^xsd:string;
 	schema:identifier 'OSD24'^^xsd:string;
 	schema:startDate '2018-06-21T10:37:00+00:00'^^xsd:datetime;
-	schema:latitude '35.19'^^xsd:double;
+	schema:latitude '35.1927'^^xsd:double;
 	schema:longitude '-2.88'^^xsd:double;
 	schema:location 'marine biome [ENVO:00000447]'^^xsd:string;
 	schema:description ' sea water [ENVO:00002149]'^^xsd:string;
@@ -3238,9 +3434,8 @@
 		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/ULAA/>;
 	],
 	schema:description 'NPL022'^^xsd:string;
-	schema:identifier 'OSD24_2018-06_1_NPL022'^^xsd:string;
 	schema:description 'OSD-Jun-2018'^^xsd:string;
-	sosa:madeBySampler <https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD24_2018-06_NPL022_1,5L%20bucket>;
+	sosa:madeBySampler <https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD24_2018-06_NPL022_1,5L%20bucket>;
 	sosa:usedProcedure 'the water was collected in a 5L buckets in a specific geolocation using a boat'^^xsd:string;
 	schema:description '1.04'^^xsd:double;
 	schema:Duration '40'^^xsd:integer;
@@ -3267,7 +3462,7 @@
 	],
 	sosa:hasResult [ a sosa:observation;
 		sosa:observedProperty http://vocab.nerc.ac.uk/collection/P02/current/PHOS/;
-		qudt:numericValue '30.0'^^xsd:double;
+		qudt:numericValue '40.0'^^xsd:double;
 	],
 	sosa:hasResult [ a sosa:observation;
 		sosa:observedProperty http://vocab.nerc.ac.uk/collection/P02/current/ALKY/;
@@ -3286,7 +3481,7 @@
 	
 .
 
-<https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD24_2018-06_NPL022_1,5L%20bucket> 
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD24_2018-06_NPL022_1,5L%20bucket> 
 	a sosa:Sampler;
 	sosa:ishostedBy 'not provided'^^xsd:string;
 .
@@ -3296,10 +3491,11 @@
 @prefix sosa: <http://www.w3.org/ns/sosa/> . 
 @prefix qudt: <http://qudt.org/schema/qudt/> .
 
-<https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD26_2018-06_NPL022_1>
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD26_2018-06_NPL022_1>
 	a schema:event, sosa:Sampling;
 	schema:identifier 'OSD26_2018-06'^^xsd:string;
 	schema:identifier 'OSD26_2018-06_NPL022_1'^^xsd:string;
+	schema:identifier 'OSD26_2018-06_1_NPL022'^^xsd:string;
 	schema:identifier 'OSD26'^^xsd:string;
 	schema:startDate '2018-06-21T10:45:00+00:00'^^xsd:datetime;
 	schema:latitude '35.82'^^xsd:double;
@@ -3315,9 +3511,8 @@
 		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/ULAA/>;
 	],
 	schema:description 'NPL022'^^xsd:string;
-	schema:identifier 'OSD26_2018-06_1_NPL022'^^xsd:string;
 	schema:description 'OSD-Jun-2018'^^xsd:string;
-	sosa:madeBySampler <https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD26_2018-06_NPL022_1,5L%20bucket>;
+	sosa:madeBySampler <https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD26_2018-06_NPL022_1,5L%20bucket>;
 	sosa:usedProcedure 'the water was collected from the coastline in a 5L buckets'^^xsd:string;
 	schema:description '1.5'^^xsd:double;
 	schema:Duration '50'^^xsd:integer;
@@ -3344,7 +3539,7 @@
 	],
 	sosa:hasResult [ a sosa:observation;
 		sosa:observedProperty http://vocab.nerc.ac.uk/collection/P02/current/PHOS/;
-		qudt:numericValue '30.0'^^xsd:double;
+		qudt:numericValue '40.0'^^xsd:double;
 	],
 	sosa:hasResult [ a sosa:observation;
 		sosa:observedProperty http://vocab.nerc.ac.uk/collection/P02/current/ALKY/;
@@ -3357,7 +3552,7 @@
 		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/USTU/>;
 	],
 	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#SAMEA7392473>;
-	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40759>;
+	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#to%20be%20added>;
 	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40760>;
 	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40757>;
 
@@ -3365,7 +3560,1321 @@
 	
 .
 
-<https://raw.githubusercontent.com/ocean-sampling-day/ToPublish/main/IMIS/OSD2018/OSD18Data_version2.csv#OSD26_2018-06_NPL022_1,5L%20bucket> 
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD26_2018-06_NPL022_1,5L%20bucket> 
 	a sosa:Sampler;
 	sosa:ishostedBy 'not provided'^^xsd:string;
+.
+
+@prefix csvw : <http://www.w3.org/ns/csvw> .
+@prefix schema : <https://schema.org/> . 
+@prefix sosa: <http://www.w3.org/ns/sosa/> . 
+@prefix qudt: <http://qudt.org/schema/qudt/> .
+
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD30_2018-06_NPL022_1>
+	a schema:event, sosa:Sampling;
+	schema:identifier 'OSD30_2018-06'^^xsd:string;
+	schema:identifier 'OSD30_2018-06_NPL022_1'^^xsd:string;
+	schema:identifier 'OSD30_2018-06_1_NPL022'^^xsd:string;
+	schema:identifier 'OSD30'^^xsd:string;
+	schema:startDate '2018-06-19T09:00:00+00:00'^^xsd:datetime;
+	schema:latitude '59.8553'^^xsd:double;
+	schema:longitude '23.2633'^^xsd:double;
+	schema:location 'neritic epipelagic zone biome [ENVO:01000042]'^^xsd:string;
+	schema:description ' sea water [ENVO:00002149]'^^xsd:string;
+	schema:description ' microbial community [PCO:1000004]'^^xsd:string;
+	schema:description 'Ocean Sampling Day'^^xsd:string;
+	schema:location 'https://www.marineregions.org/gazetteer.php?p=details&id=25672'^^xsd:anyURI;
+	sosa:hasResult [ a sosa:observation;
+		sosa:observedProperty http://vocab.nerc.ac.uk/collection/P02/current/AHGT/;
+		qudt:numericValue '1'^^xsd:integer;
+		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/ULAA/>;
+	],
+	schema:description 'NPL022'^^xsd:string;
+	schema:description 'OSD-Jun-2018'^^xsd:string;
+	sosa:madeBySampler <https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD30_2018-06_NPL022_1,2%20x%202L%20Limnos>;
+	sosa:usedProcedure 'Limnoses were deployed just below surface with a rope'^^xsd:string;
+	schema:description '0.7'^^xsd:double;
+	schema:Duration '27'^^xsd:integer;
+	schema:description 'Sterivex'^^xsd:string;
+	schema:description 'no prefiltration'^^xsd:string;
+	schema:description '0.22'^^xsd:double;
+	schema:description 'no treatment'^^xsd:string;
+	schema:description '-80'^^xsd:string;
+	sosa:hasResult [ a sosa:observation;
+		sosa:observedProperty http://vocab.nerc.ac.uk/collection/P02/current/TEMP;
+		qudt:numericValue '13.8'^^xsd:double;
+		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/UPAA/>;
+	],
+	sosa:hasResult [ a sosa:observation;
+		sosa:observedProperty http://vocab.nerc.ac.uk/collection/P02/current/PSAL/;
+		qudt:numericValue '5.74'^^xsd:double;
+		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/UGKG/>;
+	],
+	sosa:hasResult [ a sosa:observation;
+		sosa:observedProperty http://vocab.nerc.ac.uk/collection/P02/current/CNDC/;
+		qudt:numericValue '7.96'^^xsd:double;
+		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/MSPM/>;
+	],
+	sosa:hasResult [ a sosa:observation;
+		sosa:observedProperty http://vocab.nerc.ac.uk/collection/P02/current/FVLT/;
+		qudt:numericValue '2.895'^^xsd:double;
+		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/UMMC/>;
+	],
+	sosa:hasResult [ a sosa:observation;
+		sosa:observedProperty http://vocab.nerc.ac.uk/collection/P02/current/AHGT/;
+		qudt:numericValue '1.0'^^xsd:double;
+		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/ULAA/>;
+	],
+	sosa:hasResult [ a sosa:observation;
+		sosa:observedProperty http://vocab.nerc.ac.uk/collection/P02/current/AMON/;
+		qudt:numericValue '2.0'^^xsd:double;
+		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/UGPL/>;
+	],
+	sosa:hasResult [ a sosa:observation;
+		sosa:observedProperty http://vocab.nerc.ac.uk/collection/P02/current/NTRA/;
+		qudt:numericValue '3.0'^^xsd:double;
+		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/UGPL/>;
+	],
+	sosa:hasResult [ a sosa:observation;
+		sosa:observedProperty http://vocab.nerc.ac.uk/collection/P02/current/NTRI/;
+		qudt:numericValue '1.0'^^xsd:double;
+		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/UGPL/>;
+	],
+	sosa:hasResult [ a sosa:observation;
+		sosa:observedProperty http://vocab.nerc.ac.uk/collection/P02/current/PHOS/;
+		qudt:numericValue '5.4'^^xsd:double;
+		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/UGPL/>;
+	],
+	sosa:hasResult [ a sosa:observation;
+		sosa:observedProperty http://vocab.nerc.ac.uk/collection/P02/current/SLCA/;
+		qudt:numericValue '185.8'^^xsd:double;
+		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/UGPL/>;
+	],
+	sosa:hasResult [ a sosa:observation;
+		sosa:observedProperty http://vocab.nerc.ac.uk/collection/P02/current/ALKY/;
+		qudt:numericValue '8.31'^^xsd:double;
+		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/UUUU/>;
+	],
+	sosa:hasResult [ a sosa:observation;
+		sosa:observedProperty http://vocab.nerc.ac.uk/collection/P02/current/DOCC/;
+		qudt:numericValue '7.3'^^xsd:double;
+		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/UMGL/>;
+	],
+	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#SAMEA7392472>;
+	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40757>;
+
+
+	
+.
+
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD30_2018-06_NPL022_1,2%20x%202L%20Limnos> 
+	a sosa:Sampler;
+	sosa:ishostedBy 'R/V J.A. Palmen'^^xsd:string;
+.
+
+@prefix csvw : <http://www.w3.org/ns/csvw> .
+@prefix schema : <https://schema.org/> . 
+@prefix sosa: <http://www.w3.org/ns/sosa/> . 
+@prefix qudt: <http://qudt.org/schema/qudt/> .
+
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD39_2018-06_NPL022_1>
+	a schema:event, sosa:Sampling;
+	schema:identifier 'OSD39_2018-06'^^xsd:string;
+	schema:identifier 'OSD39_2018-06_NPL022_1'^^xsd:string;
+	schema:identifier 'OSD39_2018-06_1_NPL022'^^xsd:string;
+	schema:identifier 'OSD39'^^xsd:string;
+	schema:startDate '2018-06-21T10:57:00+00:00'^^xsd:datetime;
+	schema:latitude '32.7529'^^xsd:double;
+	schema:longitude '-79.8998'^^xsd:double;
+	schema:location 'marine biome [ENVO:00000447]'^^xsd:string;
+	schema:description ' sea water [ENVO:00002149]'^^xsd:string;
+	schema:description ' microbial community [PCO:1000004]'^^xsd:string;
+	schema:description 'Ocean Sampling Day'^^xsd:string;
+	schema:location 'https://www.marineregions.org/gazetteer.php?p=details&id=18952'^^xsd:anyURI;
+	sosa:hasResult [ a sosa:observation;
+		sosa:observedProperty http://vocab.nerc.ac.uk/collection/P02/current/AHGT/;
+		qudt:numericValue '1'^^xsd:integer;
+		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/ULAA/>;
+	],
+	schema:description 'NPL022'^^xsd:string;
+	schema:description 'OSD-Jun-2018'^^xsd:string;
+	sosa:madeBySampler <https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD39_2018-06_NPL022_1,2L%20Nalgene%20bottles>;
+	sosa:usedProcedure 'Submerged under surface to fill the bottle by hand'^^xsd:string;
+	rdfs:comment 'Prokaryotic samples'^^xsd:string;
+	schema:description '1.1'^^xsd:double;
+	schema:Duration '140'^^xsd:integer;
+	schema:description 'Sterivex'^^xsd:string;
+	schema:description 'particulate matter on 0.22 microm pore size filter'^^xsd:string;
+	schema:description 'no prefiltration'^^xsd:string;
+	schema:description '0.22'^^xsd:double;
+	schema:description 'no treatment'^^xsd:string;
+	schema:description '-80'^^xsd:string;
+	sosa:hasResult [ a sosa:observation;
+		sosa:observedProperty http://vocab.nerc.ac.uk/collection/P02/current/TEMP;
+		qudt:numericValue '30.4'^^xsd:double;
+		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/UPAA/>;
+	],
+	sosa:hasResult [ a sosa:observation;
+		sosa:observedProperty http://vocab.nerc.ac.uk/collection/P02/current/PSAL/;
+		qudt:numericValue '22.19'^^xsd:double;
+		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/UGKG/>;
+	],
+	sosa:hasResult [ a sosa:observation;
+		sosa:observedProperty http://vocab.nerc.ac.uk/collection/P02/current/CNDC/;
+		qudt:numericValue '35.431'^^xsd:double;
+		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/MSPM/>;
+	],
+	sosa:hasResult [ a sosa:observation;
+		sosa:observedProperty http://vocab.nerc.ac.uk/collection/P02/current/AHGT/;
+		qudt:numericValue '1.0'^^xsd:double;
+		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/ULAA/>;
+	],
+	sosa:hasResult [ a sosa:observation;
+		sosa:observedProperty http://vocab.nerc.ac.uk/collection/P02/current/ALKY/;
+		qudt:numericValue '7.65'^^xsd:double;
+		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/UUUU/>;
+	],
+	sosa:hasResult [ a sosa:observation;
+		sosa:observedProperty http://vocab.nerc.ac.uk/collection/P02/current/DOCC/;
+		qudt:numericValue '6.05'^^xsd:double;
+		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/UMGL/>;
+	],
+	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#SAMEA7392471>;
+	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#to%20be%20added>;
+	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40760>;
+	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40757>;
+
+
+	
+.
+
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD39_2018-06_NPL022_1,2L%20Nalgene%20bottles> 
+	a sosa:Sampler;
+	sosa:ishostedBy 'off cove by S.C. Dept. of Nature Resources'^^xsd:string;
+.
+
+@prefix csvw : <http://www.w3.org/ns/csvw> .
+@prefix schema : <https://schema.org/> . 
+@prefix sosa: <http://www.w3.org/ns/sosa/> . 
+@prefix qudt: <http://qudt.org/schema/qudt/> .
+
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD4_2018-06_NPL022_1>
+	a schema:event, sosa:Sampling;
+	schema:identifier 'OSD4_2018-06'^^xsd:string;
+	schema:identifier 'OSD4_2018-06_NPL022_1'^^xsd:string;
+	schema:identifier 'OSD4_2018-06_1_NPL022'^^xsd:string;
+	schema:identifier 'OSD4'^^xsd:string;
+	schema:startDate '2018-06-21T13:00:00+00:00'^^xsd:datetime;
+	schema:latitude '40.808'^^xsd:double;
+	schema:longitude '14.25'^^xsd:double;
+	schema:location 'marine biome [ENVO:00000447]'^^xsd:string;
+	schema:description ' sea water [ENVO:00002149]'^^xsd:string;
+	schema:description ' microbial community [PCO:1000004]'^^xsd:string;
+	schema:description 'Ocean Sampling Day'^^xsd:string;
+	schema:location 'https://www.marineregions.org/gazetteer.php?p=details&id=25611'^^xsd:anyURI;
+	sosa:hasResult [ a sosa:observation;
+		sosa:observedProperty http://vocab.nerc.ac.uk/collection/P02/current/AHGT/;
+		qudt:numericValue '0'^^xsd:integer;
+		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/ULAA/>;
+	],
+	schema:description 'NPL022'^^xsd:string;
+	schema:description 'OSD-Jun-2018'^^xsd:string;
+	sosa:madeBySampler <https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD4_2018-06_NPL022_1,Niskin%20bottle>;
+	schema:description '0.67'^^xsd:double;
+	schema:Duration '35'^^xsd:integer;
+	schema:description 'Sterivex'^^xsd:string;
+	schema:description 'particulate matter on 0.22 microm pore size filter'^^xsd:string;
+	schema:description 'no prefiltration'^^xsd:string;
+	schema:description '0.22'^^xsd:double;
+	schema:description 'no treatment'^^xsd:string;
+	schema:description '-80'^^xsd:string;
+	sosa:hasResult [ a sosa:observation;
+		sosa:observedProperty http://vocab.nerc.ac.uk/collection/P02/current/TEMP;
+		qudt:numericValue '24.8'^^xsd:double;
+		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/UPAA/>;
+	],
+	sosa:hasResult [ a sosa:observation;
+		sosa:observedProperty http://vocab.nerc.ac.uk/collection/P02/current/PSAL/;
+		qudt:numericValue '36.93'^^xsd:double;
+		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/UGKG/>;
+	],
+	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#SAMEA7392481>;
+	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#to%20be%20added>;
+	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40760>;
+	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40757>;
+
+
+	
+.
+
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD4_2018-06_NPL022_1,Niskin%20bottle> 
+	a sosa:Sampler;
+	sosa:ishostedBy 'Hippocampo'^^xsd:string;
+.
+
+@prefix csvw : <http://www.w3.org/ns/csvw> .
+@prefix schema : <https://schema.org/> . 
+@prefix sosa: <http://www.w3.org/ns/sosa/> . 
+@prefix qudt: <http://qudt.org/schema/qudt/> .
+
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD43_2018-06_NPL022_1>
+	a schema:event, sosa:Sampling;
+	schema:identifier 'OSD43_2018-06'^^xsd:string;
+	schema:identifier 'OSD43_2018-06_NPL022_1'^^xsd:string;
+	schema:identifier 'OSD43_2018-06_1_NPL022'^^xsd:string;
+	schema:identifier 'OSD43'^^xsd:string;
+	schema:startDate '2018-06-21T11:42:00+00:00'^^xsd:datetime;
+	schema:latitude '32.867'^^xsd:double;
+	schema:longitude '-117.2573'^^xsd:double;
+	schema:location 'marine biome [ENVO:00000447]'^^xsd:string;
+	schema:description ' sea water [ENVO:00002149]'^^xsd:string;
+	schema:description ' microbial community [PCO:1000004]'^^xsd:string;
+	schema:description 'Ocean Sampling Day'^^xsd:string;
+	schema:location 'https://www.marineregions.org/gazetteer.php?p=details&id=25365'^^xsd:anyURI;
+	sosa:hasResult [ a sosa:observation;
+		sosa:observedProperty http://vocab.nerc.ac.uk/collection/P02/current/AHGT/;
+		qudt:numericValue '0'^^xsd:integer;
+		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/ULAA/>;
+	],
+	schema:description 'NPL022'^^xsd:string;
+	schema:description 'OSD-Jun-2018'^^xsd:string;
+	schema:description 'OSD2018 samples'^^xsd:string;
+	sosa:madeBySampler <https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD43_2018-06_NPL022_1,acid%20washed%20bucket>;
+	sosa:usedProcedure 'pile wench'^^xsd:string;
+	rdfs:comment 'There were divers in the vicinity which is unusual. They could have stirred sediment but not known if they did or not.'^^xsd:string;
+	schema:description '2.0'^^xsd:double;
+	schema:Duration '30'^^xsd:integer;
+	schema:description 'Sterivex'^^xsd:string;
+	schema:description 'particulate matter on 0.22 microm pore size filter'^^xsd:string;
+	schema:description 'no prefiltration'^^xsd:string;
+	schema:description '0.22'^^xsd:double;
+	schema:description 'no treatment'^^xsd:string;
+	schema:description '-80'^^xsd:string;
+	sosa:hasResult [ a sosa:observation;
+		sosa:observedProperty http://vocab.nerc.ac.uk/collection/P02/current/TEMP;
+		qudt:numericValue '19.85'^^xsd:double;
+		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/UPAA/>;
+	],
+	sosa:hasResult [ a sosa:observation;
+		sosa:observedProperty http://vocab.nerc.ac.uk/collection/P02/current/PSAL/;
+		qudt:numericValue '34.0'^^xsd:double;
+		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/UGKG/>;
+	],
+	sosa:hasResult [ a sosa:observation;
+		sosa:observedProperty http://vocab.nerc.ac.uk/collection/P02/current/CPWC/;
+		qudt:numericValue '2.47'^^xsd:double;
+	],
+	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#SAMEA7392470>;
+	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#to%20be%20added>;
+	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40760>;
+	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40757>;
+
+
+	
+.
+
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD43_2018-06_NPL022_1,acid%20washed%20bucket> 
+	a sosa:Sampler;
+	sosa:ishostedBy 'Pier with bucket'^^xsd:string;
+.
+
+@prefix csvw : <http://www.w3.org/ns/csvw> .
+@prefix schema : <https://schema.org/> . 
+@prefix sosa: <http://www.w3.org/ns/sosa/> . 
+@prefix qudt: <http://qudt.org/schema/qudt/> .
+
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD47_2018-06_NPL022_1>
+	a schema:event, sosa:Sampling;
+	schema:identifier 'OSD47_2018-06'^^xsd:string;
+	schema:identifier 'OSD47_2018-06_NPL022_1'^^xsd:string;
+	schema:identifier 'OSD47_2018-06_1_NPL022'^^xsd:string;
+	schema:identifier 'OSD47'^^xsd:string;
+	schema:startDate '2018-06-21T10:47:00+00:00'^^xsd:datetime;
+	schema:latitude '45.502'^^xsd:double;
+	schema:longitude '12.4176'^^xsd:double;
+	schema:location 'lagoon [ENVO:00000038]'^^xsd:string;
+	schema:description ' sea water [ENVO:00002149]'^^xsd:string;
+	schema:description ' microbial community [PCO:1000004]'^^xsd:string;
+	schema:description 'Ocean Sampling Day'^^xsd:string;
+	schema:location 'https://www.marineregions.org/gazetteer.php?p=details&id=3611'^^xsd:anyURI;
+	sosa:hasResult [ a sosa:observation;
+		sosa:observedProperty http://vocab.nerc.ac.uk/collection/P02/current/AHGT/;
+		qudt:numericValue '0'^^xsd:integer;
+		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/ULAA/>;
+	],
+	schema:description 'NPL022'^^xsd:string;
+	schema:description 'OSD-Jun-2018'^^xsd:string;
+	sosa:madeBySampler <https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD47_2018-06_NPL022_1,10L%20bottle>;
+	sosa:usedProcedure 'Bottle immersion on sea surface by hand'^^xsd:string;
+	schema:description '0.48'^^xsd:double;
+	schema:Duration '10'^^xsd:integer;
+	schema:description 'Sterivex'^^xsd:string;
+	schema:description 'particulate matter'^^xsd:string;
+	schema:description 'no prefiltration'^^xsd:string;
+	schema:description '0.22'^^xsd:double;
+	schema:description 'no treatment'^^xsd:string;
+	schema:description '-80'^^xsd:string;
+	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#SAMEA7392469>;
+	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#to%20be%20added>;
+	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40760>;
+	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40757>;
+
+
+	
+.
+
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD47_2018-06_NPL022_1,10L%20bottle> 
+	a sosa:Sampler;
+	sosa:ishostedBy 'Unipd Boat'^^xsd:string;
+.
+
+@prefix csvw : <http://www.w3.org/ns/csvw> .
+@prefix schema : <https://schema.org/> . 
+@prefix sosa: <http://www.w3.org/ns/sosa/> . 
+@prefix qudt: <http://qudt.org/schema/qudt/> .
+
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD48_2018-06_NPL022_1>
+	a schema:event, sosa:Sampling;
+	schema:identifier 'OSD48_2018-06'^^xsd:string;
+	schema:identifier 'OSD48_2018-06_NPL022_1'^^xsd:string;
+	schema:identifier 'OSD48_2018-06_1_NPL022'^^xsd:string;
+	schema:identifier 'OSD48'^^xsd:string;
+	schema:startDate '2018-06-21T07:25:00+00:00'^^xsd:datetime;
+	schema:latitude '45.4125'^^xsd:double;
+	schema:longitude '12.5265'^^xsd:double;
+	schema:location 'mediterranean sea biome [ENVO:01000047]'^^xsd:string;
+	schema:description ' sea water [ENVO:00002149]'^^xsd:string;
+	schema:description ' microbial community [PCO:1000004]'^^xsd:string;
+	schema:description 'Ocean Sampling Day'^^xsd:string;
+	schema:location 'https://www.marineregions.org/gazetteer.php?p=details&id=3610'^^xsd:anyURI;
+	sosa:hasResult [ a sosa:observation;
+		sosa:observedProperty http://vocab.nerc.ac.uk/collection/P02/current/AHGT/;
+		qudt:numericValue '0'^^xsd:integer;
+		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/ULAA/>;
+	],
+	schema:description 'NPL022'^^xsd:string;
+	schema:description 'OSD-Jun-2018'^^xsd:string;
+	sosa:madeBySampler <https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD48_2018-06_NPL022_1,10L%20bottle>;
+	sosa:usedProcedure 'Bottle immersion on sea surface by hand'^^xsd:string;
+	schema:description '0.96'^^xsd:double;
+	schema:Duration '18'^^xsd:integer;
+	schema:description 'Sterivex'^^xsd:string;
+	schema:description 'particulate matter'^^xsd:string;
+	schema:description 'no prefiltration'^^xsd:string;
+	schema:description '0.22'^^xsd:double;
+	schema:description 'no treatment'^^xsd:string;
+	schema:description '-80'^^xsd:string;
+	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#SAMEA7392468>;
+	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#to%20be%20added>;
+	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40760>;
+	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40757>;
+
+
+	
+.
+
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD48_2018-06_NPL022_1,10L%20bottle> 
+	a sosa:Sampler;
+	sosa:ishostedBy 'Unipd Boat'^^xsd:string;
+.
+
+@prefix csvw : <http://www.w3.org/ns/csvw> .
+@prefix schema : <https://schema.org/> . 
+@prefix sosa: <http://www.w3.org/ns/sosa/> . 
+@prefix qudt: <http://qudt.org/schema/qudt/> .
+
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD5_2018-06_NPL022_1>
+	a schema:event, sosa:Sampling;
+	schema:identifier 'OSD5_2018-06'^^xsd:string;
+	schema:identifier 'OSD5_2018-06_NPL022_1'^^xsd:string;
+	schema:identifier 'OSD5_2018-06_1_NPL022'^^xsd:string;
+	schema:identifier 'OSD5'^^xsd:string;
+	schema:startDate '2018-06-21T09:00:00+00:00'^^xsd:datetime;
+	schema:latitude '35.66'^^xsd:double;
+	schema:longitude '24.99'^^xsd:double;
+	schema:location 'marine biome [ENVO:00000447]'^^xsd:string;
+	schema:description ' sea water [ENVO:00002149]'^^xsd:string;
+	schema:description ' microbial community [PCO:1000004]'^^xsd:string;
+	schema:description 'Ocean Sampling Day'^^xsd:string;
+	schema:location 'https://www.marineregions.org/gazetteer.php?p=details&id=3339'^^xsd:anyURI;
+	sosa:hasResult [ a sosa:observation;
+		sosa:observedProperty http://vocab.nerc.ac.uk/collection/P02/current/AHGT/;
+		qudt:numericValue '1'^^xsd:integer;
+		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/ULAA/>;
+	],
+	schema:description 'NPL022'^^xsd:string;
+	schema:description 'OSD-Jun-2018'^^xsd:string;
+	schema:description 'surface water sampling (100lt) CTD cost zooplankton net sampling'^^xsd:string;
+	sosa:madeBySampler <https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD5_2018-06_NPL022_1,Niskin%20bottles%20/%20CTD%20/%20zooplankton%20net>;
+	sosa:usedProcedure 'surface water sampling with niskin 100lt CTD cost / vertical sampling zooplankton'^^xsd:string;
+	schema:description 'Sterivex'^^xsd:string;
+	schema:description 'particulate matter on 47mm 1.2 microm pore size polycarbonate filter'^^xsd:string;
+	schema:description 'no prefiltration'^^xsd:string;
+	schema:description '0.22'^^xsd:double;
+	schema:description 'no treatment'^^xsd:string;
+	schema:description '-80'^^xsd:string;
+	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#SAMEA7392480>;
+	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#to%20be%20added>;
+	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40760>;
+	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40757>;
+
+
+	
+.
+
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD5_2018-06_NPL022_1,Niskin%20bottles%20/%20CTD%20/%20zooplankton%20net> 
+	a sosa:Sampler;
+	sosa:ishostedBy 'HCMR dinghy boat'^^xsd:string;
+.
+
+@prefix csvw : <http://www.w3.org/ns/csvw> .
+@prefix schema : <https://schema.org/> . 
+@prefix sosa: <http://www.w3.org/ns/sosa/> . 
+@prefix qudt: <http://qudt.org/schema/qudt/> .
+
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD54_2018-06_NPL022_1>
+	a schema:event, sosa:Sampling;
+	schema:identifier 'OSD54_2018-06'^^xsd:string;
+	schema:identifier 'OSD54_2018-06_NPL022_1'^^xsd:string;
+	schema:identifier 'OSD54_2018-06_1_NPL022'^^xsd:string;
+	schema:identifier 'OSD54'^^xsd:string;
+	schema:startDate '2018-06-21T06:25:00+00:00'^^xsd:datetime;
+	schema:latitude '43.844'^^xsd:double;
+	schema:longitude '-69.6409'^^xsd:double;
+	schema:location 'marine biome [ENVO:00000447]'^^xsd:string;
+	schema:description ' sea water [ENVO:00002149]'^^xsd:string;
+	schema:description ' microbial community [PCO:1000004]'^^xsd:string;
+	schema:description 'Ocean Sampling Day'^^xsd:string;
+	schema:location 'https://www.marineregions.org/gazetteer.php?p=details&id=25365'^^xsd:anyURI;
+	sosa:hasResult [ a sosa:observation;
+		sosa:observedProperty http://vocab.nerc.ac.uk/collection/P02/current/AHGT/;
+		qudt:numericValue '1'^^xsd:integer;
+		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/ULAA/>;
+	],
+	schema:description 'NPL022'^^xsd:string;
+	schema:description 'OSD-Jun-2018'^^xsd:string;
+	schema:description 'sampling at 1m from floating dock at Deaprtment of Marine Resources Maine USA'^^xsd:string;
+	sosa:madeBySampler <https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD54_2018-06_NPL022_1,5L%20Niskin%20bottle>;
+	sosa:usedProcedure '4 X 5L Niskin to fill 20L carboy'^^xsd:string;
+	rdfs:comment 'Prokaryotic samples (not prefiltered)'^^xsd:string;
+	schema:description '3.56'^^xsd:double;
+	schema:Duration '50'^^xsd:integer;
+	schema:description 'Sterivex'^^xsd:string;
+	schema:description 'particulate matter on 0.22 microm pore size filter'^^xsd:string;
+	schema:description 'no prefiltration'^^xsd:string;
+	schema:description '0.22'^^xsd:double;
+	schema:description 'no treatment'^^xsd:string;
+	schema:description '-80'^^xsd:string;
+	sosa:hasResult [ a sosa:observation;
+		sosa:observedProperty http://vocab.nerc.ac.uk/collection/P02/current/TEMP;
+		qudt:numericValue '12.2'^^xsd:double;
+		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/UPAA/>;
+	],
+	sosa:hasResult [ a sosa:observation;
+		sosa:observedProperty http://vocab.nerc.ac.uk/collection/P02/current/PSAL/;
+		qudt:numericValue '32.0'^^xsd:double;
+		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/UGKG/>;
+	],
+	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#SAMEA7392467>;
+	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#to%20be%20added>;
+	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40757>;
+
+
+	
+.
+
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD54_2018-06_NPL022_1,5L%20Niskin%20bottle> 
+	a sosa:Sampler;
+	sosa:ishostedBy 'Floating Dock'^^xsd:string;
+.
+
+@prefix csvw : <http://www.w3.org/ns/csvw> .
+@prefix schema : <https://schema.org/> . 
+@prefix sosa: <http://www.w3.org/ns/sosa/> . 
+@prefix qudt: <http://qudt.org/schema/qudt/> .
+
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD55_2018-06_NPL022_1>
+	a schema:event, sosa:Sampling;
+	schema:identifier 'OSD55_2018-06'^^xsd:string;
+	schema:identifier 'OSD55_2018-06_NPL022_1'^^xsd:string;
+	schema:identifier 'OSD55_2018-06_1_NPL022'^^xsd:string;
+	schema:identifier 'OSD55'^^xsd:string;
+	schema:startDate '2018-06-21T06:04:00+00:00'^^xsd:datetime;
+	schema:latitude '43.8604'^^xsd:double;
+	schema:longitude '-69.5781'^^xsd:double;
+	schema:location 'marine biome [ENVO:00000447]'^^xsd:string;
+	schema:description ' sea water [ENVO:00002149]'^^xsd:string;
+	schema:description ' microbial community [PCO:1000004]'^^xsd:string;
+	schema:description 'Ocean Sampling Day'^^xsd:string;
+	schema:location 'https://www.marineregions.org/gazetteer.php?p=details&id=25365'^^xsd:anyURI;
+	sosa:hasResult [ a sosa:observation;
+		sosa:observedProperty http://vocab.nerc.ac.uk/collection/P02/current/AHGT/;
+		qudt:numericValue '1'^^xsd:integer;
+		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/ULAA/>;
+	],
+	schema:description 'NPL022'^^xsd:string;
+	schema:description 'OSD-Jun-2018'^^xsd:string;
+	schema:description 'sampling at 1m from floating dock at Bigelow Laboratory for Ocean Sciences'^^xsd:string;
+	sosa:madeBySampler <https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD55_2018-06_NPL022_1,2L%20Niskin%20bottle>;
+	sosa:usedProcedure '10 X 2L Niskin deployed to fill 20L carboy'^^xsd:string;
+	rdfs:comment 'Prokaryotic samples (not prefiltered)'^^xsd:string;
+	schema:description '4.0'^^xsd:double;
+	schema:Duration '45'^^xsd:integer;
+	schema:description 'Sterivex'^^xsd:string;
+	schema:description 'particulate matter on 0.22 microm pore size filter'^^xsd:string;
+	schema:description 'no prefiltration'^^xsd:string;
+	schema:description '0.22'^^xsd:double;
+	schema:description 'no treatment'^^xsd:string;
+	schema:description '-80'^^xsd:string;
+	sosa:hasResult [ a sosa:observation;
+		sosa:observedProperty http://vocab.nerc.ac.uk/collection/P02/current/TEMP;
+		qudt:numericValue '12.2'^^xsd:double;
+		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/UPAA/>;
+	],
+	sosa:hasResult [ a sosa:observation;
+		sosa:observedProperty http://vocab.nerc.ac.uk/collection/P02/current/PSAL/;
+		qudt:numericValue '32.0'^^xsd:double;
+		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/UGKG/>;
+	],
+	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#SAMEA7392466>;
+	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#to%20be%20added>;
+	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40757>;
+
+
+	
+.
+
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD55_2018-06_NPL022_1,2L%20Niskin%20bottle> 
+	a sosa:Sampler;
+	sosa:ishostedBy 'Floating Dock'^^xsd:string;
+.
+
+@prefix csvw : <http://www.w3.org/ns/csvw> .
+@prefix schema : <https://schema.org/> . 
+@prefix sosa: <http://www.w3.org/ns/sosa/> . 
+@prefix qudt: <http://qudt.org/schema/qudt/> .
+
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD60_2018-06_NPL022_1>
+	a schema:event, sosa:Sampling;
+	schema:identifier 'OSD60_2018-06'^^xsd:string;
+	schema:identifier 'OSD60_2018-06_NPL022_1'^^xsd:string;
+	schema:identifier 'OSD60_2018-06_1_NPL022'^^xsd:string;
+	schema:identifier 'OSD60'^^xsd:string;
+	schema:startDate '2018-06-21T14:20:00+00:00'^^xsd:datetime;
+	schema:latitude '32.334'^^xsd:double;
+	schema:longitude '-79.1929'^^xsd:double;
+	schema:location 'marine biome [ENVO:00000447]'^^xsd:string;
+	schema:description ' sea water [ENVO:00002149]'^^xsd:string;
+	schema:description ' microbial community [PCO:1000004]'^^xsd:string;
+	schema:description 'Ocean Sampling Day'^^xsd:string;
+	schema:location 'https://www.marineregions.org/gazetteer.php?p=details&id=25365'^^xsd:anyURI;
+	sosa:hasResult [ a sosa:observation;
+		sosa:observedProperty http://vocab.nerc.ac.uk/collection/P02/current/AHGT/;
+		qudt:numericValue '1'^^xsd:integer;
+		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/ULAA/>;
+	],
+	schema:description 'NPL022'^^xsd:string;
+	schema:description 'OSD-Jun-2018'^^xsd:string;
+	sosa:madeBySampler <https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD60_2018-06_NPL022_1,2L%20Nalgene%20bottles>;
+	sosa:usedProcedure 'Hand dipped / sumberged under water to fill bottle'^^xsd:string;
+	rdfs:comment 'Prokaryotic samples'^^xsd:string;
+	schema:description '1.0'^^xsd:double;
+	schema:Duration '37'^^xsd:integer;
+	schema:description 'Sterivex'^^xsd:string;
+	schema:description 'particulate matter on 0.22 microm pore size filter'^^xsd:string;
+	schema:description 'no prefiltration'^^xsd:string;
+	schema:description '0.22'^^xsd:double;
+	schema:description 'no treatment'^^xsd:string;
+	schema:description '-80'^^xsd:string;
+	sosa:hasResult [ a sosa:observation;
+		sosa:observedProperty http://vocab.nerc.ac.uk/collection/P02/current/TEMP;
+		qudt:numericValue '28.5'^^xsd:double;
+		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/UPAA/>;
+	],
+	sosa:hasResult [ a sosa:observation;
+		sosa:observedProperty http://vocab.nerc.ac.uk/collection/P02/current/PSAL/;
+		qudt:numericValue '32.56'^^xsd:double;
+		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/UGKG/>;
+	],
+	sosa:hasResult [ a sosa:observation;
+		sosa:observedProperty http://vocab.nerc.ac.uk/collection/P02/current/CNDC/;
+		qudt:numericValue '50.3'^^xsd:double;
+		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/MSPM/>;
+	],
+	sosa:hasResult [ a sosa:observation;
+		sosa:observedProperty http://vocab.nerc.ac.uk/collection/P02/current/AHGT/;
+		qudt:numericValue '1.0'^^xsd:double;
+		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/ULAA/>;
+	],
+	sosa:hasResult [ a sosa:observation;
+		sosa:observedProperty http://vocab.nerc.ac.uk/collection/P02/current/ALKY/;
+		qudt:numericValue '8.04'^^xsd:double;
+		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/UUUU/>;
+	],
+	sosa:hasResult [ a sosa:observation;
+		sosa:observedProperty http://vocab.nerc.ac.uk/collection/P02/current/DOCC/;
+		qudt:numericValue '6.24'^^xsd:double;
+		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/UMGL/>;
+	],
+	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#SAMEA7392465>;
+	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#to%20be%20added>;
+	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40760>;
+	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40757>;
+
+
+	
+.
+
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD60_2018-06_NPL022_1,2L%20Nalgene%20bottles> 
+	a sosa:Sampler;
+	sosa:ishostedBy 'Floating Dock'^^xsd:string;
+.
+
+@prefix csvw : <http://www.w3.org/ns/csvw> .
+@prefix schema : <https://schema.org/> . 
+@prefix sosa: <http://www.w3.org/ns/sosa/> . 
+@prefix qudt: <http://qudt.org/schema/qudt/> .
+
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD63_2018-06_NPL022_1>
+	a schema:event, sosa:Sampling;
+	schema:identifier 'OSD63_2018-06'^^xsd:string;
+	schema:identifier 'OSD63_2018-06_NPL022_1'^^xsd:string;
+	schema:identifier 'OSD63_2018-06_1_NPL022'^^xsd:string;
+	schema:identifier 'OSD63'^^xsd:string;
+	schema:startDate '2018-06-21T09:00:00+00:00'^^xsd:datetime;
+	schema:latitude '45.3144'^^xsd:double;
+	schema:longitude '12.5083'^^xsd:double;
+	schema:location 'marine biome [ENVO:00000447]'^^xsd:string;
+	schema:description ' sea water [ENVO:00002149]'^^xsd:string;
+	schema:description ' microbial community [PCO:1000004]'^^xsd:string;
+	schema:description 'Ocean Sampling Day'^^xsd:string;
+	schema:location 'https://www.marineregions.org/gazetteer.php?p=details&id=3610'^^xsd:anyURI;
+	sosa:hasResult [ a sosa:observation;
+		sosa:observedProperty http://vocab.nerc.ac.uk/collection/P02/current/AHGT/;
+		qudt:numericValue '0'^^xsd:integer;
+		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/ULAA/>;
+	],
+	schema:description 'NPL022'^^xsd:string;
+	schema:description 'OSD-Jun-2018'^^xsd:string;
+	sosa:madeBySampler <https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD63_2018-06_NPL022_1,5L%20Single%20bottle>;
+	schema:description '3.7'^^xsd:double;
+	schema:Duration '60'^^xsd:integer;
+	schema:description 'Sterivex'^^xsd:string;
+	schema:description 'particulate matter'^^xsd:string;
+	schema:description 'no prefiltration'^^xsd:string;
+	schema:description '0.22'^^xsd:double;
+	schema:description 'no treatment'^^xsd:string;
+	schema:description '-80'^^xsd:string;
+	sosa:hasResult [ a sosa:observation;
+		sosa:observedProperty http://vocab.nerc.ac.uk/collection/P02/current/TEMP;
+		qudt:numericValue '25.88'^^xsd:double;
+		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/UPAA/>;
+	],
+	sosa:hasResult [ a sosa:observation;
+		sosa:observedProperty http://vocab.nerc.ac.uk/collection/P02/current/PSAL/;
+		qudt:numericValue '34.86'^^xsd:double;
+		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/UGKG/>;
+	],
+	sosa:hasResult [ a sosa:observation;
+		sosa:observedProperty http://vocab.nerc.ac.uk/collection/P02/current/CNDC/;
+		qudt:numericValue '53.802155'^^xsd:double;
+		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/MSPM/>;
+	],
+	sosa:hasResult [ a sosa:observation;
+		sosa:observedProperty http://vocab.nerc.ac.uk/collection/P02/current/DOCC/;
+		qudt:numericValue '5.34575'^^xsd:double;
+		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/UMLL/>;
+	],
+	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#SAMEA7392464>;
+	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40759>;
+	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40757>;
+
+
+	
+.
+
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD63_2018-06_NPL022_1,5L%20Single%20bottle> 
+	a sosa:Sampler;
+	sosa:ishostedBy 'CNR LITUS� Boat'^^xsd:string;
+.
+
+@prefix csvw : <http://www.w3.org/ns/csvw> .
+@prefix schema : <https://schema.org/> . 
+@prefix sosa: <http://www.w3.org/ns/sosa/> . 
+@prefix qudt: <http://qudt.org/schema/qudt/> .
+
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD69_2018-06_NPL022_1>
+	a schema:event, sosa:Sampling;
+	schema:identifier 'OSD69_2018-06'^^xsd:string;
+	schema:identifier 'OSD69_2018-06_NPL022_1'^^xsd:string;
+	schema:identifier 'OSD69_2018-06_1_NPL022'^^xsd:string;
+	schema:identifier 'OSD69'^^xsd:string;
+	schema:startDate '2018-06-21T13:35:00+00:00'^^xsd:datetime;
+	schema:latitude '45.4568'^^xsd:double;
+	schema:longitude '12.2605'^^xsd:double;
+	schema:location 'lagoon [ENVO:00000038]'^^xsd:string;
+	schema:description ' sea water [ENVO:00002149]'^^xsd:string;
+	schema:description ' microbial community [PCO:1000004]'^^xsd:string;
+	schema:description 'Ocean Sampling Day'^^xsd:string;
+	schema:location 'https://www.marineregions.org/gazetteer.php?p=details&id=3611'^^xsd:anyURI;
+	sosa:hasResult [ a sosa:observation;
+		sosa:observedProperty http://vocab.nerc.ac.uk/collection/P02/current/AHGT/;
+		qudt:numericValue '0'^^xsd:integer;
+		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/ULAA/>;
+	],
+	schema:description 'NPL022'^^xsd:string;
+	schema:description 'OSD-Jun-2018'^^xsd:string;
+	sosa:madeBySampler <https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD69_2018-06_NPL022_1,10L%20bottle>;
+	sosa:usedProcedure 'Bottle immersion on sea surface by hand'^^xsd:string;
+	schema:description '0.42'^^xsd:double;
+	schema:Duration '8'^^xsd:integer;
+	schema:description 'Sterivex'^^xsd:string;
+	schema:description 'particulate matter'^^xsd:string;
+	schema:description 'no prefiltration'^^xsd:string;
+	schema:description '0.22'^^xsd:double;
+	schema:description 'no treatment'^^xsd:string;
+	schema:description '-80'^^xsd:string;
+	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#SAMEA7392463>;
+	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#to%20be%20added>;
+	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40760>;
+	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40757>;
+
+
+	
+.
+
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD69_2018-06_NPL022_1,10L%20bottle> 
+	a sosa:Sampler;
+	sosa:ishostedBy 'Unipd Boat'^^xsd:string;
+.
+
+@prefix csvw : <http://www.w3.org/ns/csvw> .
+@prefix schema : <https://schema.org/> . 
+@prefix sosa: <http://www.w3.org/ns/sosa/> . 
+@prefix qudt: <http://qudt.org/schema/qudt/> .
+
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD70_2018-06_NPL022_1>
+	a schema:event, sosa:Sampling;
+	schema:identifier 'OSD70_2018-06'^^xsd:string;
+	schema:identifier 'OSD70_2018-06_NPL022_1'^^xsd:string;
+	schema:identifier 'OSD70_2018-06_1_NPL022'^^xsd:string;
+	schema:identifier 'OSD70'^^xsd:string;
+	schema:startDate '2018-06-21T07:01:00+00:00'^^xsd:datetime;
+	schema:latitude '45.4142'^^xsd:double;
+	schema:longitude '12.4378'^^xsd:double;
+	schema:location 'mediterranean sea biome [ENVO:01000047]'^^xsd:string;
+	schema:description ' sea water [ENVO:00002149]'^^xsd:string;
+	schema:description ' microbial community [PCO:1000004]'^^xsd:string;
+	schema:description 'Ocean Sampling Day'^^xsd:string;
+	schema:location 'https://www.marineregions.org/gazetteer.php?p=details&id=3610'^^xsd:anyURI;
+	sosa:hasResult [ a sosa:observation;
+		sosa:observedProperty http://vocab.nerc.ac.uk/collection/P02/current/AHGT/;
+		qudt:numericValue '0'^^xsd:integer;
+		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/ULAA/>;
+	],
+	schema:description 'NPL022'^^xsd:string;
+	schema:description 'OSD-Jun-2018'^^xsd:string;
+	sosa:madeBySampler <https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD70_2018-06_NPL022_1,10L%20bottle>;
+	sosa:usedProcedure 'Bottle immersion on sea surface by hand'^^xsd:string;
+	schema:description '1.02'^^xsd:double;
+	schema:Duration '20'^^xsd:integer;
+	schema:description 'Sterivex'^^xsd:string;
+	schema:description 'particulate matter'^^xsd:string;
+	schema:description 'no prefiltration'^^xsd:string;
+	schema:description '0.22'^^xsd:double;
+	schema:description 'no treatment'^^xsd:string;
+	schema:description '-80'^^xsd:string;
+	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#SAMEA7392462>;
+	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#to%20be%20added>;
+	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40760>;
+	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40757>;
+
+
+	
+.
+
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD70_2018-06_NPL022_1,10L%20bottle> 
+	a sosa:Sampler;
+	sosa:ishostedBy 'Unipd Boat'^^xsd:string;
+.
+
+@prefix csvw : <http://www.w3.org/ns/csvw> .
+@prefix schema : <https://schema.org/> . 
+@prefix sosa: <http://www.w3.org/ns/sosa/> . 
+@prefix qudt: <http://qudt.org/schema/qudt/> .
+
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD74_2018-06_NPL022_1>
+	a schema:event, sosa:Sampling;
+	schema:identifier 'OSD74_2018-06'^^xsd:string;
+	schema:identifier 'OSD74_2018-06_NPL022_1'^^xsd:string;
+	schema:identifier 'OSD74_2018-06_1_NPL022'^^xsd:string;
+	schema:identifier 'OSD74'^^xsd:string;
+	schema:startDate '2018-06-22T11:15:00+00:00'^^xsd:datetime;
+	schema:latitude '41.1416'^^xsd:double;
+	schema:longitude '-8.6668'^^xsd:double;
+	schema:location 'estuarine biome [ENVO:01000020]'^^xsd:string;
+	schema:description ' sea water [ENVO:00002149]'^^xsd:string;
+	schema:description ' microbial community [PCO:1000004]'^^xsd:string;
+	schema:description 'Ocean Sampling Day'^^xsd:string;
+	schema:location 'https://www.marineregions.org/gazetteer.php?p=details&id=25368'^^xsd:anyURI;
+	sosa:hasResult [ a sosa:observation;
+		sosa:observedProperty http://vocab.nerc.ac.uk/collection/P02/current/AHGT/;
+		qudt:numericValue '1'^^xsd:integer;
+		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/ULAA/>;
+	],
+	schema:description 'NPL022'^^xsd:string;
+	schema:description 'OSD-Jun-2018'^^xsd:string;
+	schema:description 'OSD investigate ocean microbial diversity'^^xsd:string;
+	sosa:madeBySampler <https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD74_2018-06_NPL022_1,acid%20washed%20bucket>;
+	sosa:usedProcedure 'Bucket tied with rope'^^xsd:string;
+	schema:description '0.9'^^xsd:double;
+	schema:Duration '94'^^xsd:integer;
+	schema:description 'Sterivex'^^xsd:string;
+	schema:description 'particulate matter'^^xsd:string;
+	schema:description 'no prefiltration'^^xsd:string;
+	schema:description '0.22'^^xsd:double;
+	schema:description 'no treatment'^^xsd:string;
+	schema:description '-80'^^xsd:string;
+	sosa:hasResult [ a sosa:observation;
+		sosa:observedProperty http://vocab.nerc.ac.uk/collection/P02/current/TEMP;
+		qudt:numericValue '20.3'^^xsd:double;
+		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/UPAA/>;
+	],
+	sosa:hasResult [ a sosa:observation;
+		sosa:observedProperty http://vocab.nerc.ac.uk/collection/P02/current/PSAL/;
+		qudt:numericValue '4.0'^^xsd:double;
+		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/UGKG/>;
+	],
+	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#SAMEA7392461>;
+	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#to%20be%20added>;
+	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40760>;
+	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40757>;
+
+
+	
+.
+
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD74_2018-06_NPL022_1,acid%20washed%20bucket> 
+	a sosa:Sampler;
+	sosa:ishostedBy 'not provided'^^xsd:string;
+.
+
+@prefix csvw : <http://www.w3.org/ns/csvw> .
+@prefix schema : <https://schema.org/> . 
+@prefix sosa: <http://www.w3.org/ns/sosa/> . 
+@prefix qudt: <http://qudt.org/schema/qudt/> .
+
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD78_2018-06_NPL022_1>
+	a schema:event, sosa:Sampling;
+	schema:identifier 'OSD78_2018-06'^^xsd:string;
+	schema:identifier 'OSD78_2018-06_NPL022_1'^^xsd:string;
+	schema:identifier 'OSD78_2018-06_1_NPL022'^^xsd:string;
+	schema:identifier 'OSD78'^^xsd:string;
+	schema:startDate '2018-06-21T12:00:00+00:00'^^xsd:datetime;
+	schema:latitude '43.57'^^xsd:double;
+	schema:longitude '13.595'^^xsd:double;
+	schema:location 'marine biome [ENVO:00000447]'^^xsd:string;
+	schema:description ' sea water [ENVO:00002149]'^^xsd:string;
+	schema:description ' microbial community [PCO:1000004]'^^xsd:string;
+	schema:description 'Ocean Sampling Day'^^xsd:string;
+	schema:location 'https://www.marineregions.org/gazetteer.php?p=details&id=25615'^^xsd:anyURI;
+	sosa:hasResult [ a sosa:observation;
+		sosa:observedProperty http://vocab.nerc.ac.uk/collection/P02/current/AHGT/;
+		qudt:numericValue '1'^^xsd:integer;
+		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/ULAA/>;
+	],
+	schema:description 'NPL022'^^xsd:string;
+	schema:description 'OSD-Jun-2018'^^xsd:string;
+	schema:description 'OSD-78-PROK'^^xsd:string;
+	sosa:madeBySampler <https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD78_2018-06_NPL022_1,Boat>;
+	sosa:usedProcedure 'sampling water from a boat'^^xsd:string;
+	schema:description '1.3'^^xsd:double;
+	schema:Duration '60'^^xsd:integer;
+	schema:description 'Tank'^^xsd:string;
+	schema:description 'seawater'^^xsd:string;
+	schema:description '0.22'^^xsd:double;
+	schema:description 'no treatment'^^xsd:string;
+	sosa:hasResult [ a sosa:observation;
+		sosa:observedProperty http://vocab.nerc.ac.uk/collection/P02/current/TEMP;
+		qudt:numericValue '26.0'^^xsd:double;
+		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/UPAA/>;
+	],
+	sosa:hasResult [ a sosa:observation;
+		sosa:observedProperty http://vocab.nerc.ac.uk/collection/P02/current/PSAL/;
+		qudt:numericValue '31.7'^^xsd:double;
+		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/UGKG/>;
+	],
+	sosa:hasResult [ a sosa:observation;
+		sosa:observedProperty http://vocab.nerc.ac.uk/collection/P02/current/CNDC/;
+		qudt:numericValue '49.5'^^xsd:double;
+		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/MSPM/>;
+	],
+	sosa:hasResult [ a sosa:observation;
+		sosa:observedProperty http://vocab.nerc.ac.uk/collection/P02/current/AHGT/;
+		qudt:numericValue '1.0'^^xsd:double;
+		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/ULAA/>;
+	],
+	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#SAMEA7392460>;
+	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#to%20be%20added>;
+	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40760>;
+	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40757>;
+
+
+	
+.
+
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD78_2018-06_NPL022_1,Boat> 
+	a sosa:Sampler;
+	sosa:ishostedBy 'not provided'^^xsd:string;
+.
+
+@prefix csvw : <http://www.w3.org/ns/csvw> .
+@prefix schema : <https://schema.org/> . 
+@prefix sosa: <http://www.w3.org/ns/sosa/> . 
+@prefix qudt: <http://qudt.org/schema/qudt/> .
+
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD81_2018-06_NPL022_1>
+	a schema:event, sosa:Sampling;
+	schema:identifier 'OSD81_2018-06'^^xsd:string;
+	schema:identifier 'OSD81_2018-06_NPL022_1'^^xsd:string;
+	schema:identifier 'OSD81_2018-06_1_NPL022'^^xsd:string;
+	schema:identifier 'OSD81'^^xsd:string;
+	schema:startDate '2018-06-21T10:58:00+00:00'^^xsd:datetime;
+	schema:latitude '37.0051'^^xsd:double;
+	schema:longitude '-7.9731'^^xsd:double;
+	schema:location 'lagoon [ENVO:00000038]'^^xsd:string;
+	schema:description ' sea water [ENVO:00002149]'^^xsd:string;
+	schema:description ' microbial community [PCO:1000004]'^^xsd:string;
+	schema:description 'Ocean Sampling Day'^^xsd:string;
+	schema:location 'https://www.marineregions.org/gazetteer.php?p=details&id=5349'^^xsd:anyURI;
+	sosa:hasResult [ a sosa:observation;
+		sosa:observedProperty http://vocab.nerc.ac.uk/collection/P02/current/AHGT/;
+		qudt:numericValue '0'^^xsd:integer;
+		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/ULAA/>;
+	],
+	schema:description 'NPL022'^^xsd:string;
+	schema:description 'OSD-Jun-2018'^^xsd:string;
+	sosa:usedProcedure 'Protocol NPL022 is followed'^^xsd:string;
+	schema:description '1.6'^^xsd:double;
+	schema:Duration '50'^^xsd:integer;
+	schema:description 'Sterivex'^^xsd:string;
+	schema:description '0.22'^^xsd:double;
+	schema:description 'no treatment'^^xsd:string;
+	schema:description '-80'^^xsd:string;
+	sosa:hasResult [ a sosa:observation;
+		sosa:observedProperty http://vocab.nerc.ac.uk/collection/P02/current/TEMP;
+		qudt:numericValue '20.9'^^xsd:double;
+		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/UPAA/>;
+	],
+	sosa:hasResult [ a sosa:observation;
+		sosa:observedProperty http://vocab.nerc.ac.uk/collection/P02/current/PSAL/;
+		qudt:numericValue '36.18'^^xsd:double;
+		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/UGKG/>;
+	],
+	sosa:hasResult [ a sosa:observation;
+		sosa:observedProperty http://vocab.nerc.ac.uk/collection/P02/current/CNDC/;
+		qudt:numericValue '50.27'^^xsd:double;
+		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/MSPM/>;
+	],
+	sosa:hasResult [ a sosa:observation;
+		sosa:observedProperty http://vocab.nerc.ac.uk/collection/P02/current/AHGT/;
+		qudt:numericValue '0.2'^^xsd:double;
+		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/ULAA/>;
+	],
+	sosa:hasResult [ a sosa:observation;
+		sosa:observedProperty http://vocab.nerc.ac.uk/collection/P02/current/ALKY/;
+		qudt:numericValue '8.19'^^xsd:double;
+		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/UUUU/>;
+	],
+	sosa:hasResult [ a sosa:observation;
+		sosa:observedProperty http://vocab.nerc.ac.uk/collection/P02/current/DOCC/;
+		qudt:numericValue '58.4'^^xsd:double;
+		qudt:hasUnit <http://qudt.org/vocab/unit/PERCENT>;
+	],
+	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#SAMEA7392459>;
+	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40760>;
+	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40757>;
+
+
+	
+.
+
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD81_2018-06_NPL022_1,not%20provided> 
+	a sosa:Sampler;
+	sosa:ishostedBy 'Boat (Hossegor)'^^xsd:string;
+.
+
+@prefix csvw : <http://www.w3.org/ns/csvw> .
+@prefix schema : <https://schema.org/> . 
+@prefix sosa: <http://www.w3.org/ns/sosa/> . 
+@prefix qudt: <http://qudt.org/schema/qudt/> .
+
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD88_2018-06_NPL022_1>
+	a schema:event, sosa:Sampling;
+	schema:identifier 'OSD88_2018-06'^^xsd:string;
+	schema:identifier 'OSD88_2018-06_NPL022_1'^^xsd:string;
+	schema:identifier 'OSD88_2018-06_1_NPL022'^^xsd:string;
+	schema:identifier 'OSD88'^^xsd:string;
+	schema:startDate '2018-06-20T08:30:00+00:00'^^xsd:datetime;
+	schema:latitude '46.0842'^^xsd:double;
+	schema:longitude '-1.3083'^^xsd:double;
+	schema:location 'marine biome [ENVO:00000447]'^^xsd:string;
+	schema:description ' sea water [ENVO:00002149]'^^xsd:string;
+	schema:description ' microbial community [PCO:1000004]'^^xsd:string;
+	schema:description 'Ocean Sampling Day'^^xsd:string;
+	schema:location 'https://www.marineregions.org/gazetteer.php?p=details&id=25218'^^xsd:anyURI;
+	sosa:hasResult [ a sosa:observation;
+		sosa:observedProperty http://vocab.nerc.ac.uk/collection/P02/current/AHGT/;
+		qudt:numericValue '0'^^xsd:integer;
+		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/ULAA/>;
+	],
+	schema:description 'NPL022'^^xsd:string;
+	schema:description 'OSD-Jun-2018'^^xsd:string;
+	schema:description 'SOMLIT network is a long term monitoring of the physicochemical parameters of the french coastal environment'^^xsd:string;
+	sosa:madeBySampler <https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD88_2018-06_NPL022_1,12L%20Niskin%20bottle>;
+	sosa:usedProcedure 'two times 12L-Niskin were deployed and poured in 1 bottle 15L nalgene acid washed bottle'^^xsd:string;
+	rdfs:comment 'tidal range is 5.19m sunny day wind is 2knots direction is NE swell is zero air temperature is 28.9 celcius degree'^^xsd:string;
+	schema:description '1.34'^^xsd:double;
+	schema:Duration '60'^^xsd:integer;
+	schema:description 'Sterivex'^^xsd:string;
+	schema:description 'particulate matter'^^xsd:string;
+	schema:description 'no prefiltration'^^xsd:string;
+	schema:description '0.22'^^xsd:double;
+	schema:description 'no treatment'^^xsd:string;
+	schema:description '-80'^^xsd:string;
+	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#SAMEA7392458>;
+	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#to%20be%20added>;
+	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40760>;
+	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40757>;
+
+
+	
+.
+
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD88_2018-06_NPL022_1,12L%20Niskin%20bottle> 
+	a sosa:Sampler;
+	sosa:ishostedBy 'research vessel ESTRAN'^^xsd:string;
+.
+
+@prefix csvw : <http://www.w3.org/ns/csvw> .
+@prefix schema : <https://schema.org/> . 
+@prefix sosa: <http://www.w3.org/ns/sosa/> . 
+@prefix qudt: <http://qudt.org/schema/qudt/> .
+
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD91_2018-06_NPL022_1>
+	a schema:event, sosa:Sampling;
+	schema:identifier 'OSD91_2018-06'^^xsd:string;
+	schema:identifier 'OSD91_2018-06_NPL022_1'^^xsd:string;
+	schema:identifier 'OSD91_2018-06_1_NPL022'^^xsd:string;
+	schema:identifier 'OSD91'^^xsd:string;
+	schema:startDate '2018-06-21T10:15:00+00:00'^^xsd:datetime;
+	schema:latitude '32.7385'^^xsd:double;
+	schema:longitude '-9.039'^^xsd:double;
+	schema:location 'marine biome [ENVO:00000447]'^^xsd:string;
+	schema:description ' sea water [ENVO:00002149]'^^xsd:string;
+	schema:description ' microbial community [PCO:1000004]'^^xsd:string;
+	schema:description 'Ocean Sampling Day'^^xsd:string;
+	schema:location 'https://www.marineregions.org/gazetteer.php?p=details&id=25322'^^xsd:anyURI;
+	sosa:hasResult [ a sosa:observation;
+		sosa:observedProperty http://vocab.nerc.ac.uk/collection/P02/current/AHGT/;
+		qudt:numericValue '1'^^xsd:integer;
+		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/ULAA/>;
+	],
+	schema:description 'NPL022'^^xsd:string;
+	schema:description 'OSD-Jun-2018'^^xsd:string;
+	sosa:madeBySampler <https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD91_2018-06_NPL022_1,5L%20bucket>;
+	sosa:usedProcedure 'the water was collected from an exact geolocation in a 5L buckets'^^xsd:string;
+	schema:description '1.5'^^xsd:double;
+	schema:Duration '40'^^xsd:integer;
+	schema:description 'Cryovial 5ml'^^xsd:string;
+	schema:description 'particulate matter on a 142 mm PC membrane'^^xsd:string;
+	schema:description 'no prefiltration'^^xsd:string;
+	schema:description '0.22'^^xsd:double;
+	schema:description 'no treatment'^^xsd:string;
+	schema:description '-80'^^xsd:string;
+	sosa:hasResult [ a sosa:observation;
+		sosa:observedProperty http://vocab.nerc.ac.uk/collection/P02/current/TEMP;
+		qudt:numericValue '19.0'^^xsd:double;
+		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/UPAA/>;
+	],
+	sosa:hasResult [ a sosa:observation;
+		sosa:observedProperty http://vocab.nerc.ac.uk/collection/P02/current/CNDC/;
+		qudt:numericValue '53.2'^^xsd:double;
+		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/MSPM/>;
+	],
+	sosa:hasResult [ a sosa:observation;
+		sosa:observedProperty http://vocab.nerc.ac.uk/collection/P02/current/AHGT/;
+		qudt:numericValue '1.0'^^xsd:double;
+		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/ULAA/>;
+	],
+	sosa:hasResult [ a sosa:observation;
+		sosa:observedProperty http://vocab.nerc.ac.uk/collection/P02/current/PHOS/;
+		qudt:numericValue '40.0'^^xsd:double;
+	],
+	sosa:hasResult [ a sosa:observation;
+		sosa:observedProperty http://vocab.nerc.ac.uk/collection/P02/current/ALKY/;
+		qudt:numericValue '8.0'^^xsd:double;
+		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/UUUU/>;
+	],
+	sosa:hasResult [ a sosa:observation;
+		sosa:observedProperty http://vocab.nerc.ac.uk/collection/P02/current/ATTN/;
+		qudt:numericValue '5.32'^^xsd:double;
+		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/USTU/>;
+	],
+	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#SAMEA7392457>;
+	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#to%20be%20added>;
+	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40760>;
+	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40757>;
+
+
+	
+.
+
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD91_2018-06_NPL022_1,5L%20bucket> 
+	a sosa:Sampler;
+	sosa:ishostedBy 'not provided'^^xsd:string;
+.
+
+@prefix csvw : <http://www.w3.org/ns/csvw> .
+@prefix schema : <https://schema.org/> . 
+@prefix sosa: <http://www.w3.org/ns/sosa/> . 
+@prefix qudt: <http://qudt.org/schema/qudt/> .
+
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD93_2018-06_NPL022_1>
+	a schema:event, sosa:Sampling;
+	schema:identifier 'OSD93_2018-06'^^xsd:string;
+	schema:identifier 'OSD93_2018-06_NPL022_1'^^xsd:string;
+	schema:identifier 'OSD93_2018-06_1_NPL022'^^xsd:string;
+	schema:identifier 'OSD93'^^xsd:string;
+	schema:startDate '2018-06-21T12:00:00+00:00'^^xsd:datetime;
+	schema:latitude '33.2464'^^xsd:double;
+	schema:longitude '-8.4761'^^xsd:double;
+	schema:location 'marine biome [ENVO:00000447]'^^xsd:string;
+	schema:description ' sea water [ENVO:00002149]'^^xsd:string;
+	schema:description ' microbial community [PCO:1000004]'^^xsd:string;
+	schema:description 'Ocean Sampling Day'^^xsd:string;
+	schema:location 'https://www.marineregions.org/gazetteer.php?p=details&id=25322'^^xsd:anyURI;
+	sosa:hasResult [ a sosa:observation;
+		sosa:observedProperty http://vocab.nerc.ac.uk/collection/P02/current/AHGT/;
+		qudt:numericValue '1'^^xsd:integer;
+		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/ULAA/>;
+	],
+	schema:description 'NPL022'^^xsd:string;
+	schema:description 'OSD-Jun-2018'^^xsd:string;
+	sosa:madeBySampler <https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD93_2018-06_NPL022_1,5L%20bucket>;
+	sosa:usedProcedure 'the water was collected from a specific geolocation in a 5L buckets'^^xsd:string;
+	schema:description '1.4'^^xsd:double;
+	schema:Duration '40'^^xsd:integer;
+	schema:description 'Cryovial 5ml'^^xsd:string;
+	schema:description 'particulate matter on a 142 mm PC membrane'^^xsd:string;
+	schema:description 'no prefiltration'^^xsd:string;
+	schema:description '0.22'^^xsd:double;
+	schema:description 'no treatment'^^xsd:string;
+	schema:description '-80'^^xsd:string;
+	sosa:hasResult [ a sosa:observation;
+		sosa:observedProperty http://vocab.nerc.ac.uk/collection/P02/current/TEMP;
+		qudt:numericValue '24.0'^^xsd:double;
+		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/UPAA/>;
+	],
+	sosa:hasResult [ a sosa:observation;
+		sosa:observedProperty http://vocab.nerc.ac.uk/collection/P02/current/CNDC/;
+		qudt:numericValue '48.0'^^xsd:double;
+		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/MSPM/>;
+	],
+	sosa:hasResult [ a sosa:observation;
+		sosa:observedProperty http://vocab.nerc.ac.uk/collection/P02/current/AHGT/;
+		qudt:numericValue '1.0'^^xsd:double;
+		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/ULAA/>;
+	],
+	sosa:hasResult [ a sosa:observation;
+		sosa:observedProperty http://vocab.nerc.ac.uk/collection/P02/current/PHOS/;
+		qudt:numericValue '40.0'^^xsd:double;
+	],
+	sosa:hasResult [ a sosa:observation;
+		sosa:observedProperty http://vocab.nerc.ac.uk/collection/P02/current/ALKY/;
+		qudt:numericValue '8.0'^^xsd:double;
+		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/UUUU/>;
+	],
+	sosa:hasResult [ a sosa:observation;
+		sosa:observedProperty http://vocab.nerc.ac.uk/collection/P02/current/ATTN/;
+		qudt:numericValue '6.32'^^xsd:double;
+		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/USTU/>;
+	],
+	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#SAMEA7392456>;
+	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#to%20be%20added>;
+	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40760>;
+	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#PRJEB40757>;
+
+
+	
+.
+
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD93_2018-06_NPL022_1,5L%20bucket> 
+	a sosa:Sampler;
+	sosa:ishostedBy 'not provided'^^xsd:string;
+.
+
+@prefix csvw : <http://www.w3.org/ns/csvw> .
+@prefix schema : <https://schema.org/> . 
+@prefix sosa: <http://www.w3.org/ns/sosa/> . 
+@prefix qudt: <http://qudt.org/schema/qudt/> .
+
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD99_2018-06_NPL022_1>
+	a schema:event, sosa:Sampling;
+	schema:identifier 'OSD99_2018-06'^^xsd:string;
+	schema:identifier 'OSD99_2018-06_NPL022_1'^^xsd:string;
+	schema:identifier 'OSD99_2018-06_1_NPL022'^^xsd:string;
+	schema:identifier 'OSD99'^^xsd:string;
+	schema:startDate '2018-06-21T10:46:00+00:00'^^xsd:datetime;
+	schema:latitude '45.7009'^^xsd:double;
+	schema:longitude '13.71'^^xsd:double;
+	schema:location 'marine biome [ENVO:00000447]'^^xsd:string;
+	schema:description 'marine biome [ENVO:00000447]'^^xsd:string;
+	schema:description 'Ocean Sampling Day'^^xsd:string;
+	schema:location 'https://www.marineregions.org/gazetteer.php?p=details&id=3314'^^xsd:anyURI;
+	sosa:hasResult [ a sosa:observation;
+		sosa:observedProperty http://vocab.nerc.ac.uk/collection/P02/current/AHGT/;
+		qudt:numericValue '1'^^xsd:integer;
+		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/ULAA/>;
+	],
+	schema:description 'NPL022'^^xsd:string;
+	schema:description 'OSD-Jun-2018'^^xsd:string;
+	schema:description 'OSD'^^xsd:string;
+	sosa:madeBySampler <https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD99_2018-06_NPL022_1,Niskin>;
+	sosa:usedProcedure 'Niskin and acid washed funnel'^^xsd:string;
+	schema:description '2.4'^^xsd:double;
+	schema:Duration '51'^^xsd:integer;
+	schema:description 'Sterivex'^^xsd:string;
+	schema:description 'particulate matter-seawater'^^xsd:string;
+	schema:description 'no prefiltration'^^xsd:string;
+	schema:description '0.22'^^xsd:double;
+	schema:description 'no treatment'^^xsd:string;
+	schema:description '-80'^^xsd:string;
+	sosa:hasResult [ a sosa:observation;
+		sosa:observedProperty http://vocab.nerc.ac.uk/collection/P02/current/TEMP;
+		qudt:numericValue '24.1'^^xsd:double;
+		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/UPAA/>;
+	],
+	sosa:hasResult [ a sosa:observation;
+		sosa:observedProperty http://vocab.nerc.ac.uk/collection/P02/current/PSAL/;
+		qudt:numericValue '37.07'^^xsd:double;
+		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/UGKG/>;
+	],
+	sosa:hasResult [ a sosa:observation;
+		sosa:observedProperty http://vocab.nerc.ac.uk/collection/P02/current/ALKY/;
+		qudt:numericValue '8.3'^^xsd:double;
+		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/UUUU/>;
+	],
+	sosa:hasResult [ a sosa:observation;
+		sosa:observedProperty http://vocab.nerc.ac.uk/collection/P02/current/DOCC/;
+		qudt:numericValue '105.0'^^xsd:double;
+		qudt:hasUnit <http://vocab.nerc.ac.uk/collection/P06/current/UPOX/>;
+	],
+	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#SAMEA7392455>;
+	schema:identifier <https://www.ebi.ac.uk/ena/browser/view/#to%20be%20added>;
+.
+
+<https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv#OSD99_2018-06_NPL022_1,Niskin> 
+	a sosa:Sampler;
+	sosa:ishostedBy 'research vessel - Niskin'^^xsd:string;
 .
