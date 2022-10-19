@@ -11,7 +11,7 @@ environment (material),ENVO type for the material sampled,xsd:string,schema:desc
 environment (feature),ENVO type for the feature sampled,xsd:string,schema:description,,,,
 project name,Name of the project,xsd:string,schema:description,,,,
 Marine Region,URL of the Marine Region of the sampling site,xsd:anyURI,schema:location,,,,
-Sampling Platform,Name or type of the sampling platform,xsd:string,,,,,
+Sampling Platform,Name or type of the sampling platform,xsd:string,schema:description,,,,
 Depth,Depth of the water sampled,xsd:double,qudt:numericValue,http://vocab.nerc.ac.uk/collection/P02/current/AHGT/,metre,http://vocab.nerc.ac.uk/collection/P06/current/ULAA/,
 Protocol Label,"OSD protocol used (NPL022 = Protocol A, NE08 = Protocol B)",xsd:string,schema:description,,,,
 Sampling Campaign,Sampling campaign name,xsd:string,schema:description,,,,
