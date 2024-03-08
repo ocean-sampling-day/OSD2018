@@ -9,19 +9,21 @@ Inputs:
     - mode: (default)
 #}
 
-@prefix csvw : <http://www.w3.org/ns/csvw> .
-@prefix schema : <https://schema.org/> . 
+@prefix csvw: <http://www.w3.org/ns/csvw#> .
+@prefix schema: <http://schema.org/> . 
 @prefix sosa: <http://www.w3.org/ns/sosa/> . 
 @prefix qudt: <http://qudt.org/schema/qudt/> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
 
 {%- if ctrl.isFirst %}
 <https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv>
 	a csvw:table;
-	csvw:schema <https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Metadata_MachineReadable_version1.csv>>
+	csvw:schema <https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Metadata_MachineReadable_version1.csv> ;
 	csvw:columns ( 
 	{%- for row in sets['osd18metadata'] %}		
 		[ a csvw:Column;
-		csvw:name {{ ttl_fmt(row['ColumnTitle'], "xsd:string") }} ; 
+		csvw:name {{ row['ColumnTitle'] | ttl("xsd:string") }} ; 
 		]	
 	{%- endfor %} 
 	)
@@ -35,12 +37,12 @@ Inputs:
 		
 	{%- if row['Property'] == 'qudt:numericValue' %}
 	sosa:hasResult [ a sosa:observation;
-		sosa:observedProperty {{row['ObservablePropertyUrl']}};
-		{{row['Property']}} {{ttl_fmt(_[row['ColumnTitle']], row['Datatype'])}};
+		sosa:observedProperty <{{row['ObservablePropertyUrl']}}> ;
+		{{row['Property']}} "{{ _[row['ColumnTitle']] }}"^^{{row['Datatype']}} ;
 		{%- if _[row['UnitColumnUrl']] %}
-		qudt:hasUnit <{{_[row['UnitColumnUrl']]}}>;
+		qudt:hasUnit <{{_[row['UnitColumnUrl']]}}> ;
 		{%- endif %}
-	],
+	] ; 
 	{%- elif row['Property'] == 'sosa:madeBySampler' %}
 	{{row['Property']}} <{{uritexpand("https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv{#SampleID,EVENT_Device}",_)}}>;
 
@@ -55,7 +57,7 @@ Inputs:
 
 
 	{% else%}
-	{{row['Property']}} {{ttl_fmt(_[row['ColumnTitle']], row['Datatype'])}};
+	{{row['Property']}} "{{ _[row['ColumnTitle']] }}"^^{{row['Datatype']}} ;
 	{%- endif %}
 
 	{%- endif %}
@@ -64,5 +66,5 @@ Inputs:
 
 <{{uritexpand("https://raw.githubusercontent.com/ocean-sampling-day/OSD2018/main/QualityControlledData/version1/OSD18Data_MachineReadable_version1.csv{#SampleID,EVENT_Device}",_)}}> 
 	a sosa:Sampler;
-	sosa:ishostedBy {{ttl_fmt(_['Sampling Platform'], 'xsd:string')}};
+	sosa:ishostedBy {{_['Sampling Platform'] | ttl("xsd:string")}};
 .
