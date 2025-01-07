@@ -15,7 +15,9 @@
             "@id": "./",
             "@type": "Dataset",
             "datePublished": "2021-11-25T11:27:08+00:00",
-            "citation": "https://marineinfo.org/id/dataset/7916",
+            "citation": { 
+                "@id" : "https://marineinfo.org/id/dataset/7916"
+            } , 
             "hasPart": [
                 {
                     "@id": "./Documentation/"
